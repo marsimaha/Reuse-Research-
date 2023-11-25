@@ -1,0 +1,2957 @@
+,IFC,raw
+0,actuator,IfcActuator
+1,alarm,IfcAlarm
+2,controller,IfcController
+3,flow  instrument,IfcFlowInstrument
+4,sensor,IfcSensor
+5,unitary control  element,IfcUnitaryControlElement
+6,construction equipment  resource,IfcConstructionEquipmentResource
+7,construction material  resource,IfcConstructionMaterialResource
+8,construction  resource,IfcConstructionResource
+9,labor  resource,IfcLaborResource
+10,audio visual  appliance,IfcAudioVisualAppliance
+11,cable carrier  fitting,IfcCableCarrierFitting
+12,cable carrier  segment,IfcCableCarrierSegment
+13,cable  fitting,IfcCableFitting
+14,cable  segment,IfcCableSegment
+15,communications  appliance,IfcCommunicationsAppliance
+16,distribution  board,IfcDistributionBoard
+17,electric  appliance,IfcElectricAppliance
+18,electric distribution  board,IfcElectricDistributionBoard
+19,electric flow storage  device,IfcElectricFlowStorageDevice
+20,electric flow treatment  device,IfcElectricFlowTreatmentDevice
+21,electric  generator,IfcElectricGenerator
+22,electric  motor,IfcElectricMotor
+23,electric time  control,IfcElectricTimeControl
+24,junction  box,IfcJunctionBox
+25,lamp,IfcLamp
+26,light  fixture,IfcLightFixture
+27,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+28,motor  connection,IfcMotorConnection
+29,outlet,IfcOutlet
+30,protective  device,IfcProtectiveDevice
+31,protective device tripping  unit,IfcProtectiveDeviceTrippingUnit
+32,solar  device,IfcSolarDevice
+33,switching  device,IfcSwitchingDevice
+34,transformer,IfcTransformer
+35,air  terminal,IfcAirTerminal
+36,air terminal  box,IfcAirTerminalBox
+37,air to air heat  recovery,IfcAirToAirHeatRecovery
+38,boiler,IfcBoiler
+39,burner,IfcBurner
+40,chiller,IfcChiller
+41,coil,IfcCoil
+42,compressor,IfcCompressor
+43,condenser,IfcCondenser
+44,cooled  beam,IfcCooledBeam
+45,cooling  tower,IfcCoolingTower
+46,damper,IfcDamper
+47,duct  fitting,IfcDuctFitting
+48,duct  segment,IfcDuctSegment
+49,duct  silencer,IfcDuctSilencer
+50,engine,IfcEngine
+51,evaporative  cooler,IfcEvaporativeCooler
+52,evap orator,IfcEvaporator
+53,fan,IfcFan
+54,filter,IfcFilter
+55,flow  meter,IfcFlowMeter
+56,heat  exchanger,IfcHeatExchanger
+57,humidif ier,IfcHumidifier
+58,medical  device,IfcMedicalDevice
+59,pipe  fitting,IfcPipeFitting
+60,pipe  segment,IfcPipeSegment
+61,pump,IfcPump
+62,space  heater,IfcSpaceHeater
+63,tank,IfcTank
+64,tube  bundle,IfcTubeBundle
+65,unitary  equipment,IfcUnitaryEquipment
+66,valve,IfcValve
+67,vibration isola tor,IfcVibrationIsolator
+68,actor,IfcActor
+69,context,IfcContext
+70,control,IfcControl
+71,group,IfcGroup
+72,object,IfcObject
+73,object  definition,IfcObjectDefinition
+74,process,IfcProcess
+75,product,IfcProduct
+76,project,IfcProject
+77,resource,IfcResource
+78,root,IfcRoot
+79,material,IfcMaterial
+80,material  definition,IfcMaterialDefinition
+81,fire suppression  terminal,IfcFireSuppressionTerminal
+82,interceptor,IfcInterceptor
+83,sanitary  terminal,IfcSanitaryTerminal
+84,stack  terminal,IfcStackTerminal
+85,waste  terminal,IfcWasteTerminal
+86,conveyor  segment,IfcConveyorSegment
+87,liquid  terminal,IfcLiquidTerminal
+88,marine  facility,IfcMarineFacility
+89,marine  part,IfcMarinePart
+90,mooring  device,IfcMooringDevice
+91,navigation  element,IfcNavigationElement
+92,task,IfcTask
+93,work  control,IfcWorkControl
+94,alignment,IfcAlignment
+95,alignment  cant,IfcAlignmentCant
+96,alignment  horizontal,IfcAlignmentHorizontal
+97,alignment  segment,IfcAlignmentSegment
+98,alignment  vertical,IfcAlignmentVertical
+99,annotation,IfcAnnotation
+100,bridge,IfcBridge
+101,bridge  part,IfcBridgePart
+102,building,IfcBuilding
+103,building  storey,IfcBuildingStorey
+104,built  element,IfcBuiltElement
+105,built  system,IfcBuiltSystem
+106,civil  element,IfcCivilElement
+107,distribution  element,IfcDistributionElement
+108,element,IfcElement
+109,element  assembly,IfcElementAssembly
+110,external spatial  element,IfcExternalSpatialElement
+111,external spatial structure  element,IfcExternalSpatialStructureElement
+112,facility,IfcFacility
+113,facility  part,IfcFacilityPart
+114,facility part  common,IfcFacilityPartCommon
+115,feature  element,IfcFeatureElement
+116,feature element  addition,IfcFeatureElementAddition
+117,feature element  subtraction,IfcFeatureElementSubtraction
+118,furnishing  element,IfcFurnishingElement
+119,geographic  element,IfcGeographicElement
+120,grid,IfcGrid
+121,impact protection  device,IfcImpactProtectionDevice
+122,linear  element,IfcLinearElement
+123,linear positioning  element,IfcLinearPositioningElement
+124,opening  element,IfcOpeningElement
+125,port,IfcPort
+126,positioning  element,IfcPositioningElement
+127,projection  element,IfcProjectionElement
+128,referent,IfcReferent
+129,site,IfcSite
+130,space,IfcSpace
+131,spatial  element,IfcSpatialElement
+132,spatial structure  element,IfcSpatialStructureElement
+133,spatial  zone,IfcSpatialZone
+134,system,IfcSystem
+135,transportation  device,IfcTransportationDevice
+136,transport  element,IfcTransportElement
+137,vehicle,IfcVehicle
+138,vibration  damper,IfcVibrationDamper
+139,virtual  element,IfcVirtualElement
+140,zone,IfcZone
+141,arbitrary closed profile de f,IfcArbitraryClosedProfileDef
+142,arbitrary profile def with  voids,IfcArbitraryProfileDefWithVoids
+143,profile de f,IfcProfileDef
+144,rail,IfcRail
+145,railway,IfcRailway
+146,railway  part,IfcRailwayPart
+147,track  element,IfcTrackElement
+148,kerb,IfcKerb
+149,road,IfcRoad
+150,road  part,IfcRoadPart
+151,beam,IfcBeam
+152,bearing,IfcBearing
+153,building element  proxy,IfcBuildingElementProxy
+154,building  system,IfcBuildingSystem
+155,chimney,IfcChimney
+156,column,IfcColumn
+157,covering,IfcCovering
+158,curtain  wall,IfcCurtainWall
+159,door,IfcDoor
+160,member,IfcMember
+161,plate,IfcPlate
+162,railing,IfcRailing
+163,ramp,IfcRamp
+164,ramp  flight,IfcRampFlight
+165,roof,IfcRoof
+166,shading  device,IfcShadingDevice
+167,slab,IfcSlab
+168,stair,IfcStair
+169,stair  flight,IfcStairFlight
+170,wall,IfcWall
+171,wall standard  case,IfcWallStandardCase
+172,window,IfcWindow
+173,distribution chamber  element,IfcDistributionChamberElement
+174,distribution control  element,IfcDistributionControlElement
+175,distribution flow  element,IfcDistributionFlowElement
+176,distribution  port,IfcDistributionPort
+177,distribution  system,IfcDistributionSystem
+178,energy conversion  device,IfcEnergyConversionDevice
+179,flow  controller,IfcFlowController
+180,flow  fitting,IfcFlowFitting
+181,flow moving  device,IfcFlowMovingDevice
+182,flow  segment,IfcFlowSegment
+183,flow storage  device,IfcFlowStorageDevice
+184,flow  terminal,IfcFlowTerminal
+185,flow treatment  device,IfcFlowTreatmentDevice
+186,building element  part,IfcBuildingElementPart
+187,discrete  accessory,IfcDiscreteAccessory
+188,element  component,IfcElementComponent
+189,fastener,IfcFastener
+190,mechanical  fastener,IfcMechanicalFastener
+191,asset,IfcAsset
+192,furniture,IfcFurniture
+193,system furniture  element,IfcSystemFurnitureElement
+194,bore hole,IfcBorehole
+195,course,IfcCourse
+196,earthworks  cut,IfcEarthworksCut
+197,earthworks  element,IfcEarthworksElement
+198,earthworks  fill,IfcEarthworksFill
+199,geo model,IfcGeomodel
+200,geo slice,IfcGeoslice
+201,geotechnical  assembly,IfcGeotechnicalAssembly
+202,geotechnical  element,IfcGeotechnicalElement
+203,geotechnical  stratum,IfcGeotechnicalStratum
+204,pavement,IfcPavement
+205,reinforced  soil,IfcReinforcedSoil
+206,sign,IfcSign
+207,signal,IfcSignal
+208,action  request,IfcActionRequest
+209,permit,IfcPermit
+210,project  order,IfcProjectOrder
+211,structural  action,IfcStructuralAction
+212,structural  activity,IfcStructuralActivity
+213,structural  connection,IfcStructuralConnection
+214,structural curve  action,IfcStructuralCurveAction
+215,structural curve  connection,IfcStructuralCurveConnection
+216,structural curve  member,IfcStructuralCurveMember
+217,structural curve member  varying,IfcStructuralCurveMemberVarying
+218,structural curve  reaction,IfcStructuralCurveReaction
+219,structural  item,IfcStructuralItem
+220,structural linear  action,IfcStructuralLinearAction
+221,structural  member,IfcStructuralMember
+222,structural planar  action,IfcStructuralPlanarAction
+223,structural point  action,IfcStructuralPointAction
+224,structural point  connection,IfcStructuralPointConnection
+225,structural point  reaction,IfcStructuralPointReaction
+226,structural  reaction,IfcStructuralReaction
+227,structural surface  action,IfcStructuralSurfaceAction
+228,structural surface  connection,IfcStructuralSurfaceConnection
+229,structural surface  member,IfcStructuralSurfaceMember
+230,structural surface member  varying,IfcStructuralSurfaceMemberVarying
+231,structural surface  reaction,IfcStructuralSurfaceReaction
+232,caisson  foundation,IfcCaissonFoundation
+233,deep  foundation,IfcDeepFoundation
+234,footing,IfcFooting
+235,pile,IfcPile
+236,reinforcing  bar,IfcReinforcingBar
+237,reinforcing  element,IfcReinforcingElement
+238,reinforcing  mesh,IfcReinforcingMesh
+239,surface  feature,IfcSurfaceFeature
+240,tendon,IfcTendon
+241,tendon  anchor,IfcTendonAnchor
+242,tendon  conduit,IfcTendonConduit
+243,voiding  feature,IfcVoidingFeature
+244,electric  actuator,IfcActuator.ELECTRICACTUATOR
+245,handoperated  actuator,IfcActuator.HANDOPERATEDACTUATOR
+246,hydraulic  actuator,IfcActuator.HYDRAULICACTUATOR
+247,pneumatic  actuator,IfcActuator.PNEUMATICACTUATOR
+248,thermostatic  actuator,IfcActuator.THERMOSTATICACTUATOR
+249,user defined,IfcActuator.USERDEFINED
+250,not defined,IfcActuator.NOTDEFINED
+251,bell,IfcAlarm.BELL
+252,breakglass button,IfcAlarm.BREAKGLASSBUTTON
+253,light,IfcAlarm.LIGHT
+254,manualpull box,IfcAlarm.MANUALPULLBOX
+255,railway crocodile,IfcAlarm.RAILWAYCROCODILE
+256,railway detonator,IfcAlarm.RAILWAYDETONATOR
+257,siren,IfcAlarm.SIREN
+258,whistle,IfcAlarm.WHISTLE
+259,user defined,IfcAlarm.USERDEFINED
+260,not defined,IfcAlarm.NOTDEFINED
+261,floating,IfcController.FLOATING
+262,multi position,IfcController.MULTIPOSITION
+263,programm able,IfcController.PROGRAMMABLE
+264,proportional,IfcController.PROPORTIONAL
+265,two position,IfcController.TWOPOSITION
+266,user defined,IfcController.USERDEFINED
+267,not defined,IfcController.NOTDEFINED
+268,ammeter,IfcFlowInstrument.AMMETER
+269,combined,IfcFlowInstrument.COMBINED
+270,frequency meter,IfcFlowInstrument.FREQUENCYMETER
+271,phaseangle meter,IfcFlowInstrument.PHASEANGLEMETER
+272,powerfactor meter,IfcFlowInstrument.POWERFACTORMETER
+273,pressure gauge,IfcFlowInstrument.PRESSUREGAUGE
+274,thermometer,IfcFlowInstrument.THERMOMETER
+275,voltmeter,IfcFlowInstrument.VOLTMETER
+276,voltmeter_ peak,IfcFlowInstrument.VOLTMETER_PEAK
+277,voltmeter_r ms,IfcFlowInstrument.VOLTMETER_RMS
+278,user defined,IfcFlowInstrument.USERDEFINED
+279,not defined,IfcFlowInstrument.NOTDEFINED
+280,co2  sensor,IfcSensor.CO2SENSOR
+281,conductance  sensor,IfcSensor.CONDUCTANCESENSOR
+282,contact  sensor,IfcSensor.CONTACTSENSOR
+283,co  sensor,IfcSensor.COSENSOR
+284,earthquake  sensor,IfcSensor.EARTHQUAKESENSOR
+285,fire  sensor,IfcSensor.FIRESENSOR
+286,flow  sensor,IfcSensor.FLOWSENSOR
+287,foreignobjectdetection  sensor,IfcSensor.FOREIGNOBJECTDETECTIONSENSOR
+288,frost  sensor,IfcSensor.FROSTSENSOR
+289,gas  sensor,IfcSensor.GASSENSOR
+290,heat  sensor,IfcSensor.HEATSENSOR
+291,humidity  sensor,IfcSensor.HUMIDITYSENSOR
+292,identifier  sensor,IfcSensor.IDENTIFIERSENSOR
+293,ionconcentration  sensor,IfcSensor.IONCONCENTRATIONSENSOR
+294,level  sensor,IfcSensor.LEVELSENSOR
+295,light  sensor,IfcSensor.LIGHTSENSOR
+296,moisture  sensor,IfcSensor.MOISTURESENSOR
+297,movement  sensor,IfcSensor.MOVEMENTSENSOR
+298,obstacle  sensor,IfcSensor.OBSTACLESENSOR
+299,ph  sensor,IfcSensor.PHSENSOR
+300,pressure  sensor,IfcSensor.PRESSURESENSOR
+301,radiation  sensor,IfcSensor.RADIATIONSENSOR
+302,radioactivity  sensor,IfcSensor.RADIOACTIVITYSENSOR
+303,rain  sensor,IfcSensor.RAINSENSOR
+304,smoke  sensor,IfcSensor.SMOKESENSOR
+305,snowdepth  sensor,IfcSensor.SNOWDEPTHSENSOR
+306,sound  sensor,IfcSensor.SOUNDSENSOR
+307,temperature  sensor,IfcSensor.TEMPERATURESENSOR
+308,train  sensor,IfcSensor.TRAINSENSOR
+309,turnoutclosure  sensor,IfcSensor.TURNOUTCLOSURESENSOR
+310,wheel  sensor,IfcSensor.WHEELSENSOR
+311,wind  sensor,IfcSensor.WINDSENSOR
+312,user defined,IfcSensor.USERDEFINED
+313,not defined,IfcSensor.NOTDEFINED
+314,alarm panel,IfcUnitaryControlElement.ALARMPANEL
+315,basestation controller,IfcUnitaryControlElement.BASESTATIONCONTROLLER
+316,combined,IfcUnitaryControlElement.COMBINED
+317,control panel,IfcUnitaryControlElement.CONTROLPANEL
+318,gasdetection panel,IfcUnitaryControlElement.GASDETECTIONPANEL
+319,humidis tat,IfcUnitaryControlElement.HUMIDISTAT
+320,indicator panel,IfcUnitaryControlElement.INDICATORPANEL
+321,mimic panel,IfcUnitaryControlElement.MIMICPANEL
+322,thermostat,IfcUnitaryControlElement.THERMOSTAT
+323,weather station,IfcUnitaryControlElement.WEATHERSTATION
+324,user defined,IfcUnitaryControlElement.USERDEFINED
+325,not defined,IfcUnitaryControlElement.NOTDEFINED
+326,amplifier,IfcAudioVisualAppliance.AMPLIFIER
+327,camera,IfcAudioVisualAppliance.CAMERA
+328,communication terminal,IfcAudioVisualAppliance.COMMUNICATIONTERMINAL
+329,display,IfcAudioVisualAppliance.DISPLAY
+330,microphone,IfcAudioVisualAppliance.MICROPHONE
+331,player,IfcAudioVisualAppliance.PLAYER
+332,projector,IfcAudioVisualAppliance.PROJECTOR
+333,receiver,IfcAudioVisualAppliance.RECEIVER
+334,recording equipment,IfcAudioVisualAppliance.RECORDINGEQUIPMENT
+335,speaker,IfcAudioVisualAppliance.SPEAKER
+336,switcher,IfcAudioVisualAppliance.SWITCHER
+337,telephone,IfcAudioVisualAppliance.TELEPHONE
+338,tuner,IfcAudioVisualAppliance.TUNER
+339,user defined,IfcAudioVisualAppliance.USERDEFINED
+340,not defined,IfcAudioVisualAppliance.NOTDEFINED
+341,bend,IfcCableCarrierFitting.BEND
+342,connector,IfcCableCarrierFitting.CONNECTOR
+343,cross,IfcCableCarrierFitting.CROSS
+344,junction,IfcCableCarrierFitting.JUNCTION
+345,reducer,IfcCableCarrierFitting.REDUCER
+346,tee,IfcCableCarrierFitting.TEE
+347,transition,IfcCableCarrierFitting.TRANSITION
+348,user defined,IfcCableCarrierFitting.USERDEFINED
+349,not defined,IfcCableCarrierFitting.NOTDEFINED
+350,cable bracket,IfcCableCarrierSegment.CABLEBRACKET
+351,cableladder segment,IfcCableCarrierSegment.CABLELADDERSEGMENT
+352,cabletray segment,IfcCableCarrierSegment.CABLETRAYSEGMENT
+353,cabletrunking segment,IfcCableCarrierSegment.CABLETRUNKINGSEGMENT
+354,catenary wire,IfcCableCarrierSegment.CATENARYWIRE
+355,conduit segment,IfcCableCarrierSegment.CONDUITSEGMENT
+356,dropper,IfcCableCarrierSegment.DROPPER
+357,user defined,IfcCableCarrierSegment.USERDEFINED
+358,not defined,IfcCableCarrierSegment.NOTDEFINED
+359,connector,IfcCableFitting.CONNECTOR
+360,entry,IfcCableFitting.ENTRY
+361,exit,IfcCableFitting.EXIT
+362,fan out,IfcCableFitting.FANOUT
+363,junction,IfcCableFitting.JUNCTION
+364,transition,IfcCableFitting.TRANSITION
+365,user defined,IfcCableFitting.USERDEFINED
+366,not defined,IfcCableFitting.NOTDEFINED
+367,busbar segment,IfcCableSegment.BUSBARSEGMENT
+368,cable segment,IfcCableSegment.CABLESEGMENT
+369,conductor segment,IfcCableSegment.CONDUCTORSEGMENT
+370,contactwire segment,IfcCableSegment.CONTACTWIRESEGMENT
+371,core segment,IfcCableSegment.CORESEGMENT
+372,fiber segment,IfcCableSegment.FIBERSEGMENT
+373,fiber tube,IfcCableSegment.FIBERTUBE
+374,opticalcable segment,IfcCableSegment.OPTICALCABLESEGMENT
+375,stitch wire,IfcCableSegment.STITCHWIRE
+376,wirepair segment,IfcCableSegment.WIREPAIRSEGMENT
+377,user defined,IfcCableSegment.USERDEFINED
+378,not defined,IfcCableSegment.NOTDEFINED
+379,antenna,IfcCommunicationsAppliance.ANTENNA
+380,automaton,IfcCommunicationsAppliance.AUTOMATON
+381,computer,IfcCommunicationsAppliance.COMPUTER
+382,fax,IfcCommunicationsAppliance.FAX
+383,gateway,IfcCommunicationsAppliance.GATEWAY
+384,intelligent peripheral,IfcCommunicationsAppliance.INTELLIGENTPERIPHERAL
+385,ipnetwork equipment,IfcCommunicationsAppliance.IPNETWORKEQUIPMENT
+386,linesideelectronic unit,IfcCommunicationsAppliance.LINESIDEELECTRONICUNIT
+387,modem,IfcCommunicationsAppliance.MODEM
+388,network appliance,IfcCommunicationsAppliance.NETWORKAPPLIANCE
+389,network bridge,IfcCommunicationsAppliance.NETWORKBRIDGE
+390,network hub,IfcCommunicationsAppliance.NETWORKHUB
+391,opticalline terminal,IfcCommunicationsAppliance.OPTICALLINETERMINAL
+392,opticalnetwork unit,IfcCommunicationsAppliance.OPTICALNETWORKUNIT
+393,printer,IfcCommunicationsAppliance.PRINTER
+394,radioblock center,IfcCommunicationsAppliance.RADIOBLOCKCENTER
+395,repeater,IfcCommunicationsAppliance.REPEATER
+396,router,IfcCommunicationsAppliance.ROUTER
+397,scanner,IfcCommunicationsAppliance.SCANNER
+398,tele command,IfcCommunicationsAppliance.TELECOMMAND
+399,telephony exchange,IfcCommunicationsAppliance.TELEPHONYEXCHANGE
+400,transition component,IfcCommunicationsAppliance.TRANSITIONCOMPONENT
+401,transponder,IfcCommunicationsAppliance.TRANSPONDER
+402,transport equipment,IfcCommunicationsAppliance.TRANSPORTEQUIPMENT
+403,user defined,IfcCommunicationsAppliance.USERDEFINED
+404,not defined,IfcCommunicationsAppliance.NOTDEFINED
+405,consumer unit,IfcDistributionBoard.CONSUMERUNIT
+406,dispatching board,IfcDistributionBoard.DISPATCHINGBOARD
+407,distribution board,IfcDistributionBoard.DISTRIBUTIONBOARD
+408,distribution frame,IfcDistributionBoard.DISTRIBUTIONFRAME
+409,motorcontrol centre,IfcDistributionBoard.MOTORCONTROLCENTRE
+410,switchboard,IfcDistributionBoard.SWITCHBOARD
+411,user defined,IfcDistributionBoard.USERDEFINED
+412,not defined,IfcDistributionBoard.NOTDEFINED
+413,dishwasher,IfcElectricAppliance.DISHWASHER
+414,electric cooker,IfcElectricAppliance.ELECTRICCOOKER
+415,freestandingelectri cheater,IfcElectricAppliance.FREESTANDINGELECTRICHEATER
+416,freestanding fan,IfcElectricAppliance.FREESTANDINGFAN
+417,freestandingwater cooler,IfcElectricAppliance.FREESTANDINGWATERCOOLER
+418,freestandingwater heater,IfcElectricAppliance.FREESTANDINGWATERHEATER
+419,freezer,IfcElectricAppliance.FREEZER
+420,fridge_ freezer,IfcElectricAppliance.FRIDGE_FREEZER
+421,hand dryer,IfcElectricAppliance.HANDDRYER
+422,kitchen machine,IfcElectricAppliance.KITCHENMACHINE
+423,microwave,IfcElectricAppliance.MICROWAVE
+424,photocopier,IfcElectricAppliance.PHOTOCOPIER
+425,refrigerator,IfcElectricAppliance.REFRIGERATOR
+426,tumble dryer,IfcElectricAppliance.TUMBLEDRYER
+427,vending machine,IfcElectricAppliance.VENDINGMACHINE
+428,washing machine,IfcElectricAppliance.WASHINGMACHINE
+429,user defined,IfcElectricAppliance.USERDEFINED
+430,not defined,IfcElectricAppliance.NOTDEFINED
+431,consumer unit,IfcElectricDistributionBoard.CONSUMERUNIT
+432,distribution board,IfcElectricDistributionBoard.DISTRIBUTIONBOARD
+433,motorcontrol centre,IfcElectricDistributionBoard.MOTORCONTROLCENTRE
+434,switchboard,IfcElectricDistributionBoard.SWITCHBOARD
+435,user defined,IfcElectricDistributionBoard.USERDEFINED
+436,not defined,IfcElectricDistributionBoard.NOTDEFINED
+437,battery,IfcElectricFlowStorageDevice.BATTERY
+438,capacitor,IfcElectricFlowStorageDevice.CAPACITOR
+439,capacitor bank,IfcElectricFlowStorageDevice.CAPACITORBANK
+440,compensa tor,IfcElectricFlowStorageDevice.COMPENSATOR
+441,harmonic filter,IfcElectricFlowStorageDevice.HARMONICFILTER
+442,inductor,IfcElectricFlowStorageDevice.INDUCTOR
+443,inductor bank,IfcElectricFlowStorageDevice.INDUCTORBANK
+444,re charger,IfcElectricFlowStorageDevice.RECHARGER
+445,ups,IfcElectricFlowStorageDevice.UPS
+446,user defined,IfcElectricFlowStorageDevice.USERDEFINED
+447,not defined,IfcElectricFlowStorageDevice.NOTDEFINED
+448,electronic filter,IfcElectricFlowTreatmentDevice.ELECTRONICFILTER
+449,user defined,IfcElectricFlowTreatmentDevice.USERDEFINED
+450,not defined,IfcElectricFlowTreatmentDevice.NOTDEFINED
+451,c hp,IfcElectricGenerator.CHP
+452,engine generator,IfcElectricGenerator.ENGINEGENERATOR
+453,stand alone,IfcElectricGenerator.STANDALONE
+454,user defined,IfcElectricGenerator.USERDEFINED
+455,not defined,IfcElectricGenerator.NOTDEFINED
+456,dc,IfcElectricMotor.DC
+457,induction,IfcElectricMotor.INDUCTION
+458,polyphase,IfcElectricMotor.POLYPHASE
+459,reluctance synchronous,IfcElectricMotor.RELUCTANCESYNCHRONOUS
+460,synchronous,IfcElectricMotor.SYNCHRONOUS
+461,user defined,IfcElectricMotor.USERDEFINED
+462,not defined,IfcElectricMotor.NOTDEFINED
+463,relay,IfcElectricTimeControl.RELAY
+464,time clock,IfcElectricTimeControl.TIMECLOCK
+465,time delay,IfcElectricTimeControl.TIMEDELAY
+466,user defined,IfcElectricTimeControl.USERDEFINED
+467,not defined,IfcElectricTimeControl.NOTDEFINED
+468,data,IfcJunctionBox.DATA
+469,power,IfcJunctionBox.POWER
+470,user defined,IfcJunctionBox.USERDEFINED
+471,not defined,IfcJunctionBox.NOTDEFINED
+472,compact fluorescent,IfcLamp.COMPACTFLUORESCENT
+473,fluorescent,IfcLamp.FLUORESCENT
+474,halogen,IfcLamp.HALOGEN
+475,highpressure mercury,IfcLamp.HIGHPRESSUREMERCURY
+476,highpressure sodium,IfcLamp.HIGHPRESSURESODIUM
+477,led,IfcLamp.LED
+478,metal halide,IfcLamp.METALHALIDE
+479,oled,IfcLamp.OLED
+480,tungsten filament,IfcLamp.TUNGSTENFILAMENT
+481,user defined,IfcLamp.USERDEFINED
+482,not defined,IfcLamp.NOTDEFINED
+483,direction source,IfcLightFixture.DIRECTIONSOURCE
+484,point source,IfcLightFixture.POINTSOURCE
+485,security lighting,IfcLightFixture.SECURITYLIGHTING
+486,user defined,IfcLightFixture.USERDEFINED
+487,not defined,IfcLightFixture.NOTDEFINED
+488,access point,IfcMobileTelecommunicationsAppliance.ACCESSPOINT
+489,baseband unit,IfcMobileTelecommunicationsAppliance.BASEBANDUNIT
+490,basetransceiver station,IfcMobileTelecommunicationsAppliance.BASETRANSCEIVERSTATION
+491,e_utran_node_ b,IfcMobileTelecommunicationsAppliance.E_UTRAN_NODE_B
+492,gateway_gprs_support_ node,IfcMobileTelecommunicationsAppliance.GATEWAY_GPRS_SUPPORT_NODE
+493,master unit,IfcMobileTelecommunicationsAppliance.MASTERUNIT
+494,mobileswitching center,IfcMobileTelecommunicationsAppliance.MOBILESWITCHINGCENTER
+495,msc server,IfcMobileTelecommunicationsAppliance.MSCSERVER
+496,packetcontrol unit,IfcMobileTelecommunicationsAppliance.PACKETCONTROLUNIT
+497,remoteradio unit,IfcMobileTelecommunicationsAppliance.REMOTERADIOUNIT
+498,remote unit,IfcMobileTelecommunicationsAppliance.REMOTEUNIT
+499,service_gprs_support_ node,IfcMobileTelecommunicationsAppliance.SERVICE_GPRS_SUPPORT_NODE
+500,subscriber server,IfcMobileTelecommunicationsAppliance.SUBSCRIBERSERVER
+501,user defined,IfcMobileTelecommunicationsAppliance.USERDEFINED
+502,not defined,IfcMobileTelecommunicationsAppliance.NOTDEFINED
+503,belt drive,IfcMotorConnection.BELTDRIVE
+504,coupling,IfcMotorConnection.COUPLING
+505,direct drive,IfcMotorConnection.DIRECTDRIVE
+506,user defined,IfcMotorConnection.USERDEFINED
+507,not defined,IfcMotorConnection.NOTDEFINED
+508,audiovisual  outlet,IfcOutlet.AUDIOVISUALOUTLET
+509,communications  outlet,IfcOutlet.COMMUNICATIONSOUTLET
+510,data  outlet,IfcOutlet.DATAOUTLET
+511,power  outlet,IfcOutlet.POWEROUTLET
+512,telephone  outlet,IfcOutlet.TELEPHONEOUTLET
+513,user defined,IfcOutlet.USERDEFINED
+514,not defined,IfcOutlet.NOTDEFINED
+515,anti_arcing_ device,IfcProtectiveDevice.ANTI_ARCING_DEVICE
+516,circuit breaker,IfcProtectiveDevice.CIRCUITBREAKER
+517,earthing switch,IfcProtectiveDevice.EARTHINGSWITCH
+518,earthleakagecircuit breaker,IfcProtectiveDevice.EARTHLEAKAGECIRCUITBREAKER
+519,fusedis connector,IfcProtectiveDevice.FUSEDISCONNECTOR
+520,residualcurrentcircuit breaker,IfcProtectiveDevice.RESIDUALCURRENTCIRCUITBREAKER
+521,residualcurrent switch,IfcProtectiveDevice.RESIDUALCURRENTSWITCH
+522,spark gap,IfcProtectiveDevice.SPARKGAP
+523,varis tor,IfcProtectiveDevice.VARISTOR
+524,voltage limiter,IfcProtectiveDevice.VOLTAGELIMITER
+525,user defined,IfcProtectiveDevice.USERDEFINED
+526,not defined,IfcProtectiveDevice.NOTDEFINED
+527,electromagnetic,IfcProtectiveDeviceTrippingUnit.ELECTROMAGNETIC
+528,electronic,IfcProtectiveDeviceTrippingUnit.ELECTRONIC
+529,residual current,IfcProtectiveDeviceTrippingUnit.RESIDUALCURRENT
+530,thermal,IfcProtectiveDeviceTrippingUnit.THERMAL
+531,user defined,IfcProtectiveDeviceTrippingUnit.USERDEFINED
+532,not defined,IfcProtectiveDeviceTrippingUnit.NOTDEFINED
+533,solar collector,IfcSolarDevice.SOLARCOLLECTOR
+534,solar panel,IfcSolarDevice.SOLARPANEL
+535,user defined,IfcSolarDevice.USERDEFINED
+536,not defined,IfcSolarDevice.NOTDEFINED
+537,cont actor,IfcSwitchingDevice.CONTACTOR
+538,dimmer switch,IfcSwitchingDevice.DIMMERSWITCH
+539,emergency stop,IfcSwitchingDevice.EMERGENCYSTOP
+540,keypad,IfcSwitchingDevice.KEYPAD
+541,momentary switch,IfcSwitchingDevice.MOMENTARYSWITCH
+542,relay,IfcSwitchingDevice.RELAY
+543,selector switch,IfcSwitchingDevice.SELECTORSWITCH
+544,starter,IfcSwitchingDevice.STARTER
+545,start_and_stop_ equipment,IfcSwitchingDevice.START_AND_STOP_EQUIPMENT
+546,switchdis connector,IfcSwitchingDevice.SWITCHDISCONNECTOR
+547,toggle switch,IfcSwitchingDevice.TOGGLESWITCH
+548,user defined,IfcSwitchingDevice.USERDEFINED
+549,not defined,IfcSwitchingDevice.NOTDEFINED
+550,chopper,IfcTransformer.CHOPPER
+551,combined,IfcTransformer.COMBINED
+552,current,IfcTransformer.CURRENT
+553,frequency,IfcTransformer.FREQUENCY
+554,inverter,IfcTransformer.INVERTER
+555,rectifier,IfcTransformer.RECTIFIER
+556,voltage,IfcTransformer.VOLTAGE
+557,user defined,IfcTransformer.USERDEFINED
+558,not defined,IfcTransformer.NOTDEFINED
+559,diffuser,IfcAirTerminal.DIFFUSER
+560,grille,IfcAirTerminal.GRILLE
+561,louvre,IfcAirTerminal.LOUVRE
+562,register,IfcAirTerminal.REGISTER
+563,user defined,IfcAirTerminal.USERDEFINED
+564,not defined,IfcAirTerminal.NOTDEFINED
+565,constant flow,IfcAirTerminalBox.CONSTANTFLOW
+566,variableflowpressure dependant,IfcAirTerminalBox.VARIABLEFLOWPRESSUREDEPENDANT
+567,variableflowpressurein dependant,IfcAirTerminalBox.VARIABLEFLOWPRESSUREINDEPENDANT
+568,user defined,IfcAirTerminalBox.USERDEFINED
+569,not defined,IfcAirTerminalBox.NOTDEFINED
+570,fixedplatecounterflow exchanger,IfcAirToAirHeatRecovery.FIXEDPLATECOUNTERFLOWEXCHANGER
+571,fixedplatecrossflow exchanger,IfcAirToAirHeatRecovery.FIXEDPLATECROSSFLOWEXCHANGER
+572,fixedplateparallelflow exchanger,IfcAirToAirHeatRecovery.FIXEDPLATEPARALLELFLOWEXCHANGER
+573,heat pipe,IfcAirToAirHeatRecovery.HEATPIPE
+574,rotary wheel,IfcAirToAirHeatRecovery.ROTARYWHEEL
+575,runaroundcoil loop,IfcAirToAirHeatRecovery.RUNAROUNDCOILLOOP
+576,thermosiphoncoiltypeheat exchangers,IfcAirToAirHeatRecovery.THERMOSIPHONCOILTYPEHEATEXCHANGERS
+577,thermosiphonsealedtubeheat exchangers,IfcAirToAirHeatRecovery.THERMOSIPHONSEALEDTUBEHEATEXCHANGERS
+578,twintowerenthalpyrecovery loops,IfcAirToAirHeatRecovery.TWINTOWERENTHALPYRECOVERYLOOPS
+579,user defined,IfcAirToAirHeatRecovery.USERDEFINED
+580,not defined,IfcAirToAirHeatRecovery.NOTDEFINED
+581,steam,IfcBoiler.STEAM
+582,water,IfcBoiler.WATER
+583,user defined,IfcBoiler.USERDEFINED
+584,not defined,IfcBoiler.NOTDEFINED
+585,user defined,IfcBurner.USERDEFINED
+586,not defined,IfcBurner.NOTDEFINED
+587,air cooled,IfcChiller.AIRCOOLED
+588,heat recovery,IfcChiller.HEATRECOVERY
+589,water cooled,IfcChiller.WATERCOOLED
+590,user defined,IfcChiller.USERDEFINED
+591,not defined,IfcChiller.NOTDEFINED
+592,dxcooling  coil,IfcCoil.DXCOOLINGCOIL
+593,electricheating  coil,IfcCoil.ELECTRICHEATINGCOIL
+594,gasheating  coil,IfcCoil.GASHEATINGCOIL
+595,hydronic  coil,IfcCoil.HYDRONICCOIL
+596,steamheating  coil,IfcCoil.STEAMHEATINGCOIL
+597,watercooling  coil,IfcCoil.WATERCOOLINGCOIL
+598,waterheating  coil,IfcCoil.WATERHEATINGCOIL
+599,user defined,IfcCoil.USERDEFINED
+600,not defined,IfcCoil.NOTDEFINED
+601,booster,IfcCompressor.BOOSTER
+602,dynamic,IfcCompressor.DYNAMIC
+603,hermetic,IfcCompressor.HERMETIC
+604,open type,IfcCompressor.OPENTYPE
+605,reciprocating,IfcCompressor.RECIPROCATING
+606,rolling piston,IfcCompressor.ROLLINGPISTON
+607,rotary,IfcCompressor.ROTARY
+608,rotary vane,IfcCompressor.ROTARYVANE
+609,scroll,IfcCompressor.SCROLL
+610,semi hermetic,IfcCompressor.SEMIHERMETIC
+611,single screw,IfcCompressor.SINGLESCREW
+612,single stage,IfcCompressor.SINGLESTAGE
+613,trochoi dal,IfcCompressor.TROCHOIDAL
+614,twin screw,IfcCompressor.TWINSCREW
+615,weldedshell hermetic,IfcCompressor.WELDEDSHELLHERMETIC
+616,user defined,IfcCompressor.USERDEFINED
+617,not defined,IfcCompressor.NOTDEFINED
+618,air cooled,IfcCondenser.AIRCOOLED
+619,evaporative cooled,IfcCondenser.EVAPORATIVECOOLED
+620,water cooled,IfcCondenser.WATERCOOLED
+621,watercooledbrazed plate,IfcCondenser.WATERCOOLEDBRAZEDPLATE
+622,watercooledshell coil,IfcCondenser.WATERCOOLEDSHELLCOIL
+623,watercooledshell tube,IfcCondenser.WATERCOOLEDSHELLTUBE
+624,watercooledtubein tube,IfcCondenser.WATERCOOLEDTUBEINTUBE
+625,user defined,IfcCondenser.USERDEFINED
+626,not defined,IfcCondenser.NOTDEFINED
+627,active,IfcCooledBeam.ACTIVE
+628,passive,IfcCooledBeam.PASSIVE
+629,user defined,IfcCooledBeam.USERDEFINED
+630,not defined,IfcCooledBeam.NOTDEFINED
+631,mechanicalforced draft,IfcCoolingTower.MECHANICALFORCEDDRAFT
+632,mechanicalinduced draft,IfcCoolingTower.MECHANICALINDUCEDDRAFT
+633,natural draft,IfcCoolingTower.NATURALDRAFT
+634,user defined,IfcCoolingTower.USERDEFINED
+635,not defined,IfcCoolingTower.NOTDEFINED
+636,backdraft  damper,IfcDamper.BACKDRAFTDAMPER
+637,balancing  damper,IfcDamper.BALANCINGDAMPER
+638,blast  damper,IfcDamper.BLASTDAMPER
+639,control  damper,IfcDamper.CONTROLDAMPER
+640,fire  damper,IfcDamper.FIREDAMPER
+641,firesmoke  damper,IfcDamper.FIRESMOKEDAMPER
+642,fumehood exhaust,IfcDamper.FUMEHOODEXHAUST
+643,gravity  damper,IfcDamper.GRAVITYDAMPER
+644,gravityrelief  damper,IfcDamper.GRAVITYRELIEFDAMPER
+645,relief  damper,IfcDamper.RELIEFDAMPER
+646,smoke  damper,IfcDamper.SMOKEDAMPER
+647,user defined,IfcDamper.USERDEFINED
+648,not defined,IfcDamper.NOTDEFINED
+649,bend,IfcDuctFitting.BEND
+650,connector,IfcDuctFitting.CONNECTOR
+651,entry,IfcDuctFitting.ENTRY
+652,exit,IfcDuctFitting.EXIT
+653,junction,IfcDuctFitting.JUNCTION
+654,obstruction,IfcDuctFitting.OBSTRUCTION
+655,transition,IfcDuctFitting.TRANSITION
+656,user defined,IfcDuctFitting.USERDEFINED
+657,not defined,IfcDuctFitting.NOTDEFINED
+658,flexible segment,IfcDuctSegment.FLEXIBLESEGMENT
+659,rigid segment,IfcDuctSegment.RIGIDSEGMENT
+660,user defined,IfcDuctSegment.USERDEFINED
+661,not defined,IfcDuctSegment.NOTDEFINED
+662,flat oval,IfcDuctSilencer.FLATOVAL
+663,rectangular,IfcDuctSilencer.RECTANGULAR
+664,round,IfcDuctSilencer.ROUND
+665,user defined,IfcDuctSilencer.USERDEFINED
+666,not defined,IfcDuctSilencer.NOTDEFINED
+667,external combustion,IfcEngine.EXTERNALCOMBUSTION
+668,internal combustion,IfcEngine.INTERNALCOMBUSTION
+669,user defined,IfcEngine.USERDEFINED
+670,not defined,IfcEngine.NOTDEFINED
+671,directevaporativeair washer,IfcEvaporativeCooler.DIRECTEVAPORATIVEAIRWASHER
+672,directevaporativepackagedrotaryair cooler,IfcEvaporativeCooler.DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER
+673,directevaporativerandommediaair cooler,IfcEvaporativeCooler.DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER
+674,directevaporativerigidmediaair cooler,IfcEvaporativeCooler.DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER
+675,directevaporativeslingerspackagedair cooler,IfcEvaporativeCooler.DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER
+676,indirectdirect combination,IfcEvaporativeCooler.INDIRECTDIRECTCOMBINATION
+677,indirectevaporativecoolingtowerorcoil cooler,IfcEvaporativeCooler.INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER
+678,indirectevaporativepackageair cooler,IfcEvaporativeCooler.INDIRECTEVAPORATIVEPACKAGEAIRCOOLER
+679,indirectevaporativewet coil,IfcEvaporativeCooler.INDIRECTEVAPORATIVEWETCOIL
+680,user defined,IfcEvaporativeCooler.USERDEFINED
+681,not defined,IfcEvaporativeCooler.NOTDEFINED
+682,direct expansion,IfcEvaporator.DIRECTEXPANSION
+683,directexpansionbrazed plate,IfcEvaporator.DIRECTEXPANSIONBRAZEDPLATE
+684,directexpansionshelland tube,IfcEvaporator.DIRECTEXPANSIONSHELLANDTUBE
+685,directexpansiontubein tube,IfcEvaporator.DIRECTEXPANSIONTUBEINTUBE
+686,floodedshelland tube,IfcEvaporator.FLOODEDSHELLANDTUBE
+687,shelland coil,IfcEvaporator.SHELLANDCOIL
+688,user defined,IfcEvaporator.USERDEFINED
+689,not defined,IfcEvaporator.NOTDEFINED
+690,centrifugal airfoil,IfcFan.CENTRIFUGALAIRFOIL
+691,centrifugalbackwardinclined curved,IfcFan.CENTRIFUGALBACKWARDINCLINEDCURVED
+692,centrifugalforward curved,IfcFan.CENTRIFUGALFORWARDCURVED
+693,centrifugal radial,IfcFan.CENTRIFUGALRADIAL
+694,propellor axial,IfcFan.PROPELLORAXIAL
+695,tube axial,IfcFan.TUBEAXIAL
+696,vane axial,IfcFan.VANEAXIAL
+697,user defined,IfcFan.USERDEFINED
+698,not defined,IfcFan.NOTDEFINED
+699,airparticle  filter,IfcFilter.AIRPARTICLEFILTER
+700,compressedair  filter,IfcFilter.COMPRESSEDAIRFILTER
+701,odor  filter,IfcFilter.ODORFILTER
+702,oil  filter,IfcFilter.OILFILTER
+703,strainer,IfcFilter.STRAINER
+704,water  filter,IfcFilter.WATERFILTER
+705,user defined,IfcFilter.USERDEFINED
+706,not defined,IfcFilter.NOTDEFINED
+707,energy meter,IfcFlowMeter.ENERGYMETER
+708,gas meter,IfcFlowMeter.GASMETER
+709,oil meter,IfcFlowMeter.OILMETER
+710,water meter,IfcFlowMeter.WATERMETER
+711,user defined,IfcFlowMeter.USERDEFINED
+712,not defined,IfcFlowMeter.NOTDEFINED
+713,plate,IfcHeatExchanger.PLATE
+714,shelland tube,IfcHeatExchanger.SHELLANDTUBE
+715,turnout heating,IfcHeatExchanger.TURNOUTHEATING
+716,user defined,IfcHeatExchanger.USERDEFINED
+717,not defined,IfcHeatExchanger.NOTDEFINED
+718,adiabaticair washer,IfcHumidifier.ADIABATICAIRWASHER
+719,adiabatic atomizing,IfcHumidifier.ADIABATICATOMIZING
+720,adiabaticcompressedair nozzle,IfcHumidifier.ADIABATICCOMPRESSEDAIRNOZZLE
+721,adiabatic pan,IfcHumidifier.ADIABATICPAN
+722,adiabaticrigid media,IfcHumidifier.ADIABATICRIGIDMEDIA
+723,adiabatic ultrasonic,IfcHumidifier.ADIABATICULTRASONIC
+724,adiabaticwetted element,IfcHumidifier.ADIABATICWETTEDELEMENT
+725,assisted butane,IfcHumidifier.ASSISTEDBUTANE
+726,assisted electric,IfcHumidifier.ASSISTEDELECTRIC
+727,assistednatur algas,IfcHumidifier.ASSISTEDNATURALGAS
+728,assisted propane,IfcHumidifier.ASSISTEDPROPANE
+729,assisted steam,IfcHumidifier.ASSISTEDSTEAM
+730,steam injection,IfcHumidifier.STEAMINJECTION
+731,user defined,IfcHumidifier.USERDEFINED
+732,not defined,IfcHumidifier.NOTDEFINED
+733,air station,IfcMedicalDevice.AIRSTATION
+734,feedair unit,IfcMedicalDevice.FEEDAIRUNIT
+735,oxygen generator,IfcMedicalDevice.OXYGENGENERATOR
+736,oxygen plant,IfcMedicalDevice.OXYGENPLANT
+737,vacuum station,IfcMedicalDevice.VACUUMSTATION
+738,user defined,IfcMedicalDevice.USERDEFINED
+739,not defined,IfcMedicalDevice.NOTDEFINED
+740,bend,IfcPipeFitting.BEND
+741,connector,IfcPipeFitting.CONNECTOR
+742,entry,IfcPipeFitting.ENTRY
+743,exit,IfcPipeFitting.EXIT
+744,junction,IfcPipeFitting.JUNCTION
+745,obstruction,IfcPipeFitting.OBSTRUCTION
+746,transition,IfcPipeFitting.TRANSITION
+747,user defined,IfcPipeFitting.USERDEFINED
+748,not defined,IfcPipeFitting.NOTDEFINED
+749,culvert,IfcPipeSegment.CULVERT
+750,flexible segment,IfcPipeSegment.FLEXIBLESEGMENT
+751,gutter,IfcPipeSegment.GUTTER
+752,rigid segment,IfcPipeSegment.RIGIDSEGMENT
+753,spool,IfcPipeSegment.SPOOL
+754,user defined,IfcPipeSegment.USERDEFINED
+755,not defined,IfcPipeSegment.NOTDEFINED
+756,circula tor,IfcPump.CIRCULATOR
+757,end suction,IfcPump.ENDSUCTION
+758,split case,IfcPump.SPLITCASE
+759,submersible  pump,IfcPump.SUBMERSIBLEPUMP
+760,sump  pump,IfcPump.SUMPPUMP
+761,verticalin line,IfcPump.VERTICALINLINE
+762,vertical turbine,IfcPump.VERTICALTURBINE
+763,user defined,IfcPump.USERDEFINED
+764,not defined,IfcPump.NOTDEFINED
+765,convector,IfcSpaceHeater.CONVECTOR
+766,radiator,IfcSpaceHeater.RADIATOR
+767,user defined,IfcSpaceHeater.USERDEFINED
+768,not defined,IfcSpaceHeater.NOTDEFINED
+769,basin,IfcTank.BASIN
+770,break pressure,IfcTank.BREAKPRESSURE
+771,expansion,IfcTank.EXPANSION
+772,feedand expansion,IfcTank.FEEDANDEXPANSION
+773,oilretention tray,IfcTank.OILRETENTIONTRAY
+774,pressure vessel,IfcTank.PRESSUREVESSEL
+775,storage,IfcTank.STORAGE
+776,vessel,IfcTank.VESSEL
+777,user defined,IfcTank.USERDEFINED
+778,not defined,IfcTank.NOTDEFINED
+779,finned,IfcTubeBundle.FINNED
+780,user defined,IfcTubeBundle.USERDEFINED
+781,not defined,IfcTubeBundle.NOTDEFINED
+782,airconditioning unit,IfcUnitaryEquipment.AIRCONDITIONINGUNIT
+783,air handler,IfcUnitaryEquipment.AIRHANDLER
+784,dehumidif ier,IfcUnitaryEquipment.DEHUMIDIFIER
+785,rooftop unit,IfcUnitaryEquipment.ROOFTOPUNIT
+786,split system,IfcUnitaryEquipment.SPLITSYSTEM
+787,user defined,IfcUnitaryEquipment.USERDEFINED
+788,not defined,IfcUnitaryEquipment.NOTDEFINED
+789,air release,IfcValve.AIRRELEASE
+790,anti vacuum,IfcValve.ANTIVACUUM
+791,changeover,IfcValve.CHANGEOVER
+792,check,IfcValve.CHECK
+793,commissioning,IfcValve.COMMISSIONING
+794,diverting,IfcValve.DIVERTING
+795,double check,IfcValve.DOUBLECHECK
+796,double regulating,IfcValve.DOUBLEREGULATING
+797,drawoff cock,IfcValve.DRAWOFFCOCK
+798,faucet,IfcValve.FAUCET
+799,flushing,IfcValve.FLUSHING
+800,gas cock,IfcValve.GASCOCK
+801,gas tap,IfcValve.GASTAP
+802,isolating,IfcValve.ISOLATING
+803,mixing,IfcValve.MIXING
+804,pressure reducing,IfcValve.PRESSUREREDUCING
+805,pressure relief,IfcValve.PRESSURERELIEF
+806,regulating,IfcValve.REGULATING
+807,safety cutoff,IfcValve.SAFETYCUTOFF
+808,steam trap,IfcValve.STEAMTRAP
+809,stopcock,IfcValve.STOPCOCK
+810,user defined,IfcValve.USERDEFINED
+811,not defined,IfcValve.NOTDEFINED
+812,base,IfcVibrationIsolator.BASE
+813,compression,IfcVibrationIsolator.COMPRESSION
+814,spring,IfcVibrationIsolator.SPRING
+815,user defined,IfcVibrationIsolator.USERDEFINED
+816,not defined,IfcVibrationIsolator.NOTDEFINED
+817,breeching inlet,IfcFireSuppressionTerminal.BREECHINGINLET
+818,fire hydrant,IfcFireSuppressionTerminal.FIREHYDRANT
+819,fire monitor,IfcFireSuppressionTerminal.FIREMONITOR
+820,hose reel,IfcFireSuppressionTerminal.HOSEREEL
+821,sprinkler,IfcFireSuppressionTerminal.SPRINKLER
+822,sprinkler deflector,IfcFireSuppressionTerminal.SPRINKLERDEFLECTOR
+823,user defined,IfcFireSuppressionTerminal.USERDEFINED
+824,not defined,IfcFireSuppressionTerminal.NOTDEFINED
+825,cyclonic,IfcInterceptor.CYCLONIC
+826,grease,IfcInterceptor.GREASE
+827,oil,IfcInterceptor.OIL
+828,petrol,IfcInterceptor.PETROL
+829,user defined,IfcInterceptor.USERDEFINED
+830,not defined,IfcInterceptor.NOTDEFINED
+831,bath,IfcSanitaryTerminal.BATH
+832,bidet,IfcSanitaryTerminal.BIDET
+833,cistern,IfcSanitaryTerminal.CISTERN
+834,sanitary fountain,IfcSanitaryTerminal.SANITARYFOUNTAIN
+835,shower,IfcSanitaryTerminal.SHOWER
+836,sink,IfcSanitaryTerminal.SINK
+837,toilet pan,IfcSanitaryTerminal.TOILETPAN
+838,urinal,IfcSanitaryTerminal.URINAL
+839,wash handbasin,IfcSanitaryTerminal.WASHHANDBASIN
+840,wc seat,IfcSanitaryTerminal.WCSEAT
+841,user defined,IfcSanitaryTerminal.USERDEFINED
+842,not defined,IfcSanitaryTerminal.NOTDEFINED
+843,birdcage,IfcStackTerminal.BIRDCAGE
+844,cowl,IfcStackTerminal.COWL
+845,rainwater hopper,IfcStackTerminal.RAINWATERHOPPER
+846,user defined,IfcStackTerminal.USERDEFINED
+847,not defined,IfcStackTerminal.NOTDEFINED
+848,floor trap,IfcWasteTerminal.FLOORTRAP
+849,floor waste,IfcWasteTerminal.FLOORWASTE
+850,gully sump,IfcWasteTerminal.GULLYSUMP
+851,gully trap,IfcWasteTerminal.GULLYTRAP
+852,roof drain,IfcWasteTerminal.ROOFDRAIN
+853,wastedisposal unit,IfcWasteTerminal.WASTEDISPOSALUNIT
+854,waste trap,IfcWasteTerminal.WASTETRAP
+855,user defined,IfcWasteTerminal.USERDEFINED
+856,not defined,IfcWasteTerminal.NOTDEFINED
+857,belt conveyor,IfcConveyorSegment.BELTCONVEYOR
+858,bucket conveyor,IfcConveyorSegment.BUCKETCONVEYOR
+859,chute conveyor,IfcConveyorSegment.CHUTECONVEYOR
+860,screw conveyor,IfcConveyorSegment.SCREWCONVEYOR
+861,user defined,IfcConveyorSegment.USERDEFINED
+862,not defined,IfcConveyorSegment.NOTDEFINED
+863,hose reel,IfcLiquidTerminal.HOSEREEL
+864,loading arm,IfcLiquidTerminal.LOADINGARM
+865,user defined,IfcLiquidTerminal.USERDEFINED
+866,not defined,IfcLiquidTerminal.NOTDEFINED
+867,barrier beach,IfcMarineFacility.BARRIERBEACH
+868,breakwater,IfcMarineFacility.BREAKWATER
+869,canal,IfcMarineFacility.CANAL
+870,drydock,IfcMarineFacility.DRYDOCK
+871,floating dock,IfcMarineFacility.FLOATINGDOCK
+872,hydro lift,IfcMarineFacility.HYDROLIFT
+873,jetty,IfcMarineFacility.JETTY
+874,launch recovery,IfcMarineFacility.LAUNCHRECOVERY
+875,marine defence,IfcMarineFacility.MARINEDEFENCE
+876,navigational channel,IfcMarineFacility.NAVIGATIONALCHANNEL
+877,port,IfcMarineFacility.PORT
+878,quay,IfcMarineFacility.QUAY
+879,revetment,IfcMarineFacility.REVETMENT
+880,ship lift,IfcMarineFacility.SHIPLIFT
+881,ship lock,IfcMarineFacility.SHIPLOCK
+882,shipyard,IfcMarineFacility.SHIPYARD
+883,slipway,IfcMarineFacility.SLIPWAY
+884,waterway,IfcMarineFacility.WATERWAY
+885,waterwayship lift,IfcMarineFacility.WATERWAYSHIPLIFT
+886,user defined,IfcMarineFacility.USERDEFINED
+887,not defined,IfcMarineFacility.NOTDEFINED
+888,above waterline,IfcMarinePart.ABOVEWATERLINE
+889,anchorage,IfcMarinePart.ANCHORAGE
+890,approach channel,IfcMarinePart.APPROACHCHANNEL
+891,below waterline,IfcMarinePart.BELOWWATERLINE
+892,berthing structure,IfcMarinePart.BERTHINGSTRUCTURE
+893,chamber,IfcMarinePart.CHAMBER
+894,cill_ level,IfcMarinePart.CILL_LEVEL
+895,cope level,IfcMarinePart.COPELEVEL
+896,core,IfcMarinePart.CORE
+897,crest,IfcMarinePart.CREST
+898,gate head,IfcMarinePart.GATEHEAD
+899,guding structure,IfcMarinePart.GUDINGSTRUCTURE
+900,high waterline,IfcMarinePart.HIGHWATERLINE
+901,land field,IfcMarinePart.LANDFIELD
+902,leeward side,IfcMarinePart.LEEWARDSIDE
+903,low waterline,IfcMarinePart.LOWWATERLINE
+904,manufacturing,IfcMarinePart.MANUFACTURING
+905,navigational area,IfcMarinePart.NAVIGATIONALAREA
+906,protection,IfcMarinePart.PROTECTION
+907,ship transfer,IfcMarinePart.SHIPTRANSFER
+908,storage area,IfcMarinePart.STORAGEAREA
+909,vehicle servicing,IfcMarinePart.VEHICLESERVICING
+910,water field,IfcMarinePart.WATERFIELD
+911,weather side,IfcMarinePart.WEATHERSIDE
+912,user defined,IfcMarinePart.USERDEFINED
+913,not defined,IfcMarinePart.NOTDEFINED
+914,bollard,IfcMooringDevice.BOLLARD
+915,linetensi oner,IfcMooringDevice.LINETENSIONER
+916,magnetic device,IfcMooringDevice.MAGNETICDEVICE
+917,mooring hooks,IfcMooringDevice.MOORINGHOOKS
+918,vacuum device,IfcMooringDevice.VACUUMDEVICE
+919,user defined,IfcMooringDevice.USERDEFINED
+920,not defined,IfcMooringDevice.NOTDEFINED
+921,beacon,IfcNavigationElement.BEACON
+922,buoy,IfcNavigationElement.BUOY
+923,user defined,IfcNavigationElement.USERDEFINED
+924,not defined,IfcNavigationElement.NOTDEFINED
+925,move,IfcTask.MOVE
+926,user defined,IfcAlignment.USERDEFINED
+927,not defined,IfcAlignment.NOTDEFINED
+928,asbuilt area,IfcAnnotation.ASBUILTAREA
+929,asbuilt line,IfcAnnotation.ASBUILTLINE
+930,asbuilt point,IfcAnnotation.ASBUILTPOINT
+931,assumed area,IfcAnnotation.ASSUMEDAREA
+932,assu medline,IfcAnnotation.ASSUMEDLINE
+933,assumed point,IfcAnnotation.ASSUMEDPOINT
+934,non_physical_ signal,IfcAnnotation.NON_PHYSICAL_SIGNAL
+935,superelevation event,IfcAnnotation.SUPERELEVATIONEVENT
+936,width event,IfcAnnotation.WIDTHEVENT
+937,user defined,IfcAnnotation.USERDEFINED
+938,not defined,IfcAnnotation.NOTDEFINED
+939,arched,IfcBridge.ARCHED
+940,cable_ stayed,IfcBridge.CABLE_STAYED
+941,cantilever,IfcBridge.CANTILEVER
+942,culvert,IfcBridge.CULVERT
+943,framework,IfcBridge.FRAMEWORK
+944,girder,IfcBridge.GIRDER
+945,suspension,IfcBridge.SUSPENSION
+946,truss,IfcBridge.TRUSS
+947,user defined,IfcBridge.USERDEFINED
+948,not defined,IfcBridge.NOTDEFINED
+949,abutment,IfcBridgePart.ABUTMENT
+950,deck,IfcBridgePart.DECK
+951,deck_ segment,IfcBridgePart.DECK_SEGMENT
+952,foundation,IfcBridgePart.FOUNDATION
+953,pier,IfcBridgePart.PIER
+954,pier_ segment,IfcBridgePart.PIER_SEGMENT
+955,pylon,IfcBridgePart.PYLON
+956,substructure,IfcBridgePart.SUBSTRUCTURE
+957,superstructure,IfcBridgePart.SUPERSTRUCTURE
+958,surface structure,IfcBridgePart.SURFACESTRUCTURE
+959,user defined,IfcBridgePart.USERDEFINED
+960,not defined,IfcBridgePart.NOTDEFINED
+961,railway line,IfcBuiltSystem.RAILWAYLINE
+962,railway track,IfcBuiltSystem.RAILWAYTRACK
+963,abutment,IfcElementAssembly.ABUTMENT
+964,accessory_ assembly,IfcElementAssembly.ACCESSORY_ASSEMBLY
+965,arch,IfcElementAssembly.ARCH
+966,beam_ grid,IfcElementAssembly.BEAM_GRID
+967,braced_ frame,IfcElementAssembly.BRACED_FRAME
+968,cross_ bracing,IfcElementAssembly.CROSS_BRACING
+969,deck,IfcElementAssembly.DECK
+970,dilatation panel,IfcElementAssembly.DILATATIONPANEL
+971,entrance works,IfcElementAssembly.ENTRANCEWORKS
+972,girder,IfcElementAssembly.GIRDER
+973,grid,IfcElementAssembly.GRID
+974,mast,IfcElementAssembly.MAST
+975,pier,IfcElementAssembly.PIER
+976,pylon,IfcElementAssembly.PYLON
+977,rail_mechanical_equipment_ assembly,IfcElementAssembly.RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY
+978,reinforcement_ unit,IfcElementAssembly.REINFORCEMENT_UNIT
+979,rigid_ frame,IfcElementAssembly.RIGID_FRAME
+980,shelter,IfcElementAssembly.SHELTER
+981,signal assembly,IfcElementAssembly.SIGNALASSEMBLY
+982,slab_ field,IfcElementAssembly.SLAB_FIELD
+983,sump buster,IfcElementAssembly.SUMPBUSTER
+984,supporting assembly,IfcElementAssembly.SUPPORTINGASSEMBLY
+985,suspension assembly,IfcElementAssembly.SUSPENSIONASSEMBLY
+986,track panel,IfcElementAssembly.TRACKPANEL
+987,traction_switching_ assembly,IfcElementAssembly.TRACTION_SWITCHING_ASSEMBLY
+988,traffic_calming_ device,IfcElementAssembly.TRAFFIC_CALMING_DEVICE
+989,truss,IfcElementAssembly.TRUSS
+990,turnout panel,IfcElementAssembly.TURNOUTPANEL
+991,user defined,IfcElementAssembly.USERDEFINED
+992,not defined,IfcElementAssembly.NOTDEFINED
+993,external,IfcExternalSpatialElement.EXTERNAL
+994,external_ earth,IfcExternalSpatialElement.EXTERNAL_EARTH
+995,external_ fire,IfcExternalSpatialElement.EXTERNAL_FIRE
+996,external_ water,IfcExternalSpatialElement.EXTERNAL_WATER
+997,user defined,IfcExternalSpatialElement.USERDEFINED
+998,not defined,IfcExternalSpatialElement.NOTDEFINED
+999,aboveground,IfcFacilityPartCommon.ABOVEGROUND
+1000,belowground,IfcFacilityPartCommon.BELOWGROUND
+1001,junction,IfcFacilityPartCommon.JUNCTION
+1002,le velcrossing,IfcFacilityPartCommon.LEVELCROSSING
+1003,segment,IfcFacilityPartCommon.SEGMENT
+1004,substructure,IfcFacilityPartCommon.SUBSTRUCTURE
+1005,superstructure,IfcFacilityPartCommon.SUPERSTRUCTURE
+1006,terminal,IfcFacilityPartCommon.TERMINAL
+1007,user defined,IfcFacilityPartCommon.USERDEFINED
+1008,not defined,IfcFacilityPartCommon.NOTDEFINED
+1009,soil_boring_ point,IfcGeographicElement.SOIL_BORING_POINT
+1010,terrain,IfcGeographicElement.TERRAIN
+1011,vegetation,IfcGeographicElement.VEGETATION
+1012,user defined,IfcGeographicElement.USERDEFINED
+1013,not defined,IfcGeographicElement.NOTDEFINED
+1014,irregular,IfcGrid.IRREGULAR
+1015,radial,IfcGrid.RADIAL
+1016,rectangular,IfcGrid.RECTANGULAR
+1017,triangular,IfcGrid.TRIANGULAR
+1018,user defined,IfcGrid.USERDEFINED
+1019,not defined,IfcGrid.NOTDEFINED
+1020,bumper,IfcImpactProtectionDevice.BUMPER
+1021,crash cushion,IfcImpactProtectionDevice.CRASHCUSHION
+1022,damping system,IfcImpactProtectionDevice.DAMPINGSYSTEM
+1023,fender,IfcImpactProtectionDevice.FENDER
+1024,user defined,IfcImpactProtectionDevice.USERDEFINED
+1025,not defined,IfcImpactProtectionDevice.NOTDEFINED
+1026,opening,IfcOpeningElement.OPENING
+1027,recess,IfcOpeningElement.RECESS
+1028,user defined,IfcOpeningElement.USERDEFINED
+1029,not defined,IfcOpeningElement.NOTDEFINED
+1030,blister,IfcProjectionElement.BLISTER
+1031,devia tor,IfcProjectionElement.DEVIATOR
+1032,user defined,IfcProjectionElement.USERDEFINED
+1033,not defined,IfcProjectionElement.NOTDEFINED
+1034,boundary,IfcReferent.BOUNDARY
+1035,intersection,IfcReferent.INTERSECTION
+1036,kilo point,IfcReferent.KILOPOINT
+1037,landmark,IfcReferent.LANDMARK
+1038,mile point,IfcReferent.MILEPOINT
+1039,position,IfcReferent.POSITION
+1040,reference marker,IfcReferent.REFERENCEMARKER
+1041,station,IfcReferent.STATION
+1042,user defined,IfcReferent.USERDEFINED
+1043,not defined,IfcReferent.NOTDEFINED
+1044,berth,IfcSpace.BERTH
+1045,external,IfcSpace.EXTERNAL
+1046,g fa,IfcSpace.GFA
+1047,internal,IfcSpace.INTERNAL
+1048,parking,IfcSpace.PARKING
+1049,  space,IfcSpace.SPACE
+1050,user defined,IfcSpace.USERDEFINED
+1051,not defined,IfcSpace.NOTDEFINED
+1052,construction,IfcSpatialZone.CONSTRUCTION
+1053,fire safety,IfcSpatialZone.FIRESAFETY
+1054,interference,IfcSpatialZone.INTERFERENCE
+1055,lighting,IfcSpatialZone.LIGHTING
+1056,occupancy,IfcSpatialZone.OCCUPANCY
+1057,reservation,IfcSpatialZone.RESERVATION
+1058,security,IfcSpatialZone.SECURITY
+1059,thermal,IfcSpatialZone.THERMAL
+1060,transport,IfcSpatialZone.TRANSPORT
+1061,ventilation,IfcSpatialZone.VENTILATION
+1062,user defined,IfcSpatialZone.USERDEFINED
+1063,not defined,IfcSpatialZone.NOTDEFINED
+1064,crane way,IfcTransportElement.CRANEWAY
+1065,elevator,IfcTransportElement.ELEVATOR
+1066,escalator,IfcTransportElement.ESCALATOR
+1067,hauling gear,IfcTransportElement.HAULINGGEAR
+1068,lifting gear,IfcTransportElement.LIFTINGGEAR
+1069,moving walkway,IfcTransportElement.MOVINGWALKWAY
+1070,user defined,IfcTransportElement.USERDEFINED
+1071,not defined,IfcTransportElement.NOTDEFINED
+1072,cargo,IfcVehicle.CARGO
+1073,rolling stock,IfcVehicle.ROLLINGSTOCK
+1074,  vehicle,IfcVehicle.VEHICLE
+1075, vehicle air,IfcVehicle.VEHICLEAIR
+1076, vehicle marine,IfcVehicle.VEHICLEMARINE
+1077, vehicle tracked,IfcVehicle.VEHICLETRACKED
+1078, vehicle wheeled,IfcVehicle.VEHICLEWHEELED
+1079,user defined,IfcVehicle.USERDEFINED
+1080,not defined,IfcVehicle.NOTDEFINED
+1081,axial_ yield,IfcVibrationDamper.AXIAL_YIELD
+1082,bending_ yield,IfcVibrationDamper.BENDING_YIELD
+1083,friction,IfcVibrationDamper.FRICTION
+1084,rubber,IfcVibrationDamper.RUBBER
+1085,shear_ yield,IfcVibrationDamper.SHEAR_YIELD
+1086,viscous,IfcVibrationDamper.VISCOUS
+1087,user defined,IfcVibrationDamper.USERDEFINED
+1088,not defined,IfcVibrationDamper.NOTDEFINED
+1089,boundary,IfcVirtualElement.BOUNDARY
+1090,clearance,IfcVirtualElement.CLEARANCE
+1091,provisionfor void,IfcVirtualElement.PROVISIONFORVOID
+1092,user defined,IfcVirtualElement.USERDEFINED
+1093,not defined,IfcVirtualElement.NOTDEFINED
+1094,blade,IfcRail.BLADE
+1095,check  rail,IfcRail.CHECKRAIL
+1096,guard  rail,IfcRail.GUARDRAIL
+1097,rack  rail,IfcRail.RACKRAIL
+1098,  rail,IfcRail.RAIL
+1099,stock  rail,IfcRail.STOCKRAIL
+1100,user defined,IfcRail.USERDEFINED
+1101,not defined,IfcRail.NOTDEFINED
+1102,user defined,IfcRailway.USERDEFINED
+1103,not defined,IfcRailway.NOTDEFINED
+1104,dilatation superstructure,IfcRailwayPart.DILATATIONSUPERSTRUCTURE
+1105,lineside structure,IfcRailwayPart.LINESIDESTRUCTURE
+1106,linesidestructure part,IfcRailwayPart.LINESIDESTRUCTUREPART
+1107,plaintrack superstructure,IfcRailwayPart.PLAINTRACKSUPERSTRUCTURE
+1108,superstructure,IfcRailwayPart.SUPERSTRUCTURE
+1109,track structure,IfcRailwayPart.TRACKSTRUCTURE
+1110,trackstructure part,IfcRailwayPart.TRACKSTRUCTUREPART
+1111,turnout superstructure,IfcRailwayPart.TURNOUTSUPERSTRUCTURE
+1112,user defined,IfcRailwayPart.USERDEFINED
+1113,not defined,IfcRailwayPart.NOTDEFINED
+1114,blocking device,IfcTrackElement.BLOCKINGDEVICE
+1115,dera iler,IfcTrackElement.DERAILER
+1116,frog,IfcTrackElement.FROG
+1117,half_set_of_ blades,IfcTrackElement.HALF_SET_OF_BLADES
+1118,sleeper,IfcTrackElement.SLEEPER
+1119,speed regulator,IfcTrackElement.SPEEDREGULATOR
+1120,trackendof alignment,IfcTrackElement.TRACKENDOFALIGNMENT
+1121,vehicle stop,IfcTrackElement.VEHICLESTOP
+1122,user defined,IfcTrackElement.USERDEFINED
+1123,not defined,IfcTrackElement.NOTDEFINED
+1124,user defined,IfcKerb.USERDEFINED
+1125,not defined,IfcKerb.NOTDEFINED
+1126,user defined,IfcRoad.USERDEFINED
+1127,not defined,IfcRoad.NOTDEFINED
+1128,bicycle crossing,IfcRoadPart.BICYCLECROSSING
+1129,bus_stop,IfcRoadPart.BUS_STOP
+1130,carriageway,IfcRoadPart.CARRIAGEWAY
+1131,central island,IfcRoadPart.CENTRALISLAND
+1132,central reserve,IfcRoadPart.CENTRALRESERVE
+1133,hard shoulder,IfcRoadPart.HARDSHOULDER
+1134,intersection,IfcRoadPart.INTERSECTION
+1135,layby,IfcRoadPart.LAYBY
+1136,parking bay,IfcRoadPart.PARKINGBAY
+1137,passing bay,IfcRoadPart.PASSINGBAY
+1138,pedestrian_crossing,IfcRoadPart.PEDESTRIAN_CROSSING
+1139,railway crossing,IfcRoadPart.RAILWAYCROSSING
+1140,refuge island,IfcRoadPart.REFUGEISLAND
+1141,road segment,IfcRoadPart.ROADSEGMENT
+1142,roadside,IfcRoadPart.ROADSIDE
+1143,roadsi depart,IfcRoadPart.ROADSIDEPART
+1144,roadway plateau,IfcRoadPart.ROADWAYPLATEAU
+1145,roundabout,IfcRoadPart.ROUNDABOUT
+1146,shoulder,IfcRoadPart.SHOULDER
+1147,sidewalk,IfcRoadPart.SIDEWALK
+1148,soft shoulder,IfcRoadPart.SOFTSHOULDER
+1149,toll plaza,IfcRoadPart.TOLLPLAZA
+1150,traffic island,IfcRoadPart.TRAFFICISLAND
+1151,traffic lane,IfcRoadPart.TRAFFICLANE
+1152,user defined,IfcRoadPart.USERDEFINED
+1153,not defined,IfcRoadPart.NOTDEFINED
+1154,  beam,IfcBeam.BEAM
+1155,cornice,IfcBeam.CORNICE
+1156,diaphragm,IfcBeam.DIAPHRAGM
+1157,edge  beam,IfcBeam.EDGEBEAM
+1158,girder_ segment,IfcBeam.GIRDER_SEGMENT
+1159,hat stone,IfcBeam.HATSTONE
+1160,hollow core,IfcBeam.HOLLOWCORE
+1161,joist,IfcBeam.JOIST
+1162,lintel,IfcBeam.LINTEL
+1163,pier cap,IfcBeam.PIERCAP
+1164,spandrel,IfcBeam.SPANDREL
+1165,t_  beam,IfcBeam.T_BEAM
+1166,user defined,IfcBeam.USERDEFINED
+1167,not defined,IfcBeam.NOTDEFINED
+1168,cylindrical,IfcBearing.CYLINDRICAL
+1169,disk,IfcBearing.DISK
+1170,elastomer ic,IfcBearing.ELASTOMERIC
+1171,guide,IfcBearing.GUIDE
+1172,pot,IfcBearing.POT
+1173,rocker,IfcBearing.ROCKER
+1174,roller,IfcBearing.ROLLER
+1175,spherical,IfcBearing.SPHERICAL
+1176,user defined,IfcBearing.USERDEFINED
+1177,not defined,IfcBearing.NOTDEFINED
+1178,complex,IfcBuildingElementProxy.COMPLEX
+1179,element,IfcBuildingElementProxy.ELEMENT
+1180,partial,IfcBuildingElementProxy.PARTIAL
+1181,provisionfor space,IfcBuildingElementProxy.PROVISIONFORSPACE
+1182,provisionfor void,IfcBuildingElementProxy.PROVISIONFORVOID
+1183,user defined,IfcBuildingElementProxy.USERDEFINED
+1184,not defined,IfcBuildingElementProxy.NOTDEFINED
+1185,user defined,IfcChimney.USERDEFINED
+1186,not defined,IfcChimney.NOTDEFINED
+1187,  column,IfcColumn.COLUMN
+1188,pier stem,IfcColumn.PIERSTEM
+1189,pierstem_ segment,IfcColumn.PIERSTEM_SEGMENT
+1190,pilaster,IfcColumn.PILASTER
+1191,stand  column,IfcColumn.STANDCOLUMN
+1192,user defined,IfcColumn.USERDEFINED
+1193,not defined,IfcColumn.NOTDEFINED
+1194,ceiling,IfcCovering.CEILING
+1195,cladding,IfcCovering.CLADDING
+1196,coping,IfcCovering.COPING
+1197,flooring,IfcCovering.FLOORING
+1198,insulation,IfcCovering.INSULATION
+1199,membrane,IfcCovering.MEMBRANE
+1200,molding,IfcCovering.MOLDING
+1201,roofing,IfcCovering.ROOFING
+1202,skirting board,IfcCovering.SKIRTINGBOARD
+1203,sleevi ng,IfcCovering.SLEEVING
+1204,topping,IfcCovering.TOPPING
+1205,wrapping,IfcCovering.WRAPPING
+1206,user defined,IfcCovering.USERDEFINED
+1207,not defined,IfcCovering.NOTDEFINED
+1208,user defined,IfcCurtainWall.USERDEFINED
+1209,not defined,IfcCurtainWall.NOTDEFINED
+1210,boom_ barrier,IfcDoor.BOOM_BARRIER
+1211,  door,IfcDoor.DOOR
+1212,gate,IfcDoor.GATE
+1213,trap  door,IfcDoor.TRAPDOOR
+1214,turnstile,IfcDoor.TURNSTILE
+1215,user defined,IfcDoor.USERDEFINED
+1216,not defined,IfcDoor.NOTDEFINED
+1217,arch_ segment,IfcMember.ARCH_SEGMENT
+1218,brace,IfcMember.BRACE
+1219,chord,IfcMember.CHORD
+1220,collar,IfcMember.COLLAR
+1221,  member,IfcMember.MEMBER
+1222,mullion,IfcMember.MULLION
+1223,plate,IfcMember.PLATE
+1224,post,IfcMember.POST
+1225,pur lin,IfcMember.PURLIN
+1226,rafter,IfcMember.RAFTER
+1227,stay_ cable,IfcMember.STAY_CABLE
+1228,stiffening_ rib,IfcMember.STIFFENING_RIB
+1229,stringer,IfcMember.STRINGER
+1230,structural cable,IfcMember.STRUCTURALCABLE
+1231,strut,IfcMember.STRUT
+1232,stud,IfcMember.STUD
+1233,suspender,IfcMember.SUSPENDER
+1234,suspension_ cable,IfcMember.SUSPENSION_CABLE
+1235,tie bar,IfcMember.TIEBAR
+1236,user defined,IfcMember.USERDEFINED
+1237,not defined,IfcMember.NOTDEFINED
+1238,base_  plate,IfcPlate.BASE_PLATE
+1239,cover_  plate,IfcPlate.COVER_PLATE
+1240,curtain_ panel,IfcPlate.CURTAIN_PANEL
+1241,flange_  plate,IfcPlate.FLANGE_PLATE
+1242,gusset_  plate,IfcPlate.GUSSET_PLATE
+1243,sheet,IfcPlate.SHEET
+1244,splice_  plate,IfcPlate.SPLICE_PLATE
+1245,stiffener_  plate,IfcPlate.STIFFENER_PLATE
+1246,web_  plate,IfcPlate.WEB_PLATE
+1247,user defined,IfcPlate.USERDEFINED
+1248,not defined,IfcPlate.NOTDEFINED
+1249,balustrade,IfcRailing.BALUSTRADE
+1250,fence,IfcRailing.FENCE
+1251,guardrail,IfcRailing.GUARDRAIL
+1252,handrail,IfcRailing.HANDRAIL
+1253,user defined,IfcRailing.USERDEFINED
+1254,not defined,IfcRailing.NOTDEFINED
+1255,half_turn_  ramp,IfcRamp.HALF_TURN_RAMP
+1256,quarter_turn_  ramp,IfcRamp.QUARTER_TURN_RAMP
+1257,spiral_  ramp,IfcRamp.SPIRAL_RAMP
+1258,straight_run_  ramp,IfcRamp.STRAIGHT_RUN_RAMP
+1259,two_quarter_turn_  ramp,IfcRamp.TWO_QUARTER_TURN_RAMP
+1260,two_straight_run_  ramp,IfcRamp.TWO_STRAIGHT_RUN_RAMP
+1261,user defined,IfcRamp.USERDEFINED
+1262,not defined,IfcRamp.NOTDEFINED
+1263,spiral,IfcRampFlight.SPIRAL
+1264,straight,IfcRampFlight.STRAIGHT
+1265,user defined,IfcRampFlight.USERDEFINED
+1266,not defined,IfcRampFlight.NOTDEFINED
+1267,barrel_  roof,IfcRoof.BARREL_ROOF
+1268,butterfly_  roof,IfcRoof.BUTTERFLY_ROOF
+1269,dome_  roof,IfcRoof.DOME_ROOF
+1270,flat_  roof,IfcRoof.FLAT_ROOF
+1271,free form,IfcRoof.FREEFORM
+1272,gable_  roof,IfcRoof.GABLE_ROOF
+1273,gambrel_  roof,IfcRoof.GAMBREL_ROOF
+1274,hipped_gable_  roof,IfcRoof.HIPPED_GABLE_ROOF
+1275,hip_  roof,IfcRoof.HIP_ROOF
+1276,mansard_  roof,IfcRoof.MANSARD_ROOF
+1277,pavilion_  roof,IfcRoof.PAVILION_ROOF
+1278,rainbow_  roof,IfcRoof.RAINBOW_ROOF
+1279,shed_  roof,IfcRoof.SHED_ROOF
+1280,user defined,IfcRoof.USERDEFINED
+1281,not defined,IfcRoof.NOTDEFINED
+1282,awning,IfcShadingDevice.AWNING
+1283,jalousie,IfcShadingDevice.JALOUSIE
+1284,shutter,IfcShadingDevice.SHUTTER
+1285,user defined,IfcShadingDevice.USERDEFINED
+1286,not defined,IfcShadingDevice.NOTDEFINED
+1287,approach_  slab,IfcSlab.APPROACH_SLAB
+1288,base  slab,IfcSlab.BASESLAB
+1289,floor,IfcSlab.FLOOR
+1290,landing,IfcSlab.LANDING
+1291,paving,IfcSlab.PAVING
+1292,roof,IfcSlab.ROOF
+1293,sidewalk,IfcSlab.SIDEWALK
+1294,track  slab,IfcSlab.TRACKSLAB
+1295,wearing,IfcSlab.WEARING
+1296,user defined,IfcSlab.USERDEFINED
+1297,not defined,IfcSlab.NOTDEFINED
+1298,curved_run_  stair,IfcStair.CURVED_RUN_STAIR
+1299,double_return_  stair,IfcStair.DOUBLE_RETURN_STAIR
+1300,half_turn_  stair,IfcStair.HALF_TURN_STAIR
+1301,half_winding_  stair,IfcStair.HALF_WINDING_STAIR
+1302,ladder,IfcStair.LADDER
+1303,quarter_turn_  stair,IfcStair.QUARTER_TURN_STAIR
+1304,quarter_winding_  stair,IfcStair.QUARTER_WINDING_STAIR
+1305,spiral_  stair,IfcStair.SPIRAL_STAIR
+1306,straight_run_  stair,IfcStair.STRAIGHT_RUN_STAIR
+1307,three_quarter_turn_  stair,IfcStair.THREE_QUARTER_TURN_STAIR
+1308,three_quarter_winding_  stair,IfcStair.THREE_QUARTER_WINDING_STAIR
+1309,two_curved_run_  stair,IfcStair.TWO_CURVED_RUN_STAIR
+1310,two_quarter_turn_  stair,IfcStair.TWO_QUARTER_TURN_STAIR
+1311,two_quarter_winding_  stair,IfcStair.TWO_QUARTER_WINDING_STAIR
+1312,two_straight_run_  stair,IfcStair.TWO_STRAIGHT_RUN_STAIR
+1313,user defined,IfcStair.USERDEFINED
+1314,not defined,IfcStair.NOTDEFINED
+1315,curved,IfcStairFlight.CURVED
+1316,free form,IfcStairFlight.FREEFORM
+1317,spiral,IfcStairFlight.SPIRAL
+1318,straight,IfcStairFlight.STRAIGHT
+1319,winder,IfcStairFlight.WINDER
+1320,user defined,IfcStairFlight.USERDEFINED
+1321,not defined,IfcStairFlight.NOTDEFINED
+1322,elemented  wall,IfcWall.ELEMENTEDWALL
+1323,movable,IfcWall.MOVABLE
+1324,parapet,IfcWall.PARAPET
+1325,partitioning,IfcWall.PARTITIONING
+1326,plumbing  wall,IfcWall.PLUMBINGWALL
+1327,polygonal,IfcWall.POLYGONAL
+1328,retaining  wall,IfcWall.RETAININGWALL
+1329,shear,IfcWall.SHEAR
+1330,solid  wall,IfcWall.SOLIDWALL
+1331,standard,IfcWall.STANDARD
+1332,wave  wall,IfcWall.WAVEWALL
+1333,user defined,IfcWall.USERDEFINED
+1334,not defined,IfcWall.NOTDEFINED
+1335,light dome,IfcWindow.LIGHTDOME
+1336,skylight,IfcWindow.SKYLIGHT
+1337,  window,IfcWindow.WINDOW
+1338,user defined,IfcWindow.USERDEFINED
+1339,not defined,IfcWindow.NOTDEFINED
+1340,formed duct,IfcDistributionChamberElement.FORMEDDUCT
+1341,inspection chamber,IfcDistributionChamberElement.INSPECTIONCHAMBER
+1342,inspection pit,IfcDistributionChamberElement.INSPECTIONPIT
+1343,manhole,IfcDistributionChamberElement.MANHOLE
+1344,meter chamber,IfcDistributionChamberElement.METERCHAMBER
+1345,sump,IfcDistributionChamberElement.SUMP
+1346,trench,IfcDistributionChamberElement.TRENCH
+1347,valve chamber,IfcDistributionChamberElement.VALVECHAMBER
+1348,user defined,IfcDistributionChamberElement.USERDEFINED
+1349,not defined,IfcDistributionChamberElement.NOTDEFINED
+1350,cable,IfcDistributionPort.CABLE
+1351,cable carrier,IfcDistributionPort.CABLECARRIER
+1352,duct,IfcDistributionPort.DUCT
+1353,pipe,IfcDistributionPort.PIPE
+1354,wireless,IfcDistributionPort.WIRELESS
+1355,user defined,IfcDistributionPort.USERDEFINED
+1356,not defined,IfcDistributionPort.NOTDEFINED
+1357,electrical,IfcDistributionSystem.ELECTRICAL
+1358,overhead_contactline_ system,IfcDistributionSystem.OVERHEAD_CONTACTLINE_SYSTEM
+1359,ventilation,IfcDistributionSystem.VENTILATION
+1360,apron,IfcBuildingElementPart.APRON
+1361,armour unit,IfcBuildingElementPart.ARMOURUNIT
+1362,insulation,IfcBuildingElementPart.INSULATION
+1363,precast panel,IfcBuildingElementPart.PRECASTPANEL
+1364,safety cage,IfcBuildingElementPart.SAFETYCAGE
+1365,user defined,IfcBuildingElementPart.USERDEFINED
+1366,not defined,IfcBuildingElementPart.NOTDEFINED
+1367,anchor plate,IfcDiscreteAccessory.ANCHORPLATE
+1368,bird protection,IfcDiscreteAccessory.BIRDPROTECTION
+1369,bracket,IfcDiscreteAccessory.BRACKET
+1370,cable arranger,IfcDiscreteAccessory.CABLEARRANGER
+1371,elastic_ cushion,IfcDiscreteAccessory.ELASTIC_CUSHION
+1372,expansion_joint_ device,IfcDiscreteAccessory.EXPANSION_JOINT_DEVICE
+1373,filler,IfcDiscreteAccessory.FILLER
+1374,flashing,IfcDiscreteAccessory.FLASHING
+1375,insulator,IfcDiscreteAccessory.INSULATOR
+1376,lock,IfcDiscreteAccessory.LOCK
+1377,panel_ strengthening,IfcDiscreteAccessory.PANEL_STRENGTHENING
+1378,pointmachinemounting device,IfcDiscreteAccessory.POINTMACHINEMOUNTINGDEVICE
+1379,point_machine_locking_ device,IfcDiscreteAccessory.POINT_MACHINE_LOCKING_DEVICE
+1380,rail brace,IfcDiscreteAccessory.RAILBRACE
+1381,rail pad,IfcDiscreteAccessory.RAILPAD
+1382,rail_ lubrication,IfcDiscreteAccessory.RAIL_LUBRICATION
+1383,rail_mechanical_ equipment,IfcDiscreteAccessory.RAIL_MECHANICAL_EQUIPMENT
+1384,shoe,IfcDiscreteAccessory.SHOE
+1385,sliding chair,IfcDiscreteAccessory.SLIDINGCHAIR
+1386,sound absorption,IfcDiscreteAccessory.SOUNDABSORPTION
+1387,tensioning equipment,IfcDiscreteAccessory.TENSIONINGEQUIPMENT
+1388,user defined,IfcDiscreteAccessory.USERDEFINED
+1389,not defined,IfcDiscreteAccessory.NOTDEFINED
+1390,glue,IfcFastener.GLUE
+1391,mortar,IfcFastener.MORTAR
+1392,weld,IfcFastener.WELD
+1393,user defined,IfcFastener.USERDEFINED
+1394,not defined,IfcFastener.NOTDEFINED
+1395,anchor bolt,IfcMechanicalFastener.ANCHORBOLT
+1396,bolt,IfcMechanicalFastener.BOLT
+1397,chain,IfcMechanicalFastener.CHAIN
+1398,coupler,IfcMechanicalFastener.COUPLER
+1399,dowel,IfcMechanicalFastener.DOWEL
+1400,nail,IfcMechanicalFastener.NAIL
+1401,nail plate,IfcMechanicalFastener.NAILPLATE
+1402,rail fastening,IfcMechanicalFastener.RAILFASTENING
+1403,rail joint,IfcMechanicalFastener.RAILJOINT
+1404,rivet,IfcMechanicalFastener.RIVET
+1405,rope,IfcMechanicalFastener.ROPE
+1406,screw,IfcMechanicalFastener.SCREW
+1407,shear connector,IfcMechanicalFastener.SHEARCONNECTOR
+1408,staple,IfcMechanicalFastener.STAPLE
+1409,studshear connector,IfcMechanicalFastener.STUDSHEARCONNECTOR
+1410,user defined,IfcMechanicalFastener.USERDEFINED
+1411,not defined,IfcMechanicalFastener.NOTDEFINED
+1412,bed,IfcFurniture.BED
+1413,chair,IfcFurniture.CHAIR
+1414,desk,IfcFurniture.DESK
+1415,file cabinet,IfcFurniture.FILECABINET
+1416,shelf,IfcFurniture.SHELF
+1417,sofa,IfcFurniture.SOFA
+1418,table,IfcFurniture.TABLE
+1419,technical cabinet,IfcFurniture.TECHNICALCABINET
+1420,user defined,IfcFurniture.USERDEFINED
+1421,not defined,IfcFurniture.NOTDEFINED
+1422,panel,IfcSystemFurnitureElement.PANEL
+1423,sub rack,IfcSystemFurnitureElement.SUBRACK
+1424,work surface,IfcSystemFurnitureElement.WORKSURFACE
+1425,user defined,IfcSystemFurnitureElement.USERDEFINED
+1426,not defined,IfcSystemFurnitureElement.NOTDEFINED
+1427,armour,IfcCourse.ARMOUR
+1428,ballast bed,IfcCourse.BALLASTBED
+1429,core,IfcCourse.CORE
+1430,filter,IfcCourse.FILTER
+1431,pavement,IfcCourse.PAVEMENT
+1432,protection,IfcCourse.PROTECTION
+1433,user defined,IfcCourse.USERDEFINED
+1434,not defined,IfcCourse.NOTDEFINED
+1435,base_ excavation,IfcEarthworksCut.BASE_EXCAVATION
+1436,cut,IfcEarthworksCut.CUT
+1437,dredging,IfcEarthworksCut.DREDGING
+1438,excavation,IfcEarthworksCut.EXCAVATION
+1439,over excavation,IfcEarthworksCut.OVEREXCAVATION
+1440,pavement milling,IfcEarthworksCut.PAVEMENTMILLING
+1441,step excavation,IfcEarthworksCut.STEPEXCAVATION
+1442,topsoil removal,IfcEarthworksCut.TOPSOILREMOVAL
+1443,trench,IfcEarthworksCut.TRENCH
+1444,user defined,IfcEarthworksCut.USERDEFINED
+1445,not defined,IfcEarthworksCut.NOTDEFINED
+1446,back fill,IfcEarthworksFill.BACKFILL
+1447,counterweight,IfcEarthworksFill.COUNTERWEIGHT
+1448,embankment,IfcEarthworksFill.EMBANKMENT
+1449,slope fill,IfcEarthworksFill.SLOPEFILL
+1450,sub grade,IfcEarthworksFill.SUBGRADE
+1451,subgrade bed,IfcEarthworksFill.SUBGRADEBED
+1452,transition section,IfcEarthworksFill.TRANSITIONSECTION
+1453,user defined,IfcEarthworksFill.USERDEFINED
+1454,not defined,IfcEarthworksFill.NOTDEFINED
+1455,solid,IfcGeotechnicalStratum.SOLID
+1456,void,IfcGeotechnicalStratum.VOID
+1457,water,IfcGeotechnicalStratum.WATER
+1458,user defined,IfcGeotechnicalStratum.USERDEFINED
+1459,not defined,IfcGeotechnicalStratum.NOTDEFINED
+1460,flexible,IfcPavement.FLEXIBLE
+1461,rigid,IfcPavement.RIGID
+1462,user defined,IfcPavement.USERDEFINED
+1463,not defined,IfcPavement.NOTDEFINED
+1464,dynamically compacted,IfcReinforcedSoil.DYNAMICALLYCOMPACTED
+1465,grouted,IfcReinforcedSoil.GROUTED
+1466,replaced,IfcReinforcedSoil.REPLACED
+1467,roller compacted,IfcReinforcedSoil.ROLLERCOMPACTED
+1468,surchargep reloaded,IfcReinforcedSoil.SURCHARGEPRELOADED
+1469,vertically drained,IfcReinforcedSoil.VERTICALLYDRAINED
+1470,user defined,IfcReinforcedSoil.USERDEFINED
+1471,not defined,IfcReinforcedSoil.NOTDEFINED
+1472,marker,IfcSign.MARKER
+1473,mirror,IfcSign.MIRROR
+1474,pict oral,IfcSign.PICTORAL
+1475,user defined,IfcSign.USERDEFINED
+1476,not defined,IfcSign.NOTDEFINED
+1477,audio,IfcSignal.AUDIO
+1478,mixed,IfcSignal.MIXED
+1479,visual,IfcSignal.VISUAL
+1480,user defined,IfcSignal.USERDEFINED
+1481,not defined,IfcSignal.NOTDEFINED
+1482,change order,IfcProjectOrder.CHANGEORDER
+1483,maintenancework order,IfcProjectOrder.MAINTENANCEWORKORDER
+1484,move order,IfcProjectOrder.MOVEORDER
+1485,purchase order,IfcProjectOrder.PURCHASEORDER
+1486,work order,IfcProjectOrder.WORKORDER
+1487,cons t,IfcStructuralCurveAction.CONST
+1488,discrete,IfcStructuralCurveAction.DISCRETE
+1489,equidistant,IfcStructuralCurveAction.EQUIDISTANT
+1490,linear,IfcStructuralCurveAction.LINEAR
+1491,parabola,IfcStructuralCurveAction.PARABOLA
+1492,polygonal,IfcStructuralCurveAction.POLYGONAL
+1493,sinus,IfcStructuralCurveAction.SINUS
+1494,user defined,IfcStructuralCurveAction.USERDEFINED
+1495,not defined,IfcStructuralCurveAction.NOTDEFINED
+1496,cable,IfcStructuralCurveMember.CABLE
+1497,compression_ member,IfcStructuralCurveMember.COMPRESSION_MEMBER
+1498,pin_joined_ member,IfcStructuralCurveMember.PIN_JOINED_MEMBER
+1499,rigid_joined_ member,IfcStructuralCurveMember.RIGID_JOINED_MEMBER
+1500,tension_ member,IfcStructuralCurveMember.TENSION_MEMBER
+1501,user defined,IfcStructuralCurveMember.USERDEFINED
+1502,not defined,IfcStructuralCurveMember.NOTDEFINED
+1503,cons t,IfcStructuralCurveReaction.CONST
+1504,discrete,IfcStructuralCurveReaction.DISCRETE
+1505,equidistant,IfcStructuralCurveReaction.EQUIDISTANT
+1506,linear,IfcStructuralCurveReaction.LINEAR
+1507,parabola,IfcStructuralCurveReaction.PARABOLA
+1508,polygonal,IfcStructuralCurveReaction.POLYGONAL
+1509,sinus,IfcStructuralCurveReaction.SINUS
+1510,user defined,IfcStructuralCurveReaction.USERDEFINED
+1511,not defined,IfcStructuralCurveReaction.NOTDEFINED
+1512,bilinear,IfcStructuralSurfaceAction.BILINEAR
+1513,cons t,IfcStructuralSurfaceAction.CONST
+1514,discrete,IfcStructuralSurfaceAction.DISCRETE
+1515,iso contour,IfcStructuralSurfaceAction.ISOCONTOUR
+1516,user defined,IfcStructuralSurfaceAction.USERDEFINED
+1517,not defined,IfcStructuralSurfaceAction.NOTDEFINED
+1518,bending_ element,IfcStructuralSurfaceMember.BENDING_ELEMENT
+1519,membrane_ element,IfcStructuralSurfaceMember.MEMBRANE_ELEMENT
+1520,shell,IfcStructuralSurfaceMember.SHELL
+1521,user defined,IfcStructuralSurfaceMember.USERDEFINED
+1522,not defined,IfcStructuralSurfaceMember.NOTDEFINED
+1523,bilinear,IfcStructuralSurfaceReaction.BILINEAR
+1524,cons t,IfcStructuralSurfaceReaction.CONST
+1525,discrete,IfcStructuralSurfaceReaction.DISCRETE
+1526,iso contour,IfcStructuralSurfaceReaction.ISOCONTOUR
+1527,user defined,IfcStructuralSurfaceReaction.USERDEFINED
+1528,not defined,IfcStructuralSurfaceReaction.NOTDEFINED
+1529,caisson,IfcCaissonFoundation.CAISSON
+1530,well,IfcCaissonFoundation.WELL
+1531,user defined,IfcCaissonFoundation.USERDEFINED
+1532,not defined,IfcCaissonFoundation.NOTDEFINED
+1533,caisson_ foundation,IfcFooting.CAISSON_FOUNDATION
+1534, footing_ beam,IfcFooting.FOOTING_BEAM
+1535,pad_  footing,IfcFooting.PAD_FOOTING
+1536,pile_ cap,IfcFooting.PILE_CAP
+1537,strip_  footing,IfcFooting.STRIP_FOOTING
+1538,user defined,IfcFooting.USERDEFINED
+1539,not defined,IfcFooting.NOTDEFINED
+1540,bored,IfcPile.BORED
+1541,cohesion,IfcPile.COHESION
+1542,driven,IfcPile.DRIVEN
+1543,friction,IfcPile.FRICTION
+1544,jet grouting,IfcPile.JETGROUTING
+1545,support,IfcPile.SUPPORT
+1546,user defined,IfcPile.USERDEFINED
+1547,not defined,IfcPile.NOTDEFINED
+1548,anchoring,IfcReinforcingBar.ANCHORING
+1549,edge,IfcReinforcingBar.EDGE
+1550,ligature,IfcReinforcingBar.LIGATURE
+1551,main,IfcReinforcingBar.MAIN
+1552,punching,IfcReinforcingBar.PUNCHING
+1553,ring,IfcReinforcingBar.RING
+1554,shear,IfcReinforcingBar.SHEAR
+1555,space bar,IfcReinforcingBar.SPACEBAR
+1556,stud,IfcReinforcingBar.STUD
+1557,user defined,IfcReinforcingBar.USERDEFINED
+1558,not defined,IfcReinforcingBar.NOTDEFINED
+1559,user defined,IfcReinforcingMesh.USERDEFINED
+1560,not defined,IfcReinforcingMesh.NOTDEFINED
+1561,defect,IfcSurfaceFeature.DEFECT
+1562,hatch marking,IfcSurfaceFeature.HATCHMARKING
+1563,line marking,IfcSurfaceFeature.LINEMARKING
+1564,mark,IfcSurfaceFeature.MARK
+1565,nonskid surfacing,IfcSurfaceFeature.NONSKIDSURFACING
+1566,pavementsurface marking,IfcSurfaceFeature.PAVEMENTSURFACEMARKING
+1567,rumble strip,IfcSurfaceFeature.RUMBLESTRIP
+1568,symbol marking,IfcSurfaceFeature.SYMBOLMARKING
+1569,tag,IfcSurfaceFeature.TAG
+1570,transverserumble strip,IfcSurfaceFeature.TRANSVERSERUMBLESTRIP
+1571,treatment,IfcSurfaceFeature.TREATMENT
+1572,user defined,IfcSurfaceFeature.USERDEFINED
+1573,not defined,IfcSurfaceFeature.NOTDEFINED
+1574,bar,IfcTendon.BAR
+1575,coated,IfcTendon.COATED
+1576,strand,IfcTendon.STRAND
+1577,wire,IfcTendon.WIRE
+1578,user defined,IfcTendon.USERDEFINED
+1579,not defined,IfcTendon.NOTDEFINED
+1580,coupler,IfcTendonAnchor.COUPLER
+1581,fixed_ end,IfcTendonAnchor.FIXED_END
+1582,tensioning_ end,IfcTendonAnchor.TENSIONING_END
+1583,user defined,IfcTendonAnchor.USERDEFINED
+1584,not defined,IfcTendonAnchor.NOTDEFINED
+1585,coupler,IfcTendonConduit.COUPLER
+1586,dia bolo,IfcTendonConduit.DIABOLO
+1587,duct,IfcTendonConduit.DUCT
+1588,grouting_ duct,IfcTendonConduit.GROUTING_DUCT
+1589,trumpet,IfcTendonConduit.TRUMPET
+1590,user defined,IfcTendonConduit.USERDEFINED
+1591,not defined,IfcTendonConduit.NOTDEFINED
+1592,chamfer,IfcVoidingFeature.CHAMFER
+1593,cutout,IfcVoidingFeature.CUTOUT
+1594,edge,IfcVoidingFeature.EDGE
+1595,hole,IfcVoidingFeature.HOLE
+1596,miter,IfcVoidingFeature.MITER
+1597,notch,IfcVoidingFeature.NOTCH
+1598,user defined,IfcVoidingFeature.USERDEFINED
+1599,not defined,IfcVoidingFeature.NOTDEFINED
+1600,actuator,IfcActuator
+1601,actuator,IfcActuator
+1602,actuator,IfcActuator
+1603,actuator,IfcActuator
+1604,actuator,IfcActuator
+1605,actuator,IfcActuator
+1606,actuator,IfcActuator
+1607,alarm,IfcAlarm
+1608,alarm,IfcAlarm
+1609,alarm,IfcAlarm
+1610,alarm,IfcAlarm
+1611,alarm,IfcAlarm
+1612,alarm,IfcAlarm
+1613,alarm,IfcAlarm
+1614,alarm,IfcAlarm
+1615,alarm,IfcAlarm
+1616,alarm,IfcAlarm
+1617,controller,IfcController
+1618,controller,IfcController
+1619,controller,IfcController
+1620,controller,IfcController
+1621,controller,IfcController
+1622,controller,IfcController
+1623,controller,IfcController
+1624,flow  instrument,IfcFlowInstrument
+1625,flow  instrument,IfcFlowInstrument
+1626,flow  instrument,IfcFlowInstrument
+1627,flow  instrument,IfcFlowInstrument
+1628,flow  instrument,IfcFlowInstrument
+1629,flow  instrument,IfcFlowInstrument
+1630,flow  instrument,IfcFlowInstrument
+1631,flow  instrument,IfcFlowInstrument
+1632,flow  instrument,IfcFlowInstrument
+1633,flow  instrument,IfcFlowInstrument
+1634,flow  instrument,IfcFlowInstrument
+1635,flow  instrument,IfcFlowInstrument
+1636,sensor,IfcSensor
+1637,sensor,IfcSensor
+1638,sensor,IfcSensor
+1639,sensor,IfcSensor
+1640,sensor,IfcSensor
+1641,sensor,IfcSensor
+1642,sensor,IfcSensor
+1643,sensor,IfcSensor
+1644,sensor,IfcSensor
+1645,sensor,IfcSensor
+1646,sensor,IfcSensor
+1647,sensor,IfcSensor
+1648,sensor,IfcSensor
+1649,sensor,IfcSensor
+1650,sensor,IfcSensor
+1651,sensor,IfcSensor
+1652,sensor,IfcSensor
+1653,sensor,IfcSensor
+1654,sensor,IfcSensor
+1655,sensor,IfcSensor
+1656,sensor,IfcSensor
+1657,sensor,IfcSensor
+1658,sensor,IfcSensor
+1659,sensor,IfcSensor
+1660,sensor,IfcSensor
+1661,sensor,IfcSensor
+1662,sensor,IfcSensor
+1663,sensor,IfcSensor
+1664,sensor,IfcSensor
+1665,sensor,IfcSensor
+1666,sensor,IfcSensor
+1667,sensor,IfcSensor
+1668,sensor,IfcSensor
+1669,sensor,IfcSensor
+1670,unitary control  element,IfcUnitaryControlElement
+1671,unitary control  element,IfcUnitaryControlElement
+1672,unitary control  element,IfcUnitaryControlElement
+1673,unitary control  element,IfcUnitaryControlElement
+1674,unitary control  element,IfcUnitaryControlElement
+1675,unitary control  element,IfcUnitaryControlElement
+1676,unitary control  element,IfcUnitaryControlElement
+1677,unitary control  element,IfcUnitaryControlElement
+1678,unitary control  element,IfcUnitaryControlElement
+1679,unitary control  element,IfcUnitaryControlElement
+1680,unitary control  element,IfcUnitaryControlElement
+1681,unitary control  element,IfcUnitaryControlElement
+1682,audio visual  appliance,IfcAudioVisualAppliance
+1683,audio visual  appliance,IfcAudioVisualAppliance
+1684,audio visual  appliance,IfcAudioVisualAppliance
+1685,audio visual  appliance,IfcAudioVisualAppliance
+1686,audio visual  appliance,IfcAudioVisualAppliance
+1687,audio visual  appliance,IfcAudioVisualAppliance
+1688,audio visual  appliance,IfcAudioVisualAppliance
+1689,audio visual  appliance,IfcAudioVisualAppliance
+1690,audio visual  appliance,IfcAudioVisualAppliance
+1691,audio visual  appliance,IfcAudioVisualAppliance
+1692,audio visual  appliance,IfcAudioVisualAppliance
+1693,audio visual  appliance,IfcAudioVisualAppliance
+1694,audio visual  appliance,IfcAudioVisualAppliance
+1695,audio visual  appliance,IfcAudioVisualAppliance
+1696,audio visual  appliance,IfcAudioVisualAppliance
+1697,cable carrier  fitting,IfcCableCarrierFitting
+1698,cable carrier  fitting,IfcCableCarrierFitting
+1699,cable carrier  fitting,IfcCableCarrierFitting
+1700,cable carrier  fitting,IfcCableCarrierFitting
+1701,cable carrier  fitting,IfcCableCarrierFitting
+1702,cable carrier  fitting,IfcCableCarrierFitting
+1703,cable carrier  fitting,IfcCableCarrierFitting
+1704,cable carrier  fitting,IfcCableCarrierFitting
+1705,cable carrier  fitting,IfcCableCarrierFitting
+1706,cable carrier  segment,IfcCableCarrierSegment
+1707,cable carrier  segment,IfcCableCarrierSegment
+1708,cable carrier  segment,IfcCableCarrierSegment
+1709,cable carrier  segment,IfcCableCarrierSegment
+1710,cable carrier  segment,IfcCableCarrierSegment
+1711,cable carrier  segment,IfcCableCarrierSegment
+1712,cable carrier  segment,IfcCableCarrierSegment
+1713,cable carrier  segment,IfcCableCarrierSegment
+1714,cable carrier  segment,IfcCableCarrierSegment
+1715,cable  fitting,IfcCableFitting
+1716,cable  fitting,IfcCableFitting
+1717,cable  fitting,IfcCableFitting
+1718,cable  fitting,IfcCableFitting
+1719,cable  fitting,IfcCableFitting
+1720,cable  fitting,IfcCableFitting
+1721,cable  fitting,IfcCableFitting
+1722,cable  fitting,IfcCableFitting
+1723,cable  segment,IfcCableSegment
+1724,cable  segment,IfcCableSegment
+1725,cable  segment,IfcCableSegment
+1726,cable  segment,IfcCableSegment
+1727,cable  segment,IfcCableSegment
+1728,cable  segment,IfcCableSegment
+1729,cable  segment,IfcCableSegment
+1730,cable  segment,IfcCableSegment
+1731,cable  segment,IfcCableSegment
+1732,cable  segment,IfcCableSegment
+1733,cable  segment,IfcCableSegment
+1734,cable  segment,IfcCableSegment
+1735,communications  appliance,IfcCommunicationsAppliance
+1736,communications  appliance,IfcCommunicationsAppliance
+1737,communications  appliance,IfcCommunicationsAppliance
+1738,communications  appliance,IfcCommunicationsAppliance
+1739,communications  appliance,IfcCommunicationsAppliance
+1740,communications  appliance,IfcCommunicationsAppliance
+1741,communications  appliance,IfcCommunicationsAppliance
+1742,communications  appliance,IfcCommunicationsAppliance
+1743,communications  appliance,IfcCommunicationsAppliance
+1744,communications  appliance,IfcCommunicationsAppliance
+1745,communications  appliance,IfcCommunicationsAppliance
+1746,communications  appliance,IfcCommunicationsAppliance
+1747,communications  appliance,IfcCommunicationsAppliance
+1748,communications  appliance,IfcCommunicationsAppliance
+1749,communications  appliance,IfcCommunicationsAppliance
+1750,communications  appliance,IfcCommunicationsAppliance
+1751,communications  appliance,IfcCommunicationsAppliance
+1752,communications  appliance,IfcCommunicationsAppliance
+1753,communications  appliance,IfcCommunicationsAppliance
+1754,communications  appliance,IfcCommunicationsAppliance
+1755,communications  appliance,IfcCommunicationsAppliance
+1756,communications  appliance,IfcCommunicationsAppliance
+1757,communications  appliance,IfcCommunicationsAppliance
+1758,communications  appliance,IfcCommunicationsAppliance
+1759,communications  appliance,IfcCommunicationsAppliance
+1760,communications  appliance,IfcCommunicationsAppliance
+1761,distribution  board,IfcDistributionBoard
+1762,distribution  board,IfcDistributionBoard
+1763,distribution  board,IfcDistributionBoard
+1764,distribution  board,IfcDistributionBoard
+1765,distribution  board,IfcDistributionBoard
+1766,distribution  board,IfcDistributionBoard
+1767,distribution  board,IfcDistributionBoard
+1768,distribution  board,IfcDistributionBoard
+1769,electric  appliance,IfcElectricAppliance
+1770,electric  appliance,IfcElectricAppliance
+1771,electric  appliance,IfcElectricAppliance
+1772,electric  appliance,IfcElectricAppliance
+1773,electric  appliance,IfcElectricAppliance
+1774,electric  appliance,IfcElectricAppliance
+1775,electric  appliance,IfcElectricAppliance
+1776,electric  appliance,IfcElectricAppliance
+1777,electric  appliance,IfcElectricAppliance
+1778,electric  appliance,IfcElectricAppliance
+1779,electric  appliance,IfcElectricAppliance
+1780,electric  appliance,IfcElectricAppliance
+1781,electric  appliance,IfcElectricAppliance
+1782,electric  appliance,IfcElectricAppliance
+1783,electric  appliance,IfcElectricAppliance
+1784,electric  appliance,IfcElectricAppliance
+1785,electric  appliance,IfcElectricAppliance
+1786,electric  appliance,IfcElectricAppliance
+1787,electric distribution  board,IfcElectricDistributionBoard
+1788,electric distribution  board,IfcElectricDistributionBoard
+1789,electric distribution  board,IfcElectricDistributionBoard
+1790,electric distribution  board,IfcElectricDistributionBoard
+1791,electric distribution  board,IfcElectricDistributionBoard
+1792,electric distribution  board,IfcElectricDistributionBoard
+1793,electric flow storage  device,IfcElectricFlowStorageDevice
+1794,electric flow storage  device,IfcElectricFlowStorageDevice
+1795,electric flow storage  device,IfcElectricFlowStorageDevice
+1796,electric flow storage  device,IfcElectricFlowStorageDevice
+1797,electric flow storage  device,IfcElectricFlowStorageDevice
+1798,electric flow storage  device,IfcElectricFlowStorageDevice
+1799,electric flow storage  device,IfcElectricFlowStorageDevice
+1800,electric flow storage  device,IfcElectricFlowStorageDevice
+1801,electric flow storage  device,IfcElectricFlowStorageDevice
+1802,electric flow storage  device,IfcElectricFlowStorageDevice
+1803,electric flow storage  device,IfcElectricFlowStorageDevice
+1804,electric flow treatment  device,IfcElectricFlowTreatmentDevice
+1805,electric flow treatment  device,IfcElectricFlowTreatmentDevice
+1806,electric flow treatment  device,IfcElectricFlowTreatmentDevice
+1807,electric  generator,IfcElectricGenerator
+1808,electric  generator,IfcElectricGenerator
+1809,electric  generator,IfcElectricGenerator
+1810,electric  generator,IfcElectricGenerator
+1811,electric  generator,IfcElectricGenerator
+1812,electric  motor,IfcElectricMotor
+1813,electric  motor,IfcElectricMotor
+1814,electric  motor,IfcElectricMotor
+1815,electric  motor,IfcElectricMotor
+1816,electric  motor,IfcElectricMotor
+1817,electric  motor,IfcElectricMotor
+1818,electric  motor,IfcElectricMotor
+1819,electric time  control,IfcElectricTimeControl
+1820,electric time  control,IfcElectricTimeControl
+1821,electric time  control,IfcElectricTimeControl
+1822,electric time  control,IfcElectricTimeControl
+1823,electric time  control,IfcElectricTimeControl
+1824,junction  box,IfcJunctionBox
+1825,junction  box,IfcJunctionBox
+1826,junction  box,IfcJunctionBox
+1827,junction  box,IfcJunctionBox
+1828,lamp,IfcLamp
+1829,lamp,IfcLamp
+1830,lamp,IfcLamp
+1831,lamp,IfcLamp
+1832,lamp,IfcLamp
+1833,lamp,IfcLamp
+1834,lamp,IfcLamp
+1835,lamp,IfcLamp
+1836,lamp,IfcLamp
+1837,lamp,IfcLamp
+1838,lamp,IfcLamp
+1839,light  fixture,IfcLightFixture
+1840,light  fixture,IfcLightFixture
+1841,light  fixture,IfcLightFixture
+1842,light  fixture,IfcLightFixture
+1843,light  fixture,IfcLightFixture
+1844,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1845,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1846,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1847,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1848,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1849,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1850,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1851,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1852,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1853,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1854,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1855,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1856,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1857,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1858,mobile telecommunications  appliance,IfcMobileTelecommunicationsAppliance
+1859,motor  connection,IfcMotorConnection
+1860,motor  connection,IfcMotorConnection
+1861,motor  connection,IfcMotorConnection
+1862,motor  connection,IfcMotorConnection
+1863,motor  connection,IfcMotorConnection
+1864,outlet,IfcOutlet
+1865,outlet,IfcOutlet
+1866,outlet,IfcOutlet
+1867,outlet,IfcOutlet
+1868,outlet,IfcOutlet
+1869,outlet,IfcOutlet
+1870,outlet,IfcOutlet
+1871,protective  device,IfcProtectiveDevice
+1872,protective  device,IfcProtectiveDevice
+1873,protective  device,IfcProtectiveDevice
+1874,protective  device,IfcProtectiveDevice
+1875,protective  device,IfcProtectiveDevice
+1876,protective  device,IfcProtectiveDevice
+1877,protective  device,IfcProtectiveDevice
+1878,protective  device,IfcProtectiveDevice
+1879,protective  device,IfcProtectiveDevice
+1880,protective  device,IfcProtectiveDevice
+1881,protective  device,IfcProtectiveDevice
+1882,protective  device,IfcProtectiveDevice
+1883,protective device tripping  unit,IfcProtectiveDeviceTrippingUnit
+1884,protective device tripping  unit,IfcProtectiveDeviceTrippingUnit
+1885,protective device tripping  unit,IfcProtectiveDeviceTrippingUnit
+1886,protective device tripping  unit,IfcProtectiveDeviceTrippingUnit
+1887,protective device tripping  unit,IfcProtectiveDeviceTrippingUnit
+1888,protective device tripping  unit,IfcProtectiveDeviceTrippingUnit
+1889,solar  device,IfcSolarDevice
+1890,solar  device,IfcSolarDevice
+1891,solar  device,IfcSolarDevice
+1892,solar  device,IfcSolarDevice
+1893,switching  device,IfcSwitchingDevice
+1894,switching  device,IfcSwitchingDevice
+1895,switching  device,IfcSwitchingDevice
+1896,switching  device,IfcSwitchingDevice
+1897,switching  device,IfcSwitchingDevice
+1898,switching  device,IfcSwitchingDevice
+1899,switching  device,IfcSwitchingDevice
+1900,switching  device,IfcSwitchingDevice
+1901,switching  device,IfcSwitchingDevice
+1902,switching  device,IfcSwitchingDevice
+1903,switching  device,IfcSwitchingDevice
+1904,switching  device,IfcSwitchingDevice
+1905,switching  device,IfcSwitchingDevice
+1906,transformer,IfcTransformer
+1907,transformer,IfcTransformer
+1908,transformer,IfcTransformer
+1909,transformer,IfcTransformer
+1910,transformer,IfcTransformer
+1911,transformer,IfcTransformer
+1912,transformer,IfcTransformer
+1913,transformer,IfcTransformer
+1914,transformer,IfcTransformer
+1915,air  terminal,IfcAirTerminal
+1916,air  terminal,IfcAirTerminal
+1917,air  terminal,IfcAirTerminal
+1918,air  terminal,IfcAirTerminal
+1919,air  terminal,IfcAirTerminal
+1920,air  terminal,IfcAirTerminal
+1921,air terminal  box,IfcAirTerminalBox
+1922,air terminal  box,IfcAirTerminalBox
+1923,air terminal  box,IfcAirTerminalBox
+1924,air terminal  box,IfcAirTerminalBox
+1925,air terminal  box,IfcAirTerminalBox
+1926,air to air heat  recovery,IfcAirToAirHeatRecovery
+1927,air to air heat  recovery,IfcAirToAirHeatRecovery
+1928,air to air heat  recovery,IfcAirToAirHeatRecovery
+1929,air to air heat  recovery,IfcAirToAirHeatRecovery
+1930,air to air heat  recovery,IfcAirToAirHeatRecovery
+1931,air to air heat  recovery,IfcAirToAirHeatRecovery
+1932,air to air heat  recovery,IfcAirToAirHeatRecovery
+1933,air to air heat  recovery,IfcAirToAirHeatRecovery
+1934,air to air heat  recovery,IfcAirToAirHeatRecovery
+1935,air to air heat  recovery,IfcAirToAirHeatRecovery
+1936,air to air heat  recovery,IfcAirToAirHeatRecovery
+1937,boiler,IfcBoiler
+1938,boiler,IfcBoiler
+1939,boiler,IfcBoiler
+1940,boiler,IfcBoiler
+1941,burner,IfcBurner
+1942,burner,IfcBurner
+1943,chiller,IfcChiller
+1944,chiller,IfcChiller
+1945,chiller,IfcChiller
+1946,chiller,IfcChiller
+1947,chiller,IfcChiller
+1948,coil,IfcCoil
+1949,coil,IfcCoil
+1950,coil,IfcCoil
+1951,coil,IfcCoil
+1952,coil,IfcCoil
+1953,coil,IfcCoil
+1954,coil,IfcCoil
+1955,coil,IfcCoil
+1956,coil,IfcCoil
+1957,compressor,IfcCompressor
+1958,compressor,IfcCompressor
+1959,compressor,IfcCompressor
+1960,compressor,IfcCompressor
+1961,compressor,IfcCompressor
+1962,compressor,IfcCompressor
+1963,compressor,IfcCompressor
+1964,compressor,IfcCompressor
+1965,compressor,IfcCompressor
+1966,compressor,IfcCompressor
+1967,compressor,IfcCompressor
+1968,compressor,IfcCompressor
+1969,compressor,IfcCompressor
+1970,compressor,IfcCompressor
+1971,compressor,IfcCompressor
+1972,compressor,IfcCompressor
+1973,compressor,IfcCompressor
+1974,condenser,IfcCondenser
+1975,condenser,IfcCondenser
+1976,condenser,IfcCondenser
+1977,condenser,IfcCondenser
+1978,condenser,IfcCondenser
+1979,condenser,IfcCondenser
+1980,condenser,IfcCondenser
+1981,condenser,IfcCondenser
+1982,condenser,IfcCondenser
+1983,cooled  beam,IfcCooledBeam
+1984,cooled  beam,IfcCooledBeam
+1985,cooled  beam,IfcCooledBeam
+1986,cooled  beam,IfcCooledBeam
+1987,cooling  tower,IfcCoolingTower
+1988,cooling  tower,IfcCoolingTower
+1989,cooling  tower,IfcCoolingTower
+1990,cooling  tower,IfcCoolingTower
+1991,cooling  tower,IfcCoolingTower
+1992,damper,IfcDamper
+1993,damper,IfcDamper
+1994,damper,IfcDamper
+1995,damper,IfcDamper
+1996,damper,IfcDamper
+1997,damper,IfcDamper
+1998,damper,IfcDamper
+1999,damper,IfcDamper
+2000,damper,IfcDamper
+2001,damper,IfcDamper
+2002,damper,IfcDamper
+2003,damper,IfcDamper
+2004,damper,IfcDamper
+2005,duct  fitting,IfcDuctFitting
+2006,duct  fitting,IfcDuctFitting
+2007,duct  fitting,IfcDuctFitting
+2008,duct  fitting,IfcDuctFitting
+2009,duct  fitting,IfcDuctFitting
+2010,duct  fitting,IfcDuctFitting
+2011,duct  fitting,IfcDuctFitting
+2012,duct  fitting,IfcDuctFitting
+2013,duct  fitting,IfcDuctFitting
+2014,duct  segment,IfcDuctSegment
+2015,duct  segment,IfcDuctSegment
+2016,duct  segment,IfcDuctSegment
+2017,duct  segment,IfcDuctSegment
+2018,duct  silencer,IfcDuctSilencer
+2019,duct  silencer,IfcDuctSilencer
+2020,duct  silencer,IfcDuctSilencer
+2021,duct  silencer,IfcDuctSilencer
+2022,duct  silencer,IfcDuctSilencer
+2023,engine,IfcEngine
+2024,engine,IfcEngine
+2025,engine,IfcEngine
+2026,engine,IfcEngine
+2027,evaporative  cooler,IfcEvaporativeCooler
+2028,evaporative  cooler,IfcEvaporativeCooler
+2029,evaporative  cooler,IfcEvaporativeCooler
+2030,evaporative  cooler,IfcEvaporativeCooler
+2031,evaporative  cooler,IfcEvaporativeCooler
+2032,evaporative  cooler,IfcEvaporativeCooler
+2033,evaporative  cooler,IfcEvaporativeCooler
+2034,evaporative  cooler,IfcEvaporativeCooler
+2035,evaporative  cooler,IfcEvaporativeCooler
+2036,evaporative  cooler,IfcEvaporativeCooler
+2037,evaporative  cooler,IfcEvaporativeCooler
+2038,evap orator,IfcEvaporator
+2039,evap orator,IfcEvaporator
+2040,evap orator,IfcEvaporator
+2041,evap orator,IfcEvaporator
+2042,evap orator,IfcEvaporator
+2043,evap orator,IfcEvaporator
+2044,evap orator,IfcEvaporator
+2045,evap orator,IfcEvaporator
+2046,fan,IfcFan
+2047,fan,IfcFan
+2048,fan,IfcFan
+2049,fan,IfcFan
+2050,fan,IfcFan
+2051,fan,IfcFan
+2052,fan,IfcFan
+2053,fan,IfcFan
+2054,fan,IfcFan
+2055,filter,IfcFilter
+2056,filter,IfcFilter
+2057,filter,IfcFilter
+2058,filter,IfcFilter
+2059,filter,IfcFilter
+2060,filter,IfcFilter
+2061,filter,IfcFilter
+2062,filter,IfcFilter
+2063,flow  meter,IfcFlowMeter
+2064,flow  meter,IfcFlowMeter
+2065,flow  meter,IfcFlowMeter
+2066,flow  meter,IfcFlowMeter
+2067,flow  meter,IfcFlowMeter
+2068,flow  meter,IfcFlowMeter
+2069,heat  exchanger,IfcHeatExchanger
+2070,heat  exchanger,IfcHeatExchanger
+2071,heat  exchanger,IfcHeatExchanger
+2072,heat  exchanger,IfcHeatExchanger
+2073,heat  exchanger,IfcHeatExchanger
+2074,humidif ier,IfcHumidifier
+2075,humidif ier,IfcHumidifier
+2076,humidif ier,IfcHumidifier
+2077,humidif ier,IfcHumidifier
+2078,humidif ier,IfcHumidifier
+2079,humidif ier,IfcHumidifier
+2080,humidif ier,IfcHumidifier
+2081,humidif ier,IfcHumidifier
+2082,humidif ier,IfcHumidifier
+2083,humidif ier,IfcHumidifier
+2084,humidif ier,IfcHumidifier
+2085,humidif ier,IfcHumidifier
+2086,humidif ier,IfcHumidifier
+2087,humidif ier,IfcHumidifier
+2088,humidif ier,IfcHumidifier
+2089,medical  device,IfcMedicalDevice
+2090,medical  device,IfcMedicalDevice
+2091,medical  device,IfcMedicalDevice
+2092,medical  device,IfcMedicalDevice
+2093,medical  device,IfcMedicalDevice
+2094,medical  device,IfcMedicalDevice
+2095,medical  device,IfcMedicalDevice
+2096,pipe  fitting,IfcPipeFitting
+2097,pipe  fitting,IfcPipeFitting
+2098,pipe  fitting,IfcPipeFitting
+2099,pipe  fitting,IfcPipeFitting
+2100,pipe  fitting,IfcPipeFitting
+2101,pipe  fitting,IfcPipeFitting
+2102,pipe  fitting,IfcPipeFitting
+2103,pipe  fitting,IfcPipeFitting
+2104,pipe  fitting,IfcPipeFitting
+2105,pipe  segment,IfcPipeSegment
+2106,pipe  segment,IfcPipeSegment
+2107,pipe  segment,IfcPipeSegment
+2108,pipe  segment,IfcPipeSegment
+2109,pipe  segment,IfcPipeSegment
+2110,pipe  segment,IfcPipeSegment
+2111,pipe  segment,IfcPipeSegment
+2112,pump,IfcPump
+2113,pump,IfcPump
+2114,pump,IfcPump
+2115,pump,IfcPump
+2116,pump,IfcPump
+2117,pump,IfcPump
+2118,pump,IfcPump
+2119,pump,IfcPump
+2120,pump,IfcPump
+2121,space  heater,IfcSpaceHeater
+2122,space  heater,IfcSpaceHeater
+2123,space  heater,IfcSpaceHeater
+2124,space  heater,IfcSpaceHeater
+2125,tank,IfcTank
+2126,tank,IfcTank
+2127,tank,IfcTank
+2128,tank,IfcTank
+2129,tank,IfcTank
+2130,tank,IfcTank
+2131,tank,IfcTank
+2132,tank,IfcTank
+2133,tank,IfcTank
+2134,tank,IfcTank
+2135,tube  bundle,IfcTubeBundle
+2136,tube  bundle,IfcTubeBundle
+2137,tube  bundle,IfcTubeBundle
+2138,unitary  equipment,IfcUnitaryEquipment
+2139,unitary  equipment,IfcUnitaryEquipment
+2140,unitary  equipment,IfcUnitaryEquipment
+2141,unitary  equipment,IfcUnitaryEquipment
+2142,unitary  equipment,IfcUnitaryEquipment
+2143,unitary  equipment,IfcUnitaryEquipment
+2144,unitary  equipment,IfcUnitaryEquipment
+2145,valve,IfcValve
+2146,valve,IfcValve
+2147,valve,IfcValve
+2148,valve,IfcValve
+2149,valve,IfcValve
+2150,valve,IfcValve
+2151,valve,IfcValve
+2152,valve,IfcValve
+2153,valve,IfcValve
+2154,valve,IfcValve
+2155,valve,IfcValve
+2156,valve,IfcValve
+2157,valve,IfcValve
+2158,valve,IfcValve
+2159,valve,IfcValve
+2160,valve,IfcValve
+2161,valve,IfcValve
+2162,valve,IfcValve
+2163,valve,IfcValve
+2164,valve,IfcValve
+2165,valve,IfcValve
+2166,valve,IfcValve
+2167,valve,IfcValve
+2168,vibration isola tor,IfcVibrationIsolator
+2169,vibration isola tor,IfcVibrationIsolator
+2170,vibration isola tor,IfcVibrationIsolator
+2171,vibration isola tor,IfcVibrationIsolator
+2172,vibration isola tor,IfcVibrationIsolator
+2173,fire suppression  terminal,IfcFireSuppressionTerminal
+2174,fire suppression  terminal,IfcFireSuppressionTerminal
+2175,fire suppression  terminal,IfcFireSuppressionTerminal
+2176,fire suppression  terminal,IfcFireSuppressionTerminal
+2177,fire suppression  terminal,IfcFireSuppressionTerminal
+2178,fire suppression  terminal,IfcFireSuppressionTerminal
+2179,fire suppression  terminal,IfcFireSuppressionTerminal
+2180,fire suppression  terminal,IfcFireSuppressionTerminal
+2181,interceptor,IfcInterceptor
+2182,interceptor,IfcInterceptor
+2183,interceptor,IfcInterceptor
+2184,interceptor,IfcInterceptor
+2185,interceptor,IfcInterceptor
+2186,interceptor,IfcInterceptor
+2187,sanitary  terminal,IfcSanitaryTerminal
+2188,sanitary  terminal,IfcSanitaryTerminal
+2189,sanitary  terminal,IfcSanitaryTerminal
+2190,sanitary  terminal,IfcSanitaryTerminal
+2191,sanitary  terminal,IfcSanitaryTerminal
+2192,sanitary  terminal,IfcSanitaryTerminal
+2193,sanitary  terminal,IfcSanitaryTerminal
+2194,sanitary  terminal,IfcSanitaryTerminal
+2195,sanitary  terminal,IfcSanitaryTerminal
+2196,sanitary  terminal,IfcSanitaryTerminal
+2197,sanitary  terminal,IfcSanitaryTerminal
+2198,sanitary  terminal,IfcSanitaryTerminal
+2199,stack  terminal,IfcStackTerminal
+2200,stack  terminal,IfcStackTerminal
+2201,stack  terminal,IfcStackTerminal
+2202,stack  terminal,IfcStackTerminal
+2203,stack  terminal,IfcStackTerminal
+2204,waste  terminal,IfcWasteTerminal
+2205,waste  terminal,IfcWasteTerminal
+2206,waste  terminal,IfcWasteTerminal
+2207,waste  terminal,IfcWasteTerminal
+2208,waste  terminal,IfcWasteTerminal
+2209,waste  terminal,IfcWasteTerminal
+2210,waste  terminal,IfcWasteTerminal
+2211,waste  terminal,IfcWasteTerminal
+2212,waste  terminal,IfcWasteTerminal
+2213,conveyor  segment,IfcConveyorSegment
+2214,conveyor  segment,IfcConveyorSegment
+2215,conveyor  segment,IfcConveyorSegment
+2216,conveyor  segment,IfcConveyorSegment
+2217,conveyor  segment,IfcConveyorSegment
+2218,conveyor  segment,IfcConveyorSegment
+2219,liquid  terminal,IfcLiquidTerminal
+2220,liquid  terminal,IfcLiquidTerminal
+2221,liquid  terminal,IfcLiquidTerminal
+2222,liquid  terminal,IfcLiquidTerminal
+2223,marine  facility,IfcMarineFacility
+2224,marine  facility,IfcMarineFacility
+2225,marine  facility,IfcMarineFacility
+2226,marine  facility,IfcMarineFacility
+2227,marine  facility,IfcMarineFacility
+2228,marine  facility,IfcMarineFacility
+2229,marine  facility,IfcMarineFacility
+2230,marine  facility,IfcMarineFacility
+2231,marine  facility,IfcMarineFacility
+2232,marine  facility,IfcMarineFacility
+2233,marine  facility,IfcMarineFacility
+2234,marine  facility,IfcMarineFacility
+2235,marine  facility,IfcMarineFacility
+2236,marine  facility,IfcMarineFacility
+2237,marine  facility,IfcMarineFacility
+2238,marine  facility,IfcMarineFacility
+2239,marine  facility,IfcMarineFacility
+2240,marine  facility,IfcMarineFacility
+2241,marine  facility,IfcMarineFacility
+2242,marine  facility,IfcMarineFacility
+2243,marine  facility,IfcMarineFacility
+2244,marine  part,IfcMarinePart
+2245,marine  part,IfcMarinePart
+2246,marine  part,IfcMarinePart
+2247,marine  part,IfcMarinePart
+2248,marine  part,IfcMarinePart
+2249,marine  part,IfcMarinePart
+2250,marine  part,IfcMarinePart
+2251,marine  part,IfcMarinePart
+2252,marine  part,IfcMarinePart
+2253,marine  part,IfcMarinePart
+2254,marine  part,IfcMarinePart
+2255,marine  part,IfcMarinePart
+2256,marine  part,IfcMarinePart
+2257,marine  part,IfcMarinePart
+2258,marine  part,IfcMarinePart
+2259,marine  part,IfcMarinePart
+2260,marine  part,IfcMarinePart
+2261,marine  part,IfcMarinePart
+2262,marine  part,IfcMarinePart
+2263,marine  part,IfcMarinePart
+2264,marine  part,IfcMarinePart
+2265,marine  part,IfcMarinePart
+2266,marine  part,IfcMarinePart
+2267,marine  part,IfcMarinePart
+2268,marine  part,IfcMarinePart
+2269,marine  part,IfcMarinePart
+2270,mooring  device,IfcMooringDevice
+2271,mooring  device,IfcMooringDevice
+2272,mooring  device,IfcMooringDevice
+2273,mooring  device,IfcMooringDevice
+2274,mooring  device,IfcMooringDevice
+2275,mooring  device,IfcMooringDevice
+2276,mooring  device,IfcMooringDevice
+2277,navigation  element,IfcNavigationElement
+2278,navigation  element,IfcNavigationElement
+2279,navigation  element,IfcNavigationElement
+2280,navigation  element,IfcNavigationElement
+2281,task,IfcTask
+2282,alignment,IfcAlignment
+2283,alignment,IfcAlignment
+2284,annotation,IfcAnnotation
+2285,annotation,IfcAnnotation
+2286,annotation,IfcAnnotation
+2287,annotation,IfcAnnotation
+2288,annotation,IfcAnnotation
+2289,annotation,IfcAnnotation
+2290,annotation,IfcAnnotation
+2291,annotation,IfcAnnotation
+2292,annotation,IfcAnnotation
+2293,annotation,IfcAnnotation
+2294,annotation,IfcAnnotation
+2295,bridge,IfcBridge
+2296,bridge,IfcBridge
+2297,bridge,IfcBridge
+2298,bridge,IfcBridge
+2299,bridge,IfcBridge
+2300,bridge,IfcBridge
+2301,bridge,IfcBridge
+2302,bridge,IfcBridge
+2303,bridge,IfcBridge
+2304,bridge,IfcBridge
+2305,bridge  part,IfcBridgePart
+2306,bridge  part,IfcBridgePart
+2307,bridge  part,IfcBridgePart
+2308,bridge  part,IfcBridgePart
+2309,bridge  part,IfcBridgePart
+2310,bridge  part,IfcBridgePart
+2311,bridge  part,IfcBridgePart
+2312,bridge  part,IfcBridgePart
+2313,bridge  part,IfcBridgePart
+2314,bridge  part,IfcBridgePart
+2315,bridge  part,IfcBridgePart
+2316,bridge  part,IfcBridgePart
+2317,built  system,IfcBuiltSystem
+2318,built  system,IfcBuiltSystem
+2319,element  assembly,IfcElementAssembly
+2320,element  assembly,IfcElementAssembly
+2321,element  assembly,IfcElementAssembly
+2322,element  assembly,IfcElementAssembly
+2323,element  assembly,IfcElementAssembly
+2324,element  assembly,IfcElementAssembly
+2325,element  assembly,IfcElementAssembly
+2326,element  assembly,IfcElementAssembly
+2327,element  assembly,IfcElementAssembly
+2328,element  assembly,IfcElementAssembly
+2329,element  assembly,IfcElementAssembly
+2330,element  assembly,IfcElementAssembly
+2331,element  assembly,IfcElementAssembly
+2332,element  assembly,IfcElementAssembly
+2333,element  assembly,IfcElementAssembly
+2334,element  assembly,IfcElementAssembly
+2335,element  assembly,IfcElementAssembly
+2336,element  assembly,IfcElementAssembly
+2337,element  assembly,IfcElementAssembly
+2338,element  assembly,IfcElementAssembly
+2339,element  assembly,IfcElementAssembly
+2340,element  assembly,IfcElementAssembly
+2341,element  assembly,IfcElementAssembly
+2342,element  assembly,IfcElementAssembly
+2343,element  assembly,IfcElementAssembly
+2344,element  assembly,IfcElementAssembly
+2345,element  assembly,IfcElementAssembly
+2346,element  assembly,IfcElementAssembly
+2347,element  assembly,IfcElementAssembly
+2348,element  assembly,IfcElementAssembly
+2349,external spatial  element,IfcExternalSpatialElement
+2350,external spatial  element,IfcExternalSpatialElement
+2351,external spatial  element,IfcExternalSpatialElement
+2352,external spatial  element,IfcExternalSpatialElement
+2353,external spatial  element,IfcExternalSpatialElement
+2354,external spatial  element,IfcExternalSpatialElement
+2355,facility part  common,IfcFacilityPartCommon
+2356,facility part  common,IfcFacilityPartCommon
+2357,facility part  common,IfcFacilityPartCommon
+2358,facility part  common,IfcFacilityPartCommon
+2359,facility part  common,IfcFacilityPartCommon
+2360,facility part  common,IfcFacilityPartCommon
+2361,facility part  common,IfcFacilityPartCommon
+2362,facility part  common,IfcFacilityPartCommon
+2363,facility part  common,IfcFacilityPartCommon
+2364,facility part  common,IfcFacilityPartCommon
+2365,geographic  element,IfcGeographicElement
+2366,geographic  element,IfcGeographicElement
+2367,geographic  element,IfcGeographicElement
+2368,geographic  element,IfcGeographicElement
+2369,geographic  element,IfcGeographicElement
+2370,grid,IfcGrid
+2371,grid,IfcGrid
+2372,grid,IfcGrid
+2373,grid,IfcGrid
+2374,grid,IfcGrid
+2375,grid,IfcGrid
+2376,impact protection  device,IfcImpactProtectionDevice
+2377,impact protection  device,IfcImpactProtectionDevice
+2378,impact protection  device,IfcImpactProtectionDevice
+2379,impact protection  device,IfcImpactProtectionDevice
+2380,impact protection  device,IfcImpactProtectionDevice
+2381,impact protection  device,IfcImpactProtectionDevice
+2382,opening  element,IfcOpeningElement
+2383,opening  element,IfcOpeningElement
+2384,opening  element,IfcOpeningElement
+2385,opening  element,IfcOpeningElement
+2386,projection  element,IfcProjectionElement
+2387,projection  element,IfcProjectionElement
+2388,projection  element,IfcProjectionElement
+2389,projection  element,IfcProjectionElement
+2390,referent,IfcReferent
+2391,referent,IfcReferent
+2392,referent,IfcReferent
+2393,referent,IfcReferent
+2394,referent,IfcReferent
+2395,referent,IfcReferent
+2396,referent,IfcReferent
+2397,referent,IfcReferent
+2398,referent,IfcReferent
+2399,referent,IfcReferent
+2400,space,IfcSpace
+2401,space,IfcSpace
+2402,space,IfcSpace
+2403,space,IfcSpace
+2404,space,IfcSpace
+2405,space,IfcSpace
+2406,space,IfcSpace
+2407,space,IfcSpace
+2408,spatial  zone,IfcSpatialZone
+2409,spatial  zone,IfcSpatialZone
+2410,spatial  zone,IfcSpatialZone
+2411,spatial  zone,IfcSpatialZone
+2412,spatial  zone,IfcSpatialZone
+2413,spatial  zone,IfcSpatialZone
+2414,spatial  zone,IfcSpatialZone
+2415,spatial  zone,IfcSpatialZone
+2416,spatial  zone,IfcSpatialZone
+2417,spatial  zone,IfcSpatialZone
+2418,spatial  zone,IfcSpatialZone
+2419,spatial  zone,IfcSpatialZone
+2420,transport  element,IfcTransportElement
+2421,transport  element,IfcTransportElement
+2422,transport  element,IfcTransportElement
+2423,transport  element,IfcTransportElement
+2424,transport  element,IfcTransportElement
+2425,transport  element,IfcTransportElement
+2426,transport  element,IfcTransportElement
+2427,transport  element,IfcTransportElement
+2428,vehicle,IfcVehicle
+2429,vehicle,IfcVehicle
+2430,vehicle,IfcVehicle
+2431,vehicle,IfcVehicle
+2432,vehicle,IfcVehicle
+2433,vehicle,IfcVehicle
+2434,vehicle,IfcVehicle
+2435,vehicle,IfcVehicle
+2436,vehicle,IfcVehicle
+2437,vibration  damper,IfcVibrationDamper
+2438,vibration  damper,IfcVibrationDamper
+2439,vibration  damper,IfcVibrationDamper
+2440,vibration  damper,IfcVibrationDamper
+2441,vibration  damper,IfcVibrationDamper
+2442,vibration  damper,IfcVibrationDamper
+2443,vibration  damper,IfcVibrationDamper
+2444,vibration  damper,IfcVibrationDamper
+2445,virtual  element,IfcVirtualElement
+2446,virtual  element,IfcVirtualElement
+2447,virtual  element,IfcVirtualElement
+2448,virtual  element,IfcVirtualElement
+2449,virtual  element,IfcVirtualElement
+2450,rail,IfcRail
+2451,rail,IfcRail
+2452,rail,IfcRail
+2453,rail,IfcRail
+2454,rail,IfcRail
+2455,rail,IfcRail
+2456,rail,IfcRail
+2457,rail,IfcRail
+2458,railway,IfcRailway
+2459,railway,IfcRailway
+2460,railway  part,IfcRailwayPart
+2461,railway  part,IfcRailwayPart
+2462,railway  part,IfcRailwayPart
+2463,railway  part,IfcRailwayPart
+2464,railway  part,IfcRailwayPart
+2465,railway  part,IfcRailwayPart
+2466,railway  part,IfcRailwayPart
+2467,railway  part,IfcRailwayPart
+2468,railway  part,IfcRailwayPart
+2469,railway  part,IfcRailwayPart
+2470,track  element,IfcTrackElement
+2471,track  element,IfcTrackElement
+2472,track  element,IfcTrackElement
+2473,track  element,IfcTrackElement
+2474,track  element,IfcTrackElement
+2475,track  element,IfcTrackElement
+2476,track  element,IfcTrackElement
+2477,track  element,IfcTrackElement
+2478,track  element,IfcTrackElement
+2479,track  element,IfcTrackElement
+2480,kerb,IfcKerb
+2481,kerb,IfcKerb
+2482,road,IfcRoad
+2483,road,IfcRoad
+2484,road  part,IfcRoadPart
+2485,road  part,IfcRoadPart
+2486,road  part,IfcRoadPart
+2487,road  part,IfcRoadPart
+2488,road  part,IfcRoadPart
+2489,road  part,IfcRoadPart
+2490,road  part,IfcRoadPart
+2491,road  part,IfcRoadPart
+2492,road  part,IfcRoadPart
+2493,road  part,IfcRoadPart
+2494,road  part,IfcRoadPart
+2495,road  part,IfcRoadPart
+2496,road  part,IfcRoadPart
+2497,road  part,IfcRoadPart
+2498,road  part,IfcRoadPart
+2499,road  part,IfcRoadPart
+2500,road  part,IfcRoadPart
+2501,road  part,IfcRoadPart
+2502,road  part,IfcRoadPart
+2503,road  part,IfcRoadPart
+2504,road  part,IfcRoadPart
+2505,road  part,IfcRoadPart
+2506,road  part,IfcRoadPart
+2507,road  part,IfcRoadPart
+2508,road  part,IfcRoadPart
+2509,road  part,IfcRoadPart
+2510,beam,IfcBeam
+2511,beam,IfcBeam
+2512,beam,IfcBeam
+2513,beam,IfcBeam
+2514,beam,IfcBeam
+2515,beam,IfcBeam
+2516,beam,IfcBeam
+2517,beam,IfcBeam
+2518,beam,IfcBeam
+2519,beam,IfcBeam
+2520,beam,IfcBeam
+2521,beam,IfcBeam
+2522,beam,IfcBeam
+2523,beam,IfcBeam
+2524,bearing,IfcBearing
+2525,bearing,IfcBearing
+2526,bearing,IfcBearing
+2527,bearing,IfcBearing
+2528,bearing,IfcBearing
+2529,bearing,IfcBearing
+2530,bearing,IfcBearing
+2531,bearing,IfcBearing
+2532,bearing,IfcBearing
+2533,bearing,IfcBearing
+2534,building element  proxy,IfcBuildingElementProxy
+2535,building element  proxy,IfcBuildingElementProxy
+2536,building element  proxy,IfcBuildingElementProxy
+2537,building element  proxy,IfcBuildingElementProxy
+2538,building element  proxy,IfcBuildingElementProxy
+2539,building element  proxy,IfcBuildingElementProxy
+2540,building element  proxy,IfcBuildingElementProxy
+2541,chimney,IfcChimney
+2542,chimney,IfcChimney
+2543,column,IfcColumn
+2544,column,IfcColumn
+2545,column,IfcColumn
+2546,column,IfcColumn
+2547,column,IfcColumn
+2548,column,IfcColumn
+2549,column,IfcColumn
+2550,covering,IfcCovering
+2551,covering,IfcCovering
+2552,covering,IfcCovering
+2553,covering,IfcCovering
+2554,covering,IfcCovering
+2555,covering,IfcCovering
+2556,covering,IfcCovering
+2557,covering,IfcCovering
+2558,covering,IfcCovering
+2559,covering,IfcCovering
+2560,covering,IfcCovering
+2561,covering,IfcCovering
+2562,covering,IfcCovering
+2563,covering,IfcCovering
+2564,curtain  wall,IfcCurtainWall
+2565,curtain  wall,IfcCurtainWall
+2566,door,IfcDoor
+2567,door,IfcDoor
+2568,door,IfcDoor
+2569,door,IfcDoor
+2570,door,IfcDoor
+2571,door,IfcDoor
+2572,door,IfcDoor
+2573,member,IfcMember
+2574,member,IfcMember
+2575,member,IfcMember
+2576,member,IfcMember
+2577,member,IfcMember
+2578,member,IfcMember
+2579,member,IfcMember
+2580,member,IfcMember
+2581,member,IfcMember
+2582,member,IfcMember
+2583,member,IfcMember
+2584,member,IfcMember
+2585,member,IfcMember
+2586,member,IfcMember
+2587,member,IfcMember
+2588,member,IfcMember
+2589,member,IfcMember
+2590,member,IfcMember
+2591,member,IfcMember
+2592,member,IfcMember
+2593,member,IfcMember
+2594,plate,IfcPlate
+2595,plate,IfcPlate
+2596,plate,IfcPlate
+2597,plate,IfcPlate
+2598,plate,IfcPlate
+2599,plate,IfcPlate
+2600,plate,IfcPlate
+2601,plate,IfcPlate
+2602,plate,IfcPlate
+2603,plate,IfcPlate
+2604,plate,IfcPlate
+2605,railing,IfcRailing
+2606,railing,IfcRailing
+2607,railing,IfcRailing
+2608,railing,IfcRailing
+2609,railing,IfcRailing
+2610,railing,IfcRailing
+2611,ramp,IfcRamp
+2612,ramp,IfcRamp
+2613,ramp,IfcRamp
+2614,ramp,IfcRamp
+2615,ramp,IfcRamp
+2616,ramp,IfcRamp
+2617,ramp,IfcRamp
+2618,ramp,IfcRamp
+2619,ramp  flight,IfcRampFlight
+2620,ramp  flight,IfcRampFlight
+2621,ramp  flight,IfcRampFlight
+2622,ramp  flight,IfcRampFlight
+2623,roof,IfcRoof
+2624,roof,IfcRoof
+2625,roof,IfcRoof
+2626,roof,IfcRoof
+2627,roof,IfcRoof
+2628,roof,IfcRoof
+2629,roof,IfcRoof
+2630,roof,IfcRoof
+2631,roof,IfcRoof
+2632,roof,IfcRoof
+2633,roof,IfcRoof
+2634,roof,IfcRoof
+2635,roof,IfcRoof
+2636,roof,IfcRoof
+2637,roof,IfcRoof
+2638,shading  device,IfcShadingDevice
+2639,shading  device,IfcShadingDevice
+2640,shading  device,IfcShadingDevice
+2641,shading  device,IfcShadingDevice
+2642,shading  device,IfcShadingDevice
+2643,slab,IfcSlab
+2644,slab,IfcSlab
+2645,slab,IfcSlab
+2646,slab,IfcSlab
+2647,slab,IfcSlab
+2648,slab,IfcSlab
+2649,slab,IfcSlab
+2650,slab,IfcSlab
+2651,slab,IfcSlab
+2652,slab,IfcSlab
+2653,slab,IfcSlab
+2654,stair,IfcStair
+2655,stair,IfcStair
+2656,stair,IfcStair
+2657,stair,IfcStair
+2658,stair,IfcStair
+2659,stair,IfcStair
+2660,stair,IfcStair
+2661,stair,IfcStair
+2662,stair,IfcStair
+2663,stair,IfcStair
+2664,stair,IfcStair
+2665,stair,IfcStair
+2666,stair,IfcStair
+2667,stair,IfcStair
+2668,stair,IfcStair
+2669,stair,IfcStair
+2670,stair,IfcStair
+2671,stair  flight,IfcStairFlight
+2672,stair  flight,IfcStairFlight
+2673,stair  flight,IfcStairFlight
+2674,stair  flight,IfcStairFlight
+2675,stair  flight,IfcStairFlight
+2676,stair  flight,IfcStairFlight
+2677,stair  flight,IfcStairFlight
+2678,wall,IfcWall
+2679,wall,IfcWall
+2680,wall,IfcWall
+2681,wall,IfcWall
+2682,wall,IfcWall
+2683,wall,IfcWall
+2684,wall,IfcWall
+2685,wall,IfcWall
+2686,wall,IfcWall
+2687,wall,IfcWall
+2688,wall,IfcWall
+2689,wall,IfcWall
+2690,wall,IfcWall
+2691,window,IfcWindow
+2692,window,IfcWindow
+2693,window,IfcWindow
+2694,window,IfcWindow
+2695,window,IfcWindow
+2696,distribution chamber  element,IfcDistributionChamberElement
+2697,distribution chamber  element,IfcDistributionChamberElement
+2698,distribution chamber  element,IfcDistributionChamberElement
+2699,distribution chamber  element,IfcDistributionChamberElement
+2700,distribution chamber  element,IfcDistributionChamberElement
+2701,distribution chamber  element,IfcDistributionChamberElement
+2702,distribution chamber  element,IfcDistributionChamberElement
+2703,distribution chamber  element,IfcDistributionChamberElement
+2704,distribution chamber  element,IfcDistributionChamberElement
+2705,distribution chamber  element,IfcDistributionChamberElement
+2706,distribution  port,IfcDistributionPort
+2707,distribution  port,IfcDistributionPort
+2708,distribution  port,IfcDistributionPort
+2709,distribution  port,IfcDistributionPort
+2710,distribution  port,IfcDistributionPort
+2711,distribution  port,IfcDistributionPort
+2712,distribution  port,IfcDistributionPort
+2713,distribution  system,IfcDistributionSystem
+2714,distribution  system,IfcDistributionSystem
+2715,distribution  system,IfcDistributionSystem
+2716,building element  part,IfcBuildingElementPart
+2717,building element  part,IfcBuildingElementPart
+2718,building element  part,IfcBuildingElementPart
+2719,building element  part,IfcBuildingElementPart
+2720,building element  part,IfcBuildingElementPart
+2721,building element  part,IfcBuildingElementPart
+2722,building element  part,IfcBuildingElementPart
+2723,discrete  accessory,IfcDiscreteAccessory
+2724,discrete  accessory,IfcDiscreteAccessory
+2725,discrete  accessory,IfcDiscreteAccessory
+2726,discrete  accessory,IfcDiscreteAccessory
+2727,discrete  accessory,IfcDiscreteAccessory
+2728,discrete  accessory,IfcDiscreteAccessory
+2729,discrete  accessory,IfcDiscreteAccessory
+2730,discrete  accessory,IfcDiscreteAccessory
+2731,discrete  accessory,IfcDiscreteAccessory
+2732,discrete  accessory,IfcDiscreteAccessory
+2733,discrete  accessory,IfcDiscreteAccessory
+2734,discrete  accessory,IfcDiscreteAccessory
+2735,discrete  accessory,IfcDiscreteAccessory
+2736,discrete  accessory,IfcDiscreteAccessory
+2737,discrete  accessory,IfcDiscreteAccessory
+2738,discrete  accessory,IfcDiscreteAccessory
+2739,discrete  accessory,IfcDiscreteAccessory
+2740,discrete  accessory,IfcDiscreteAccessory
+2741,discrete  accessory,IfcDiscreteAccessory
+2742,discrete  accessory,IfcDiscreteAccessory
+2743,discrete  accessory,IfcDiscreteAccessory
+2744,discrete  accessory,IfcDiscreteAccessory
+2745,discrete  accessory,IfcDiscreteAccessory
+2746,fastener,IfcFastener
+2747,fastener,IfcFastener
+2748,fastener,IfcFastener
+2749,fastener,IfcFastener
+2750,fastener,IfcFastener
+2751,mechanical  fastener,IfcMechanicalFastener
+2752,mechanical  fastener,IfcMechanicalFastener
+2753,mechanical  fastener,IfcMechanicalFastener
+2754,mechanical  fastener,IfcMechanicalFastener
+2755,mechanical  fastener,IfcMechanicalFastener
+2756,mechanical  fastener,IfcMechanicalFastener
+2757,mechanical  fastener,IfcMechanicalFastener
+2758,mechanical  fastener,IfcMechanicalFastener
+2759,mechanical  fastener,IfcMechanicalFastener
+2760,mechanical  fastener,IfcMechanicalFastener
+2761,mechanical  fastener,IfcMechanicalFastener
+2762,mechanical  fastener,IfcMechanicalFastener
+2763,mechanical  fastener,IfcMechanicalFastener
+2764,mechanical  fastener,IfcMechanicalFastener
+2765,mechanical  fastener,IfcMechanicalFastener
+2766,mechanical  fastener,IfcMechanicalFastener
+2767,mechanical  fastener,IfcMechanicalFastener
+2768,furniture,IfcFurniture
+2769,furniture,IfcFurniture
+2770,furniture,IfcFurniture
+2771,furniture,IfcFurniture
+2772,furniture,IfcFurniture
+2773,furniture,IfcFurniture
+2774,furniture,IfcFurniture
+2775,furniture,IfcFurniture
+2776,furniture,IfcFurniture
+2777,furniture,IfcFurniture
+2778,system furniture  element,IfcSystemFurnitureElement
+2779,system furniture  element,IfcSystemFurnitureElement
+2780,system furniture  element,IfcSystemFurnitureElement
+2781,system furniture  element,IfcSystemFurnitureElement
+2782,system furniture  element,IfcSystemFurnitureElement
+2783,course,IfcCourse
+2784,course,IfcCourse
+2785,course,IfcCourse
+2786,course,IfcCourse
+2787,course,IfcCourse
+2788,course,IfcCourse
+2789,course,IfcCourse
+2790,course,IfcCourse
+2791,earthworks  cut,IfcEarthworksCut
+2792,earthworks  cut,IfcEarthworksCut
+2793,earthworks  cut,IfcEarthworksCut
+2794,earthworks  cut,IfcEarthworksCut
+2795,earthworks  cut,IfcEarthworksCut
+2796,earthworks  cut,IfcEarthworksCut
+2797,earthworks  cut,IfcEarthworksCut
+2798,earthworks  cut,IfcEarthworksCut
+2799,earthworks  cut,IfcEarthworksCut
+2800,earthworks  cut,IfcEarthworksCut
+2801,earthworks  cut,IfcEarthworksCut
+2802,earthworks  fill,IfcEarthworksFill
+2803,earthworks  fill,IfcEarthworksFill
+2804,earthworks  fill,IfcEarthworksFill
+2805,earthworks  fill,IfcEarthworksFill
+2806,earthworks  fill,IfcEarthworksFill
+2807,earthworks  fill,IfcEarthworksFill
+2808,earthworks  fill,IfcEarthworksFill
+2809,earthworks  fill,IfcEarthworksFill
+2810,earthworks  fill,IfcEarthworksFill
+2811,geotechnical  stratum,IfcGeotechnicalStratum
+2812,geotechnical  stratum,IfcGeotechnicalStratum
+2813,geotechnical  stratum,IfcGeotechnicalStratum
+2814,geotechnical  stratum,IfcGeotechnicalStratum
+2815,geotechnical  stratum,IfcGeotechnicalStratum
+2816,pavement,IfcPavement
+2817,pavement,IfcPavement
+2818,pavement,IfcPavement
+2819,pavement,IfcPavement
+2820,reinforced  soil,IfcReinforcedSoil
+2821,reinforced  soil,IfcReinforcedSoil
+2822,reinforced  soil,IfcReinforcedSoil
+2823,reinforced  soil,IfcReinforcedSoil
+2824,reinforced  soil,IfcReinforcedSoil
+2825,reinforced  soil,IfcReinforcedSoil
+2826,reinforced  soil,IfcReinforcedSoil
+2827,reinforced  soil,IfcReinforcedSoil
+2828,sign,IfcSign
+2829,sign,IfcSign
+2830,sign,IfcSign
+2831,sign,IfcSign
+2832,sign,IfcSign
+2833,signal,IfcSignal
+2834,signal,IfcSignal
+2835,signal,IfcSignal
+2836,signal,IfcSignal
+2837,signal,IfcSignal
+2838,project  order,IfcProjectOrder
+2839,project  order,IfcProjectOrder
+2840,project  order,IfcProjectOrder
+2841,project  order,IfcProjectOrder
+2842,project  order,IfcProjectOrder
+2843,structural curve  action,IfcStructuralCurveAction
+2844,structural curve  action,IfcStructuralCurveAction
+2845,structural curve  action,IfcStructuralCurveAction
+2846,structural curve  action,IfcStructuralCurveAction
+2847,structural curve  action,IfcStructuralCurveAction
+2848,structural curve  action,IfcStructuralCurveAction
+2849,structural curve  action,IfcStructuralCurveAction
+2850,structural curve  action,IfcStructuralCurveAction
+2851,structural curve  action,IfcStructuralCurveAction
+2852,structural curve  member,IfcStructuralCurveMember
+2853,structural curve  member,IfcStructuralCurveMember
+2854,structural curve  member,IfcStructuralCurveMember
+2855,structural curve  member,IfcStructuralCurveMember
+2856,structural curve  member,IfcStructuralCurveMember
+2857,structural curve  member,IfcStructuralCurveMember
+2858,structural curve  member,IfcStructuralCurveMember
+2859,structural curve  reaction,IfcStructuralCurveReaction
+2860,structural curve  reaction,IfcStructuralCurveReaction
+2861,structural curve  reaction,IfcStructuralCurveReaction
+2862,structural curve  reaction,IfcStructuralCurveReaction
+2863,structural curve  reaction,IfcStructuralCurveReaction
+2864,structural curve  reaction,IfcStructuralCurveReaction
+2865,structural curve  reaction,IfcStructuralCurveReaction
+2866,structural curve  reaction,IfcStructuralCurveReaction
+2867,structural curve  reaction,IfcStructuralCurveReaction
+2868,structural surface  action,IfcStructuralSurfaceAction
+2869,structural surface  action,IfcStructuralSurfaceAction
+2870,structural surface  action,IfcStructuralSurfaceAction
+2871,structural surface  action,IfcStructuralSurfaceAction
+2872,structural surface  action,IfcStructuralSurfaceAction
+2873,structural surface  action,IfcStructuralSurfaceAction
+2874,structural surface  member,IfcStructuralSurfaceMember
+2875,structural surface  member,IfcStructuralSurfaceMember
+2876,structural surface  member,IfcStructuralSurfaceMember
+2877,structural surface  member,IfcStructuralSurfaceMember
+2878,structural surface  member,IfcStructuralSurfaceMember
+2879,structural surface  reaction,IfcStructuralSurfaceReaction
+2880,structural surface  reaction,IfcStructuralSurfaceReaction
+2881,structural surface  reaction,IfcStructuralSurfaceReaction
+2882,structural surface  reaction,IfcStructuralSurfaceReaction
+2883,structural surface  reaction,IfcStructuralSurfaceReaction
+2884,structural surface  reaction,IfcStructuralSurfaceReaction
+2885,caisson  foundation,IfcCaissonFoundation
+2886,caisson  foundation,IfcCaissonFoundation
+2887,caisson  foundation,IfcCaissonFoundation
+2888,caisson  foundation,IfcCaissonFoundation
+2889,footing,IfcFooting
+2890,footing,IfcFooting
+2891,footing,IfcFooting
+2892,footing,IfcFooting
+2893,footing,IfcFooting
+2894,footing,IfcFooting
+2895,footing,IfcFooting
+2896,pile,IfcPile
+2897,pile,IfcPile
+2898,pile,IfcPile
+2899,pile,IfcPile
+2900,pile,IfcPile
+2901,pile,IfcPile
+2902,pile,IfcPile
+2903,pile,IfcPile
+2904,reinforcing  bar,IfcReinforcingBar
+2905,reinforcing  bar,IfcReinforcingBar
+2906,reinforcing  bar,IfcReinforcingBar
+2907,reinforcing  bar,IfcReinforcingBar
+2908,reinforcing  bar,IfcReinforcingBar
+2909,reinforcing  bar,IfcReinforcingBar
+2910,reinforcing  bar,IfcReinforcingBar
+2911,reinforcing  bar,IfcReinforcingBar
+2912,reinforcing  bar,IfcReinforcingBar
+2913,reinforcing  bar,IfcReinforcingBar
+2914,reinforcing  bar,IfcReinforcingBar
+2915,reinforcing  mesh,IfcReinforcingMesh
+2916,reinforcing  mesh,IfcReinforcingMesh
+2917,surface  feature,IfcSurfaceFeature
+2918,surface  feature,IfcSurfaceFeature
+2919,surface  feature,IfcSurfaceFeature
+2920,surface  feature,IfcSurfaceFeature
+2921,surface  feature,IfcSurfaceFeature
+2922,surface  feature,IfcSurfaceFeature
+2923,surface  feature,IfcSurfaceFeature
+2924,surface  feature,IfcSurfaceFeature
+2925,surface  feature,IfcSurfaceFeature
+2926,surface  feature,IfcSurfaceFeature
+2927,surface  feature,IfcSurfaceFeature
+2928,surface  feature,IfcSurfaceFeature
+2929,surface  feature,IfcSurfaceFeature
+2930,tendon,IfcTendon
+2931,tendon,IfcTendon
+2932,tendon,IfcTendon
+2933,tendon,IfcTendon
+2934,tendon,IfcTendon
+2935,tendon,IfcTendon
+2936,tendon  anchor,IfcTendonAnchor
+2937,tendon  anchor,IfcTendonAnchor
+2938,tendon  anchor,IfcTendonAnchor
+2939,tendon  anchor,IfcTendonAnchor
+2940,tendon  anchor,IfcTendonAnchor
+2941,tendon  conduit,IfcTendonConduit
+2942,tendon  conduit,IfcTendonConduit
+2943,tendon  conduit,IfcTendonConduit
+2944,tendon  conduit,IfcTendonConduit
+2945,tendon  conduit,IfcTendonConduit
+2946,tendon  conduit,IfcTendonConduit
+2947,tendon  conduit,IfcTendonConduit
+2948,voiding  feature,IfcVoidingFeature
+2949,voiding  feature,IfcVoidingFeature
+2950,voiding  feature,IfcVoidingFeature
+2951,voiding  feature,IfcVoidingFeature
+2952,voiding  feature,IfcVoidingFeature
+2953,voiding  feature,IfcVoidingFeature
+2954,voiding  feature,IfcVoidingFeature
+2955,voiding  feature,IfcVoidingFeature

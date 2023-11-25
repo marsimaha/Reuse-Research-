@@ -1,0 +1,329 @@
+,raw,code,word,Translated_Text
+0,A01.01 Grundstückserwerb;A01.01;Grundstückserwerb;;;;;;Grundstückserwerb,A01.01,Grundstückserwerb,Property acquisition
+1,A01.02 Baurechtserwerb;A01.02;Baurechtserwerb;;;;;;Baurechtserwerb,A01.02,Baurechtserwerb,Building law acquisition
+2,A01.03 Bauwerkserwerb;A01.03;Bauwerkserwerb;;;;;;Bauwerkserwerb,A01.03,Bauwerkserwerb,Building acquisition
+3,A01.04 Perimeterbeitrag;A01.04;Perimeterbeitrag;;;;;;Perimeterbeitrag,A01.04,Perimeterbeitrag,Perimeter contribution
+4,A02.01 Handänderungssteuer,A02.01,Handänderungssteuer,Hand change tax
+5,A02.02 Notariatskosten;A02.02;Notariatskosten;;;;;;Notariatskosten,A02.02,Notariatskosten,Notary costs
+6,A02.03 Grundbuchgebühr;A02.03;Grundbuchgebühr;;;;;;Grundbuchgebühr,A02.03,Grundbuchgebühr,Land registry fee
+7,A02.04 Anwaltskosten,A02.04,Anwaltskosten,Attorney
+8,A02.05 Vermittlungsprovision;A02.05;Vermittlungsprovision;;;;;;Vermittlungsprovision,A02.05,Vermittlungsprovision,Mediation commission
+9,A02.06 Abfindung,A02.06,Abfindung,severance pay
+10,A02.07 Vermessung,A02.07,Vermessung,measurement
+11,B01.01 Baugrunduntersuchung;B01.01;Baugrunduntersuchung;;;;;;Baugrunduntersuchung,B01.01,Baugrunduntersuchung,Building basic investigation
+12,B01.02 Bestandsaufnahme;B01.02;Bestandsaufnahme;;;;;;Bestandsaufnahme,B01.02,Bestandsaufnahme,inventory
+13,B01.03 Umweltmessung;B01.03;Umweltmessung;;;;;;Umweltmessung,B01.03,Umweltmessung,Environmental measurement
+14,B01.04 Überwachung;B01.04;Überwachung;;;;;;Überwachung,B01.04,Überwachung,surveillance
+15,B02.01 Baustellenerschliessung;B02.01;Baustellenerschliessung;;;;;;Baustellenerschliessung,B02.01,Baustellenerschliessung,Construction site closure
+16,B02.02 Versorgung,B02.02,Versorgung,care
+17,B02.03 Arbeitsraum,B02.03,Arbeitsraum,working space
+18,B02.04 Hebe-,B02.04,Hebe-,Lifting
+19,B02.05 Einrichtung für Materialaufbereitung;B02.05;Einrichtung;für;Materialaufbereitung;;;;Einrichtung für Materialaufbereitung,B02.05,Einrichtung für Materialaufbereitung,Furnishing for material preparation
+20,B02.06 Witterungsbedingte Baumassnahme;B02.06;Witterungsbedingte;Baumassnahme;;;;;Witterungsbedingte Baumassnahme,B02.06,Witterungsbedingte Baumassnahme,Weather related construction measures
+21,B02.07 Baustellenorganisation,B02.07,Baustellenorganisation,Construction site organization
+22,B02.08 Schutzmassnahme für Umgebung;B02.08;Schutzmassnahme;für;Umgebung;;;;Schutzmassnahme für Umgebung,B02.08,Schutzmassnahme für Umgebung,Protection measure for the environment
+23,B03.01 Provisorisches Rückhaltesystem;B03.01;Provisorisches;Rückhaltesystem;;;;;Provisorisches Rückhaltesystem,B03.01,Provisorisches Rückhaltesystem,Provisional retention system
+24,B03.02 Provisorische Werkleitung;B03.02;Provisorische;Werkleitung;;;;;Provisorische Werkleitung,B03.02,Provisorische Werkleitung,Provisional work management
+25,B03.03 Provisorisches Gebäude;B03.03;Provisorisches;Gebäude;;;;;Provisorisches Gebäude,B03.03,Provisorisches Gebäude,Provisional building
+26,B03.04 Provisorische Verkehrsanlage;B03.04;Provisorische;Verkehrsanlage;;;;;Provisorische Verkehrsanlage,B03.04,Provisorische Verkehrsanlage,Provisional traffic system
+27,B03.05 Provisorischer Ausbau,B03.05,Provisorischer Ausbau,Provisional expansion
+28,B04.01 Starkstromleitung;B04.01;Starkstromleitung;;;;;;Starkstromleitung,B04.01,Starkstromleitung,Power line
+29,B04.02 Schwachstromleitung;B04.02;Schwachstromleitung;;;;;;Schwachstromleitung,B04.02,Schwachstromleitung,Low current line
+30,B04.03 Fernwärmeleitung;B04.03;Fernwärmeleitung;;;;;;Fernwärmeleitung,B04.03,Fernwärmeleitung,District heating line
+31,B04.04 Fernkälteleitung;B04.04;Fernkälteleitung;;;;;;Fernkälteleitung,B04.04,Fernkälteleitung,Remote cold line
+32,B04.05 Wasserleitung;B04.05;Wasserleitung;;;;;;Wasserleitung,B04.05,Wasserleitung,Water pipe
+33,B04.06 Schmutzwasserleitung;B04.06;Schmutzwasserleitung;;;;;;Schmutzwasserleitung,B04.06,Schmutzwasserleitung,Wastewater pipe
+34,B04.07 Regenwasserleitung;B04.07;Regenwasserleitung;;;;;;Regenwasserleitung,B04.07,Regenwasserleitung,Rainwater line
+35,B04.08 Gasleitung;B04.08;Gasleitung;;;;;;Gasleitung,B04.08,Gasleitung,Gas line
+36,B05.01 Fällung,B05.01,Fällung,precipitation
+37,B05.02 Nicht kontaminierter Rückbau;B05.02;Nicht;kontaminierter;Rückbau;;;;Nicht kontaminierter Rückbau,B05.02,Nicht kontaminierter Rückbau,Non contaminated dismantling
+38,B05.03 Kontaminierter Rückbau;B05.03;Kontaminierter;Rückbau;;;;;Kontaminierter Rückbau,B05.03,Kontaminierter Rückbau,Contaminated dismantling
+39,B06.01 Nicht kontaminierter Aushub;B06.01;Nicht;kontaminierter;Aushub;;;;Nicht kontaminierter Aushub,B06.01,Nicht kontaminierter Aushub,Non contaminated excavation
+40,B06.02 Kontaminierter Aushub;B06.02;Kontaminierter;Aushub;;;;;Kontaminierter Aushub,B06.02,Kontaminierter Aushub,Contaminated excavation
+41,B06.03 Böschungssicherung;B06.03;Böschungssicherung;;;;;;Böschungssicherung,B06.03,Böschungssicherung,Embankment
+42,B06.04 Baugrubenabschluss;B06.04;Baugrubenabschluss;;;;;;Baugrubenabschluss,B06.04,Baugrubenabschluss,Construction mine
+43,B06.05 Materialeinbau;B06.05;Materialeinbau;;;;;;Materialeinbau,B06.05,Materialeinbau,Material installation
+44,B06.06 Wasserhaltung;B06.06;Wasserhaltung;;;;;;Wasserhaltung,B06.06,Wasserhaltung,Water husbandry
+45,B07.01 Verbesserung Baugrund;B07.01;Verbesserung;Baugrund;;;;;Verbesserung Baugrund,B07.01,Verbesserung Baugrund,Improvement building ground
+46,B07.02 Pfählung;B07.02;Pfählung;;;;;;Pfählung,B07.02,Pfählung,Post
+47,B07.03 Unterfangung Bauwerk;B07.03;Unterfangung;Bauwerk;;;;;Unterfangung Bauwerk,B07.03,Unterfangung Bauwerk,Sub incorporation building
+48,B07.04 Sicherung Bauwerk;B07.04;Sicherung;Bauwerk;;;;;Sicherung Bauwerk,B07.04,Sicherung Bauwerk,Securing building
+49,B08.01 Fassadengerüst;B08.01;Fassadengerüst;;;;;;Fassadengerüst,B08.01,Fassadengerüst,Facade framework
+50,B08.02 Arbeitsgerüst;B08.02;Arbeitsgerüst;;;;;;Arbeitsgerüst,B08.02,Arbeitsgerüst,Scaffolding
+51,B08.03 Notdach;B08.03;Notdach;;;;;;Notdach,B08.03,Notdach,Emergency roof
+52,B08.04 Schutzgerüst;B08.04;Schutzgerüst;;;;;;Schutzgerüst,B08.04,Schutzgerüst,Scaffolding
+53,B09.01 Bauliche Anpassung angrenzendes Bauwerk;B09.01;Bauliche;Anpassung;angrenzendes;Bauwerk;;;Bauliche Anpassung angrenzendes Bauwerk,B09.01,Bauliche Anpassung angrenzendes Bauwerk,Structural adaptation adjacent building
+54,B09.02 Unterfangung,B09.02,Unterfangung,Undercamation
+55,B09.03 Verkehrsanlage ausserhalb Grundstück;B09.03;Verkehrsanlage;ausserhalb;Grundstück;;;;Verkehrsanlage ausserhalb Grundstück,B09.03,Verkehrsanlage ausserhalb Grundstück,Traffic plant outside property
+56,C01.01 Unterbau Fundament,C01.01,Unterbau Fundament,Substructure foundation
+57,C01.02 Fundament;C01.02;Fundament;;;;;;Fundament,C01.02,Fundament,foundation
+58,C01.03 Bodenplatte;C01.03;Bodenplatte;;;;;;Bodenplatte,C01.03,Bodenplatte,Base plate
+59,C01.04 Erdverbundene Treppe,C01.04,Erdverbundene Treppe,Tied stairs
+60,C01.05 Erdverbundenes Podest;C01.05;Erdverbundenes;Podest;;;;;Erdverbundenes Podest,C01.05,Erdverbundenes Podest,Earth connected podium
+61,C02.01 Aussenwandkonstruktion;C02.01;Aussenwandkonstruktion;;;;;;Aussenwandkonstruktion,C02.01,Aussenwandkonstruktion,Outside wall construction
+62,C02.02 Innenwandkonstruktion;C02.02;Innenwandkonstruktion;;;;;;Innenwandkonstruktion,C02.02,Innenwandkonstruktion,Interior wall construction
+63,C03.01 Aussenstütze;C03.01;Aussenstütze;;;;;;Aussenstütze,C03.01,Aussenstütze,Outer support
+64,C03.02 Innenstütze;C03.02;Innenstütze;;;;;;Innenstütze,C03.02,Innenstütze,Interior support
+65,C04.01 Geschossdecke;C04.01;Geschossdecke;;;;;;Geschossdecke,C04.01,Geschossdecke,Storey blanket
+66,C04.02 Innen liegende Treppe,C04.02,Innen liegende Treppe,Inside stairs
+67,C04.03 Innen liegendes Podest;C04.03;Innen;liegendes;Podest;;;;Innen liegendes Podest,C04.03,Innen liegendes Podest,Inside podium
+68,C04.04 Konstruktion Flachdach;C04.04;Konstruktion;Flachdach;;;;;Konstruktion Flachdach,C04.04,Konstruktion Flachdach,Construction of flat roof
+69,C04.05 Konstruktion geneigtes Dach;C04.05;Konstruktion;geneigtes;Dach;;;;Konstruktion geneigtes Dach,C04.05,Konstruktion geneigtes Dach,Construction inclined roof
+70,C04.06 Aussen liegende Treppe,C04.06,Aussen liegende Treppe,Stairs lying outside
+71,C04.07 Aussen liegendes Podest;C04.07;Aussen;liegendes;Podest;;;;Aussen liegendes Podest,C04.07,Aussen liegendes Podest,Podest lying outside
+72,C04.08 Aussen liegende Konstruktion,C04.08,Aussen liegende Konstruktion,Lying on the outside
+73,C05.01 Durchbruch,C05.01,Durchbruch,breakthrough
+74,C05.02 Maschinensockel,C05.02,Maschinensockel,Machine
+75,D01.01 Anlage Erzeugung Starkstrom;D01.01;Anlage;Erzeugung;Starkstrom;;;;Anlage Erzeugung Starkstrom,D01.01,Anlage Erzeugung Starkstrom,Appendix generation strong current
+76,D01.02 Transformierung Starkstrom;D01.02;Transformierung;Starkstrom;;;;;Transformierung Starkstrom,D01.02,Transformierung Starkstrom,Transforming strong current
+77,D01.03 Speicherung Starkstrom;D01.03;Speicherung;Starkstrom;;;;;Speicherung Starkstrom,D01.03,Speicherung Starkstrom,Storage strong current
+78,D01.04 Installation Starkstrom;D01.04;Installation;Starkstrom;;;;;Installation Starkstrom,D01.04,Installation Starkstrom,Installation in power
+79,D01.05 Verbraucher Starkstrom: Leuchten;D01.05;Verbraucher;Starkstrom:;Leuchten;;;;Verbraucher Starkstrom: Leuchten,D01.05,Verbraucher Starkstrom: Leuchten,Consumer strong current lights
+80,D01.06 Verbraucher Starkstrom: Elektrogeräte;D01.06;Verbraucher;Starkstrom:;Elektrogeräte;;;;Verbraucher Starkstrom: Elektrogeräte,D01.06,Verbraucher Starkstrom: Elektrogeräte,Consumer strong current electrical appliances
+81,D01.07 Anlage Erzeugung Schwachstrom;D01.07;Anlage;Erzeugung;Schwachstrom;;;;Anlage Erzeugung Schwachstrom,D01.07,Anlage Erzeugung Schwachstrom,Appendix production weak stream
+82,D01.08 Transformierung Schwachstrom;D01.08;Transformierung;Schwachstrom;;;;;Transformierung Schwachstrom,D01.08,Transformierung Schwachstrom,Transformation weak stream
+83,D01.09 Speicherung Schwachstrom;D01.09;Speicherung;Schwachstrom;;;;;Speicherung Schwachstrom,D01.09,Speicherung Schwachstrom,Storage of weak stream
+84,D01.10 Installation Schwachstrom;D01.10;Installation;Schwachstrom;;;;;Installation Schwachstrom,D01.10,Installation Schwachstrom,Installation weak stream
+85,D01.11 Verbraucher Schwachstrom;D01.11;Verbraucher;Schwachstrom;;;;;Verbraucher Schwachstrom,D01.11,Verbraucher Schwachstrom,Consumer weak stream
+86,D02.01 Managementebene;D02.01;Managementebene;;;;;;Managementebene,D02.01,Managementebene,Management level
+87,D02.02 Automationsebene;D02.02;Automationsebene;;;;;;Automationsebene,D02.02,Automationsebene,Automation level
+88,D02.03 Feldebene;D02.03;Feldebene;;;;;;Feldebene,D02.03,Feldebene,Field level
+89,D02.04 Raumautomation;D02.04;Raumautomation;;;;;;Raumautomation,D02.04,Raumautomation,Room automation
+90,D02.05 Automationsnetzwerk;D02.05;Automationsnetzwerk;;;;;;Automationsnetzwerk,D02.05,Automationsnetzwerk,Automation network
+91,D02.06 Schaltgerätekombination;D02.06;Schaltgerätekombination;;;;;;Schaltgerätekombination,D02.06,Schaltgerätekombination,Switching device combination
+92,D02.07 Systemintegration;D02.07;Systemintegration;;;;;;Systemintegration,D02.07,Systemintegration,System integration
+93,D03.01 Einbruchmeldeanlage,D03.01,Einbruchmeldeanlage,Burglary
+94,D03.02 Zutrittskontrollanlage;D03.02;Zutrittskontrollanlage;;;;;;Zutrittskontrollanlage,D03.02,Zutrittskontrollanlage,Access control system
+95,D03.03 Videoüberwachungsanlage;D03.03;Videoüberwachungsanlage;;;;;;Videoüberwachungsanlage,D03.03,Videoüberwachungsanlage,Video monitoring system
+96,D03.04 Schliessanlage;D03.04;Schliessanlage;;;;;;Schliessanlage,D03.04,Schliessanlage,Locking system
+97,D04.01 Brandmeldeanlage;D04.01;Brandmeldeanlage;;;;;;Brandmeldeanlage,D04.01,Brandmeldeanlage,Fire alarm system
+98,D04.02 Gaswarnanlage;D04.02;Gaswarnanlage;;;;;;Gaswarnanlage,D04.02,Gaswarnanlage,Gas warning system
+99,D04.03 Nasslöschanlage;D04.03;Nasslöschanlage;;;;;;Nasslöschanlage,D04.03,Nasslöschanlage,Wet extinguisher
+100,D04.04 Trockenlöschanlage;D04.04;Trockenlöschanlage;;;;;;Trockenlöschanlage,D04.04,Trockenlöschanlage,Dry extinguish
+101,D04.05 Löschgerät;D04.05;Löschgerät;;;;;;Löschgerät,D04.05,Löschgerät,Extinguishing device
+102,D04.06 Rauch- und Wärmebehandlungsanlage;D04.06;Rauch-;und;Wärmebehandlungsanlage;;;;Rauch- und Wärmebehandlungsanlage,D04.06,Rauch- und Wärmebehandlungsanlage,Smoke and heat treatment plant
+103,D04.07 Elektroakustische Lautsprecheranlage;D04.07;Elektroakustische;Lautsprecheranlage;;;;;Elektroakustische Lautsprecheranlage,D04.07,Elektroakustische Lautsprecheranlage,Electro acoustic loudspeaker system
+104,D05.01 Wärmequelle,D05.01,Wärmequelle,Heat source
+105,D05.02 Wärmeerzeugung;D05.02;Wärmeerzeugung;;;;;;Wärmeerzeugung,D05.02,Wärmeerzeugung,Heat generation
+106,D05.03 Wärmespeicherung;D05.03;Wärmespeicherung;;;;;;Wärmespeicherung,D05.03,Wärmespeicherung,Heat storage
+107,D05.04 Wärmeverteilung;D05.04;Wärmeverteilung;;;;;;Wärmeverteilung,D05.04,Wärmeverteilung,Heat distribution
+108,D05.05 Wärmeabgabe;D05.05;Wärmeabgabe;;;;;;Wärmeabgabe,D05.05,Wärmeabgabe,Heat output
+109,D05.06 Wärmebezug: Investitionsanteil;D05.06;Wärmebezug:;Investitionsanteil;;;;;Wärmebezug: Investitionsanteil,D05.06,Wärmebezug: Investitionsanteil,Heat train investment share
+110,D06.01 Kältequelle,D06.01,Kältequelle,Cold source
+111,D06.02 Kälteerzeugung;D06.02;Kälteerzeugung;;;;;;Kälteerzeugung,D06.02,Kälteerzeugung,Refrigeration
+112,D06.03 Kältespeicherung;D06.03;Kältespeicherung;;;;;;Kältespeicherung,D06.03,Kältespeicherung,Cold storage
+113,D06.04 Kälteverteilung;D06.04;Kälteverteilung;;;;;;Kälteverteilung,D06.04,Kälteverteilung,Cold distribution
+114,D06.05 Kälteabgabe;D06.05;Kälteabgabe;;;;;;Kälteabgabe,D06.05,Kälteabgabe,Refrigeration
+115,D06.06 Kältebezug: Investitionsanteil;D06.06;Kältebezug:;Investitionsanteil;;;;;Kältebezug: Investitionsanteil,D06.06,Kältebezug: Investitionsanteil,Colding Investment share
+116,D07.01 Aussenluftversorgung,D07.01,Aussenluftversorgung,Outdoor air supply
+117,D07.02 Luftaufbereitung;D07.02;Luftaufbereitung;;;;;;Luftaufbereitung,D07.02,Luftaufbereitung,Aerial preparation
+118,D07.03 Luftwärmespeicherung;D07.03;Luftwärmespeicherung;;;;;;Luftwärmespeicherung,D07.03,Luftwärmespeicherung,Air heating storage
+119,D07.04 Luftverteilung;D07.04;Luftverteilung;;;;;;Luftverteilung,D07.04,Luftverteilung,Air distribution
+120,D07.05 Luftabgabe;D07.05;Luftabgabe;;;;;;Luftabgabe,D07.05,Luftabgabe,Air output
+121,D07.06 Luft: Investitionsanteil;D07.06;Luft:;Investitionsanteil;;;;;Luft: Investitionsanteil,D07.06,Luft: Investitionsanteil,Air investment share
+122,D08.01 Wasserversorgung;D08.01;Wasserversorgung;;;;;;Wasserversorgung,D08.01,Wasserversorgung,Water supply
+123,D08.02 Wasserbehandlung;D08.02;Wasserbehandlung;;;;;;Wasserbehandlung,D08.02,Wasserbehandlung,Water treatment
+124,D08.03 Wasserspeicher;D08.03;Wasserspeicher;;;;;;Wasserspeicher,D08.03,Wasserspeicher,watertank
+125,D08.04 Wasserverteilung;D08.04;Wasserverteilung;;;;;;Wasserverteilung,D08.04,Wasserverteilung,Water distribution
+126,D08.05 Wasser: Armatur,D08.05,Wasser: Armatur,Water tap
+127,D08.06 Wasser: Installationselement;D08.06;Wasser:;Installationselement;;;;;Wasser: Installationselement,D08.06,Wasser: Installationselement,Water installation element
+128,D09.01 Abwasserentsorgung;D09.01;Abwasserentsorgung;;;;;;Abwasserentsorgung,D09.01,Abwasserentsorgung,Wastewater disposal
+129,D09.02 Abwasserbehandlung;D09.02;Abwasserbehandlung;;;;;;Abwasserbehandlung,D09.02,Abwasserbehandlung,Wastewater treatment
+130,D09.03 Abwasserspeicher;D09.03;Abwasserspeicher;;;;;;Abwasserspeicher,D09.03,Abwasserspeicher,Wastewater memory
+131,D09.04 Abwassersammlung;D09.04;Abwassersammlung;;;;;;Abwassersammlung,D09.04,Abwassersammlung,Wastewater collection
+132,D09.05 Abwasser: Armatur,D09.05,Abwasser: Armatur,Wastewater fitting
+133,D10.01 Gasversorgung;D10.01;Gasversorgung;;;;;;Gasversorgung,D10.01,Gasversorgung,Gas supply
+134,D10.02 Gasbehandlung;D10.02;Gasbehandlung;;;;;;Gasbehandlung,D10.02,Gasbehandlung,Gas treatment
+135,D10.03 Gasspeicherung;D10.03;Gasspeicherung;;;;;;Gasspeicherung,D10.03,Gasspeicherung,Gas storage
+136,D10.04 Gasverteilung;D10.04;Gasverteilung;;;;;;Gasverteilung,D10.04,Gasverteilung,Gas distribution
+137,D10.05 Gas: Armatur,D10.05,Gas: Armatur,Gas tap
+138,D11.01 Spezialmedien: Versorgung,D11.01,Spezialmedien: Versorgung,Special media supply
+139,D11.02 Spezialmedien: Aufbereitung;D11.02;Spezialmedien:;Aufbereitung;;;;;Spezialmedien: Aufbereitung,D11.02,Spezialmedien: Aufbereitung,Special media preparation
+140,D11.03 Spezialmedien: Speicherung;D11.03;Spezialmedien:;Speicherung;;;;;Spezialmedien: Speicherung,D11.03,Spezialmedien: Speicherung,Special media storage
+141,D11.04 Spezialmedien: Verteilung;D11.04;Spezialmedien:;Verteilung;;;;;Spezialmedien: Verteilung,D11.04,Spezialmedien: Verteilung,Special media distribution
+142,D11.05 Spezialmedien: Armatur,D11.05,Spezialmedien: Armatur,Special media fitting
+143,D12.01 Personenaufzug;D12.01;Personenaufzug;;;;;;Personenaufzug,D12.01,Personenaufzug,Passenger elevator
+144,D12.02 Lasten- und Serviceaufzug;D12.02;Lasten-;und;Serviceaufzug;;;;Lasten- und Serviceaufzug,D12.02,Lasten- und Serviceaufzug,Load and service elevator
+145,D12.03 Spezialaufzug;D12.03;Spezialaufzug;;;;;;Spezialaufzug,D12.03,Spezialaufzug,Special elevator
+146,D12.04 Fahrtreppe;D12.04;Fahrtreppe;;;;;;Fahrtreppe,D12.04,Fahrtreppe,Staircase
+147,D12.05 Fahrsteig;D12.05;Fahrsteig;;;;;;Fahrsteig,D12.05,Fahrsteig,Gear
+148,D12.06 Hebeeinrichtung,D12.06,Hebeeinrichtung,Lifting device
+149,E01.01 Wandabdichtung unter Terrain;E01.01;Wandabdichtung;unter;Terrain;;;;Wandabdichtung unter Terrain,E01.01,Wandabdichtung unter Terrain,Wall seal under terrain
+150,E01.02 Aussenwärmedämmung unter Terrain;E01.02;Aussenwärmedämmung;unter;Terrain;;;;Aussenwärmedämmung unter Terrain,E01.02,Aussenwärmedämmung unter Terrain,Outside heating insulation under terrain
+151,E01.03 Schutzschicht unter Terrain;E01.03;Schutzschicht;unter;Terrain;;;;Schutzschicht unter Terrain,E01.03,Schutzschicht unter Terrain,Protective layer under terrain
+152,E02.01 Äussere Beschichtung;E02.01;Äussere;Beschichtung;;;;;Äussere Beschichtung,E02.01,Äussere Beschichtung,Exterior coating
+153,E02.02 Aussenwärmedämmsystem;E02.02;Aussenwärmedämmsystem;;;;;;Aussenwärmedämmsystem,E02.02,Aussenwärmedämmsystem,External heat insulation system
+154,E02.03 Fassadenbekleidung;E02.03;Fassadenbekleidung;;;;;;Fassadenbekleidung,E02.03,Fassadenbekleidung,Facade clothing
+155,E02.04 Systemfassade;E02.04;Systemfassade;;;;;;Systemfassade,E02.04,Systemfassade,System facade
+156,E02.05 Fassadenbekleidung Untersicht;E02.05;Fassadenbekleidung;Untersicht;;;;;Fassadenbekleidung Untersicht,E02.05,Fassadenbekleidung Untersicht,Facade clothing below
+157,E02.06 Aussen liegende Absturzsicherung;E02.06;Aussen;liegende;Absturzsicherung;;;;Aussen liegende Absturzsicherung,E02.06,Aussen liegende Absturzsicherung,Fall protection lying outside
+158,E03.01 Fenster;E03.01;Fenster;;;;;;Fenster,E03.01,Fenster,Window
+159,E03.02 Aussentür;E03.02;Aussentür;;;;;;Aussentür,E03.02,Aussentür,Anterior door
+160,E03.03 Aussentor;E03.03;Aussentor;;;;;;Aussentor,E03.03,Aussentor,Outer gate
+161,E03.04 Sonnenschutz,E03.04,Sonnenschutz,Sun protection
+162,E03.05 Absturzsicherung;E03.05;Absturzsicherung;;;;;;Absturzsicherung,E03.05,Absturzsicherung,Fall protection
+163,F01.01 Dachabdichtung unter Terrain;F01.01;Dachabdichtung;unter;Terrain;;;;Dachabdichtung unter Terrain,F01.01,Dachabdichtung unter Terrain,Roof seal under terrain
+164,F01.02 Bedachung Flachdach;F01.02;Bedachung;Flachdach;;;;;Bedachung Flachdach,F01.02,Bedachung Flachdach,Reduction flat roof
+165,F01.03 Bedachung geneigtes Dach;F01.03;Bedachung;geneigtes;Dach;;;;Bedachung geneigtes Dach,F01.03,Bedachung geneigtes Dach,Roof inclined
+166,F01.04 Systemdach;F01.04;Systemdach;;;;;;Systemdach,F01.04,Systemdach,System roof
+167,F02.01 Element zu Flachdach;F02.01;Element;zu;Flachdach;;;;Element zu Flachdach,F02.01,Element zu Flachdach,Element to flat roof
+168,F02.02 Element zu geneigtem Dach;F02.02;Element;zu;geneigtem;Dach;;;Element zu geneigtem Dach,F02.02,Element zu geneigtem Dach,Element to inclined roof
+169,F02.03 Schutzanlage zu Dach;F02.03;Schutzanlage;zu;Dach;;;;Schutzanlage zu Dach,F02.03,Schutzanlage zu Dach,Protection system to roof
+170,G01.01 Fest stehende Trennwand;G01.01;Fest;stehende;Trennwand;;;;Fest stehende Trennwand,G01.01,Fest stehende Trennwand,Firm partition
+171,G01.02 Bewegliche Trennwand;G01.02;Bewegliche;Trennwand;;;;;Bewegliche Trennwand,G01.02,Bewegliche Trennwand,Movable partition
+172,G01.03 Schachtfront;G01.03;Schachtfront;;;;;;Schachtfront,G01.03,Schachtfront,Shaft front
+173,G01.04 Innenfenster;G01.04;Innenfenster;;;;;;Innenfenster,G01.04,Innenfenster,Inner window
+174,G01.05 Innentür;G01.05;Innentür;;;;;;Innentür,G01.05,Innentür,Interior door
+175,G01.06 Innentor;G01.06;Innentor;;;;;;Innentor,G01.06,Innentor,Interior gate
+176,G02.01 Unterkonstruktion zu Bodenbelag;G02.01;Unterkonstruktion;zu;Bodenbelag;;;;Unterkonstruktion zu Bodenbelag,G02.01,Unterkonstruktion zu Bodenbelag,Sub construction to flooring
+177,G02.02 Bodenbelag;G02.02;Bodenbelag;;;;;;Bodenbelag,G02.02,Bodenbelag,Flooring
+178,G03.01 Unterkonstruktion zu Wandbekleidung;G03.01;Unterkonstruktion;zu;Wandbekleidung;;;;Unterkonstruktion zu Wandbekleidung,G03.01,Unterkonstruktion zu Wandbekleidung,Substructure to wall clothing
+179,G03.02 Wandbekleidung;G03.02;Wandbekleidung;;;;;;Wandbekleidung,G03.02,Wandbekleidung,Wallwear
+180,G04.01 Unterkonstruktion zu Deckenbekleidung;G04.01;Unterkonstruktion;zu;Deckenbekleidung;;;;Unterkonstruktion zu Deckenbekleidung,G04.01,Unterkonstruktion zu Deckenbekleidung,Substructure to ceiling clothing
+181,G04.02 Deckenbekleidung;G04.02;Deckenbekleidung;;;;;;Deckenbekleidung,G04.02,Deckenbekleidung,Ceiling clothing
+182,G05.01 Einbauschrank,G05.01,Einbauschrank,Incubator
+183,G05.02 Einbauküche;G05.02;Einbauküche;;;;;;Einbauküche,G05.02,Einbauküche,Equipped kitchen
+184,G05.03 Innerer Fensterausbau;G05.03;Innerer;Fensterausbau;;;;;Innerer Fensterausbau,G05.03,Innerer Fensterausbau,Inner window expansion
+185,G05.04 Innerer Abschluss;G05.04;Innerer;Abschluss;;;;;Innerer Abschluss,G05.04,Innerer Abschluss,Inner conclusion
+186,G05.05 Absturz-,G05.05,Absturz-,Crash
+187,G05.06 Sonderbauteil;G05.06;Sonderbauteil;;;;;;Sonderbauteil,G05.06,Sonderbauteil,Special component
+188,G05.07 Kleinbauteil,G05.07,Kleinbauteil,Small component
+189,G06.01 Durchbruch,G06.01,Durchbruch,breakthrough
+190,G06.02 Abschottung;G06.02;Abschottung;;;;;;Abschottung,G06.02,Abschottung,isolation
+191,G06.03 Reinigung;G06.03;Reinigung;;;;;;Reinigung,G06.03,Reinigung,cleaning
+192,G06.04 Trocknung;G06.04;Trocknung;;;;;;Trocknung,G06.04,Trocknung,Drying
+193,H01.01 Produktionsanlage: Versorgung,H01.01,Produktionsanlage: Versorgung,Production system supply
+194,H01.02 Produktionsanlage: Aufbereitung;H01.02;Produktionsanlage:;Aufbereitung;;;;;Produktionsanlage: Aufbereitung,H01.02,Produktionsanlage: Aufbereitung,Production system preparation
+195,H01.03 Produktionsanlage: Speicherung;H01.03;Produktionsanlage:;Speicherung;;;;;Produktionsanlage: Speicherung,H01.03,Produktionsanlage: Speicherung,Production system storage
+196,H01.04 Produktionsanlage: Verteilung;H01.04;Produktionsanlage:;Verteilung;;;;;Produktionsanlage: Verteilung,H01.04,Produktionsanlage: Verteilung,Production system distribution
+197,H01.05 Produktionsanlage: Armatur,H01.05,Produktionsanlage: Armatur,Production system fitting
+198,H02.01 Laboranlage: Versorgung,H02.01,Laboranlage: Versorgung,Laboratory system supply
+199,H02.02 Laboranlage: Aufbereitung;H02.02;Laboranlage:;Aufbereitung;;;;;Laboranlage: Aufbereitung,H02.02,Laboranlage: Aufbereitung,Laboratory system preparation
+200,H02.03 Laboranlage: Speicherung;H02.03;Laboranlage:;Speicherung;;;;;Laboranlage: Speicherung,H02.03,Laboranlage: Speicherung,Laboratory system storage
+201,H02.04 Laboranlage: Verteilung;H02.04;Laboranlage:;Verteilung;;;;;Laboranlage: Verteilung,H02.04,Laboranlage: Verteilung,Laboratory system distribution
+202,H02.05 Laboranlage: Armatur,H02.05,Laboranlage: Armatur,Laboratory system fitting
+203,H03.01 Grossküche: Versorgung,H03.01,Grossküche: Versorgung,Grand kitchen supply
+204,H03.02 Grossküche: Aufbereitung;H03.02;Grossküche:;Aufbereitung;;;;;Grossküche: Aufbereitung,H03.02,Grossküche: Aufbereitung,Grand kitchen preparation
+205,H03.03 Grossküche: Lagerung;H03.03;Grossküche:;Lagerung;;;;;Grossküche: Lagerung,H03.03,Grossküche: Lagerung,Grand kitchen storage
+206,H03.04 Grossküche: Verteilung;H03.04;Grossküche:;Verteilung;;;;;Grossküche: Verteilung,H03.04,Grossküche: Verteilung,Grand kitchen distribution
+207,H03.05 Grossküche: Armatur,H03.05,Grossküche: Armatur,Grand kitchen fitting
+208,H04.01 Wäscherei-,H04.01,Wäscherei-,Laundry
+209,H04.02 Wäscherei-,H04.02,Wäscherei-,Laundry
+210,H04.03 Wäscherei-,H04.03,Wäscherei-,Laundry
+211,H04.04 Wäscherei-,H04.04,Wäscherei-,Laundry
+212,H04.05 Wäscherei-,H04.05,Wäscherei-,Laundry
+213,H05.01 Gerät für Vitaldatenüberwachung;H05.01;Gerät;für;Vitaldatenüberwachung;;;;Gerät für Vitaldatenüberwachung,H05.01,Gerät für Vitaldatenüberwachung,Device for vital data monitoring
+214,H05.02 Einrichtung für Diagnostik;H05.02;Einrichtung;für;Diagnostik;;;;Einrichtung für Diagnostik,H05.02,Einrichtung für Diagnostik,Establishment for diagnostics
+215,H05.03 Gerät für Behandlung,H05.03,Gerät für Behandlung,Device for treatment
+216,H05.04 Medizinisches Kälte-,H05.04,Medizinisches Kälte-,Medical cold
+217,H05.05 Mess-,H05.05,Mess-,Measurement
+218,H05.06 Reinigung,H05.06,Reinigung,cleaning
+219,H05.07 Medizinische Einrichtung,H05.07,Medizinische Einrichtung,medical facilities
+220,H05.08 Medizinischer Beleuchtungskörper;H05.08;Medizinischer;Beleuchtungskörper;;;;;Medizinischer Beleuchtungskörper,H05.08,Medizinischer Beleuchtungskörper,Medical lighting body
+221,H05.09 Medizinische Textilien;H05.09;Medizinische;Textilien;;;;;Medizinische Textilien,H05.09,Medizinische Textilien,Medical textiles
+222,H05.10 Medizinisches Kleininventar;H05.10;Medizinisches;Kleininventar;;;;;Medizinisches Kleininventar,H05.10,Medizinisches Kleininventar,Medical small inventory
+223,H05.11 Medizinisches Transportmittel;H05.11;Medizinisches;Transportmittel;;;;;Medizinisches Transportmittel,H05.11,Medizinisches Transportmittel,Medical means of transportation
+224,H05.12 Medizinisches Betriebsmittel;H05.12;Medizinisches;Betriebsmittel;;;;;Medizinisches Betriebsmittel,H05.12,Medizinisches Betriebsmittel,Medical equipment
+225,H06.01 Bildung,H06.01,Bildung,Education
+226,H06.02 Bildung,H06.02,Bildung,Education
+227,H06.03 Bildung,H06.03,Bildung,Education
+228,H06.04 Bildung,H06.04,Bildung,Education
+229,H07.01 Sportanlage,H07.01,Sportanlage,Sports facility
+230,H07.02 Sportanlage,H07.02,Sportanlage,Sports facility
+231,H07.03 Sportanlage,H07.03,Sportanlage,Sports facility
+232,H07.04 Sportanlage,H07.04,Sportanlage,Sports facility
+233,H08.01 Erholungsanlage: Versorgung,H08.01,Erholungsanlage: Versorgung,Recreation system supply
+234,H08.02 Erholungsanlage: Apparat;H08.02;Erholungsanlage:;Apparat;;;;;Erholungsanlage: Apparat,H08.02,Erholungsanlage: Apparat,Recreation system apparatus
+235,H08.03 Erholungsanlage: Steuerung;H08.03;Erholungsanlage:;Steuerung;;;;;Erholungsanlage: Steuerung,H08.03,Erholungsanlage: Steuerung,Recreation system control
+236,H08.04 Erholungsanlage: Einbauten;H08.04;Erholungsanlage:;Einbauten;;;;;Erholungsanlage: Einbauten,H08.04,Erholungsanlage: Einbauten,Recreation system built in
+237,H09.01 Nutzungsspezifische Anlage: Versorgung,H09.01,Nutzungsspezifische Anlage: Versorgung,Usage specific system supply
+238,H09.02 Nutzungsspezifische Anlage: Aufbereitung;H09.02;Nutzungsspezifische;Anlage:;Aufbereitung;;;;Nutzungsspezifische Anlage: Aufbereitung,H09.02,Nutzungsspezifische Anlage: Aufbereitung,Usage specific system preparation
+239,H09.03 Nutzungsspezifische Anlage: Speicherung,H09.03,Nutzungsspezifische Anlage: Speicherung,Usage specific system storage
+240,H09.04 Nutzungsspezifische Anlage: Verteilung;H09.04;Nutzungsspezifische;Anlage:;Verteilung;;;;Nutzungsspezifische Anlage: Verteilung,H09.04,Nutzungsspezifische Anlage: Verteilung,Usage specific system distribution
+241,H09.05 Nutzungsspezifische Anlage: Armatur,H09.05,Nutzungsspezifische Anlage: Armatur,Usage specific system fitting
+242,H09.06 Parkieranlage;H09.06;Parkieranlage;;;;;;Parkieranlage,H09.06,Parkieranlage,Parking system
+243,H09.07 Materialtransportanlage;H09.07;Materialtransportanlage;;;;;;Materialtransportanlage,H09.07,Materialtransportanlage,Material transport system
+244,H09.08 Kühlzelle;H09.08;Kühlzelle;;;;;;Kühlzelle,H09.08,Kühlzelle,Heat cell
+245,H09.09 Lagereinrichtung;H09.09;Lagereinrichtung;;;;;;Lagereinrichtung,H09.09,Lagereinrichtung,Storage device
+246,I01.01 Geländeanpassung;I01.01;Geländeanpassung;;;;;;Geländeanpassung,I01.01,Geländeanpassung,Terrain adjustment
+247,I01.02 Tief liegende Entwässerung;I01.02;Tief;liegende;Entwässerung;;;;Tief liegende Entwässerung,I01.02,Tief liegende Entwässerung,Deep drainage
+248,I02.01 Böschungsverbau;I02.01;Böschungsverbau;;;;;;Böschungsverbau,I02.01,Böschungsverbau,Embankment
+249,I02.02 Stützmauer;I02.02;Stützmauer;;;;;;Stützmauer,I02.02,Stützmauer,retaining wall
+250,I02.03 Frei stehende Wand;I02.03;Frei;stehende;Wand;;;;Frei stehende Wand,I02.03,Frei stehende Wand,Freely standing wall
+251,I02.04 Treppe,I02.04,Treppe,Stairs
+252,I02.05 Kleinbauwerk;I02.05;Kleinbauwerk;;;;;;Kleinbauwerk,I02.05,Kleinbauwerk,Small structure
+253,I02.06 Unterirdisches Bauwerk;I02.06;Unterirdisches;Bauwerk;;;;;Unterirdisches Bauwerk,I02.06,Unterirdisches Bauwerk,Underground building
+254,I02.07 Absturz-,I02.07,Absturz-,Crash
+255,I02.08 Einfriedung;I02.08;Einfriedung;;;;;;Einfriedung,I02.08,Einfriedung,enclosure
+256,I03.01 Vegetationstragschicht;I03.01;Vegetationstragschicht;;;;;;Vegetationstragschicht,I03.01,Vegetationstragschicht,Vegetation strag layer
+257,I03.02 Saatfläche;I03.02;Saatfläche;;;;;;Saatfläche,I03.02,Saatfläche,Seed area
+258,I03.03 Flächenbepflanzung,I03.03,Flächenbepflanzung,Planting
+259,I03.04 Vertikale Begrünung;I03.04;Vertikale;Begrünung;;;;;Vertikale Begrünung,I03.04,Vertikale Begrünung,Vertical greening
+260,I03.05 Einzelbepflanzung;I03.05;Einzelbepflanzung;;;;;;Einzelbepflanzung,I03.05,Einzelbepflanzung,Individual planting
+261,I03.06 Einfassung,I03.06,Einfassung,Border
+262,I03.07 Naturnahe Wasserfläche;I03.07;Naturnahe;Wasserfläche;;;;;Naturnahe Wasserfläche,I03.07,Naturnahe Wasserfläche,Natural water surface
+263,I03.08 Ingenieurbiologische Massnahme;I03.08;Ingenieurbiologische;Massnahme;;;;;Ingenieurbiologische Massnahme,I03.08,Ingenieurbiologische Massnahme,Engineer biological measure
+264,I03.09 Pflegemassnahme bis Übergabe;I03.09;Pflegemassnahme;bis;Übergabe;;;;Pflegemassnahme bis Übergabe,I03.09,Pflegemassnahme bis Übergabe,Care measures up to handover
+265,I04.01 Fundations-,I04.01,Fundations-,Foundation
+266,I04.02 Einfassung,I04.02,Einfassung,Border
+267,I04.03 Deckschicht;I04.03;Deckschicht;;;;;;Deckschicht,I04.03,Deckschicht,Top layer
+268,I04.04 Bodenmarkierung;I04.04;Bodenmarkierung;;;;;;Bodenmarkierung,I04.04,Bodenmarkierung,Floor marking
+269,I05.01 Elektroanlage Starkstrom für Umgebung;I05.01;Elektroanlage;Starkstrom;für;Umgebung;;;Elektroanlage Starkstrom für Umgebung,I05.01,Elektroanlage Starkstrom für Umgebung,Electrical system Strong stream for the surrounding area
+270,I05.02 Elektroanlage Schwachstrom für Umgebung;I05.02;Elektroanlage;Schwachstrom;für;Umgebung;;;Elektroanlage Schwachstrom für Umgebung,I05.02,Elektroanlage Schwachstrom für Umgebung,Electrical system weak stream for the environment
+271,I05.03 Wärmeanlage für Umgebung;I05.03;Wärmeanlage;für;Umgebung;;;;Wärmeanlage für Umgebung,I05.03,Wärmeanlage für Umgebung,Heat system for the surrounding area
+272,I05.04 Kälteanlage für Umgebung;I05.04;Kälteanlage;für;Umgebung;;;;Kälteanlage für Umgebung,I05.04,Kälteanlage für Umgebung,Cold system for the surrounding area
+273,I05.05 Sanitäre Anlage für Umgebung;I05.05;Sanitäre;Anlage;für;Umgebung;;;Sanitäre Anlage für Umgebung,I05.05,Sanitäre Anlage für Umgebung,Sanitary facility for the environment
+274,I05.06 Oberflächenentwässerung für Umgebung;I05.06;Oberflächenentwässerung;für;Umgebung;;;;Oberflächenentwässerung für Umgebung,I05.06,Oberflächenentwässerung für Umgebung,Surface drainage for the environment
+275,I05.07 Transportanlage für Umgebung;I05.07;Transportanlage;für;Umgebung;;;;Transportanlage für Umgebung,I05.07,Transportanlage für Umgebung,Transport system for the environment
+276,I05.08 Perimeterschutz;I05.08;Perimeterschutz;;;;;;Perimeterschutz,I05.08,Perimeterschutz,Perimeter protection
+277,I06.01 Mobile Ausstattung für Umgebung;I06.01;Mobile;Ausstattung;für;Umgebung;;;Mobile Ausstattung für Umgebung,I06.01,Mobile Ausstattung für Umgebung,Mobile equipment for the surrounding area
+278,I06.02 Fixierte Ausstattung für Umgebung;I06.02;Fixierte;Ausstattung;für;Umgebung;;;Fixierte Ausstattung für Umgebung,I06.02,Fixierte Ausstattung für Umgebung,Fixed equipment for the area
+279,I06.03 Spiel-,I06.03,Spiel-,Game
+280,I06.04 Abfallentsorgungseinrichtung für Umgebung;I06.04;Abfallentsorgungseinrichtung;für;Umgebung;;;;Abfallentsorgungseinrichtung für Umgebung,I06.04,Abfallentsorgungseinrichtung für Umgebung,Waste disposal facility for the environment
+281,J01.01 Allgemeines Mobiliar;J01.01;Allgemeines;Mobiliar;;;;;Allgemeines Mobiliar,J01.01,Allgemeines Mobiliar,General furniture
+282,J01.02 Nutzungsspezifisches Mobiliar;J01.02;Nutzungsspezifisches;Mobiliar;;;;;Nutzungsspezifisches Mobiliar,J01.02,Nutzungsspezifisches Mobiliar,Usage specific furniture
+283,J01.03 Mobile Leuchte;J01.03;Mobile;Leuchte;;;;;Mobile Leuchte,J01.03,Mobile Leuchte,Mobile lamp
+284,J01.04 Signaletik;J01.04;Signaletik;;;;;;Signaletik,J01.04,Signaletik,Signal
+285,J02.01 Allgemeines Kleininventar;J02.01;Allgemeines;Kleininventar;;;;;Allgemeines Kleininventar,J02.01,Allgemeines Kleininventar,General small inventory
+286,J02.02 Nutzungsspezifisches Kleininventar;J02.02;Nutzungsspezifisches;Kleininventar;;;;;Nutzungsspezifisches Kleininventar,J02.02,Nutzungsspezifisches Kleininventar,Use specific small inventory
+287,J02.03 Mobiles Gerät;J02.03;Mobiles;Gerät;;;;;Mobiles Gerät,J02.03,Mobiles Gerät,Mobile device
+288,J03.01 Allgemeine Textilien;J03.01;Allgemeine;Textilien;;;;;Allgemeine Textilien,J03.01,Allgemeine Textilien,General textiles
+289,J03.02 Nutzungsspezifische Textilien;J03.02;Nutzungsspezifische;Textilien;;;;;Nutzungsspezifische Textilien,J03.02,Nutzungsspezifische Textilien,Usage specific textiles
+290,J04.01 Kunstobjekt;J04.01;Kunstobjekt;;;;;;Kunstobjekt,J04.01,Kunstobjekt,Art object
+291,J04.02 Künstlerisch gestaltetes Bauteil;J04.02;Künstlerisch;gestaltetes;Bauteil;;;;Künstlerisch gestaltetes Bauteil,J04.02,Künstlerisch gestaltetes Bauteil,Artistically designed component
+292,V01.01 Architekt;V01.01;Architekt;;;;;;Architekt,V01.01,Architekt,architect
+293,V01.02 Landschaftsarchitekt;V01.02;Landschaftsarchitekt;;;;;;Landschaftsarchitekt,V01.02,Landschaftsarchitekt,Landscape architect
+294,V01.03 Bauingenieur;V01.03;Bauingenieur;;;;;;Bauingenieur,V01.03,Bauingenieur,Civil engineer
+295,V01.04 Fachingenieur Gebäudetechnik;V01.04;Fachingenieur;Gebäudetechnik;;;;;Fachingenieur Gebäudetechnik,V01.04,Fachingenieur Gebäudetechnik,Specialist engineer building technology
+296,V01.05 Spezialist;V01.05;Spezialist;;;;;;Spezialist,V01.05,Spezialist,specialist
+297,V01.06 Generalplaner,V01.06,Generalplaner,General planner
+298,V01.07 Nebenkosten zu Planerleistungen;V01.07;Nebenkosten;zu;Planerleistungen;;;;Nebenkosten zu Planerleistungen,V01.07,Nebenkosten zu Planerleistungen,Additional costs for planning services
+299,V02.01 Beratung zur Planung;V02.01;Beratung;zur;Planung;;;;Beratung zur Planung,V02.01,Beratung zur Planung,Advice on planning
+300,V02.02 Vorbereitung zur Bewirtschaftung;V02.02;Vorbereitung;zur;Bewirtschaftung;;;;Vorbereitung zur Bewirtschaftung,V02.02,Vorbereitung zur Bewirtschaftung,Preparation for management
+301,V03.01 Auswahlverfahren;V03.01;Auswahlverfahren;;;;;;Auswahlverfahren,V03.01,Auswahlverfahren,Selection
+302,V03.02 Eigentümer;V03.02;Eigentümer;;;;;;Eigentümer,V03.02,Eigentümer,owner
+303,V03.03 Betreiber;V03.03;Betreiber;;;;;;Betreiber,V03.03,Betreiber,operator
+304,V03.04 Nutzer;V03.04;Nutzer;;;;;;Nutzer,V03.04,Nutzer,User
+305,V03.05 Berater;V03.05;Berater;;;;;;Berater,V03.05,Berater,Advisor
+306,V03.06 Anwalt,V03.06,Anwalt,Attorney
+307,V03.07 Plattform,V03.07,Plattform,platform
+308,W01.01 Bewilligung;W01.01;Bewilligung;;;;;;Bewilligung,W01.01,Bewilligung,Approval
+309,W01.02 Gebühr;W01.02;Gebühr;;;;;;Gebühr,W01.02,Gebühr,fee
+310,W02.01 Versicherung;W02.01;Versicherung;;;;;;Versicherung,W02.01,Versicherung,Insurance
+311,W02.02 Garantie;W02.02;Garantie;;;;;;Garantie,W02.02,Garantie,guarantee
+312,W02.03 Rückvergütung;W02.03;Rückvergütung;;;;;;Rückvergütung,W02.03,Rückvergütung,Reimbursement
+313,W03.01 Kapitalkosten zu Grundstück;W03.01;Kapitalkosten;zu;Grundstück;;;;Kapitalkosten zu Grundstück,W03.01,Kapitalkosten zu Grundstück,Capital costs for property
+314,W03.02 Kapitalkosten zu Erstellung;W03.02;Kapitalkosten;zu;Erstellung;;;;Kapitalkosten zu Erstellung,W03.02,Kapitalkosten zu Erstellung,Creating for capital
+315,W04.01 Bewirtungskosten;W04.01;Bewirtungskosten;;;;;;Bewirtungskosten,W04.01,Bewirtungskosten,Catering costs
+316,W04.02 Öffentlichkeitsarbeit;W04.02;Öffentlichkeitsarbeit;;;;;;Öffentlichkeitsarbeit,W04.02,Öffentlichkeitsarbeit,public relation
+317,W04.03 Entschädigung;W04.03;Entschädigung;;;;;;Entschädigung,W04.03,Entschädigung,Compensation
+318,W05.01 Inbetriebnahme Bauwerk;W05.01;Inbetriebnahme;Bauwerk;;;;;Inbetriebnahme Bauwerk,W05.01,Inbetriebnahme Bauwerk,Commissioning building
+319,W06.01 Vergütung zu Erstvermietung;W06.01;Vergütung;zu;Erstvermietung;;;;Vergütung zu Erstvermietung,W06.01,Vergütung zu Erstvermietung,Remuneration for first letting
+320,W06.02 Nebenkosten zu Erstvermietung;W06.02;Nebenkosten;zu;Erstvermietung;;;;Nebenkosten zu Erstvermietung,W06.02,Nebenkosten zu Erstvermietung,Additional costs for first letting
+321,W06.03 Vergütung zu Verkauf;W06.03;Vergütung;zu;Verkauf;;;;Vergütung zu Verkauf,W06.03,Vergütung zu Verkauf,Remuneration for sale
+322,W06.04 Nebenkosten zu Verkauf;W06.04;Nebenkosten;zu;Verkauf;;;;Nebenkosten zu Verkauf,W06.04,Nebenkosten zu Verkauf,Sales for additional costs
+323,W07.01 Betriebsaufwand;W07.01;Betriebsaufwand;;;;;;Betriebsaufwand,W07.01,Betriebsaufwand,Operating effort
+324,W07.02 Betriebsertrag;W07.02;Betriebsertrag;;;;;;Betriebsertrag,W07.02,Betriebsertrag,Operating income
+325,Y01.01 Reserve;Y01.01;Reserve;;;;;;Reserve,Y01.01,Reserve,reserve
+326,Y02.01 Teuerung;Y02.01;Teuerung;;;;;;Teuerung,Y02.01,Teuerung,Inflation
+327,Z01.01 Mehrwertsteuer;Z01.01;Mehrwertsteuer;;;;;;Mehrwertsteuer,Z01.01,Mehrwertsteuer,VAT

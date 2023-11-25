@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classification Similarity Search</title>
+</head>
+<body>
+    {% if code != None %}
+
+    <h4>Code: {{ code }}, Name: {{ names }}</h4>
+    {% else %}
+
+    <h2>Results for {{ search_query }}</h2>
+    <h3>Top 5 Similar from Text1:</h3>
+    <ul>
+        {% for text, cos_val in similar_texts %}
+            <li>Code: {{ text }},</span> Cosine Similarity: {{ cos_val|round(3, 'common')  }}</li>
+        {% endfor %}
+    </ul>
+    <h3>Most Similar from Master Format:</h3>
+    <ul>
+        {% for result in most_similar_text2 %}
+            <li>
+                <p>Code: {{ result[0] }}  Text: {{ result[1] }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+    <h3>Most Similar from eBKP:</h3>
+    <ul>
+        {% for result in most_similar_text3 %}
+            <li>
+                <p>Code: {{ result[0] }}  Text: {{ result[1] }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+    <a href="/">New search</a>
+</body>
+</html>

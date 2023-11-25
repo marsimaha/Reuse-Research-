@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Components with Same User</title>
+</head>
+<body>
+    <h1>Components with Same User</h1>
+    
+    <form method="POST">
+        <label for="user">User:</label>
+        <input type="text" id="user" name="user" required>
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for component in components %}
+            <li>
+                <p>Name: {{ component['name'] }}</p>
+                <p>Material: {{ component['material'] }}</p>
+                <p>Width: {{ component['width'] }}</p>
+                <p>Length: {{ component['length'] }}</p>
+                <p>Classification: {{ component['classification'] }}</p>
+                <a href="{{ url_for('edit_component', component_id=component.id) }}">Edit Component</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

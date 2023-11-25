@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Components</title>
+</head>
+<body>
+    <h1>Edit Components with User: {{ user }}</h1>
+    <ul>
+        {% for component in components %}
+            <li>
+                <p>Id: {{ component['id'] }}</p>
+                <p>Name: {{ component['name'] }}</p>
+                <p>Material: {{ component['material'] }}</p>
+                <p>Width: {{ component['width'] }}</p>
+                <p>Length: {{ component['length'] }}</p>
+                <p>Classification: {{ component['classification'] }}</p>
+                <a href="{{url_for('edit_component', component_id=component['id'])}}">Edit Component</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classification Similarity Search</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <div id="result">
+    <form action="/search" method="post">
+        <input type="text" name="search_bar" placeholder="Enter text...">
+        <input type="submit" value="Search">
+        <input type="checkbox" id="IFC">
+        <label for="IFC">IFC</label>
+        
+        <input type="checkbox" id="eBKP">
+        <label for="eBKP">eBKP</label>
+        
+        <input type="checkbox" id="MF">
+        <label for="MF">MF</label>
+    </form>
+
+    {% if request.method == 'POST' %}
+    {% if code != None %}
+
+        <h4>Code: {{ code }}, Name: {{ names }}</h4>
+    {% else %}
+    
+        <h2>Results for {{ search_query }}</h2>
+        <h3>Top 5 Similar from Text1:</h3>
+        <ul>
+            {% for text, cos_val in similar_texts %}
+                <li>Code: {{ text }}, Cosine Similarity: {{ cos_val|round(3, 'common')  }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Most Similar from Master Format:</h3>
+        <ul>
+            {% for result in most_similar_text2 %}
+                <li>
+                    <p>Code: {{ result[0] }}  Text: {{ result[1] }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <h3>Most Similar from eBKP:</h3>
+        <ul>
+            {% for result in most_similar_text3 %}
+                <li>
+                    <p>Code: {{ result[0] }}  Text: {{ result[1] }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% endif %}
+    </div>
+</body>
+</html>
