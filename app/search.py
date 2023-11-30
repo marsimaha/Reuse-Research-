@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
 import nltk
 from nltk.corpus import wordnet
 nltk.download("wordnet")
@@ -9,13 +7,8 @@ import ast
 from nltk.tokenize import word_tokenize
 from rank_bm25 import BM25Okapi
 
-# You might need to download the NLTK tokenizer data if you haven't already:
-# import nltk
-# nltk.download('punkt')
-
 def tokenize(text):
     return word_tokenize(text.lower())  # Tokenize and lowercase the text
-
 
 class BM25Plus(BM25Okapi):
     def __init__(self, *args, **kwargs):

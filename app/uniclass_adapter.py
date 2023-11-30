@@ -28,3 +28,6 @@ class Ifc2Uni(BaseModel):
     classification: SingleValue
     price: float
     metadata: str
+
+
+    

@@ -59,7 +59,6 @@ def search():
 
 
     if search_query:
-        # Perform search and other operations as in the Flask app
         pass
 
     IFC = pd.read_csv("IFC_processed.csv") 
@@ -103,39 +102,95 @@ def search():
             # Display the DataFrame as a table in Streamlit
             st.table(df_similar_texts)
 
+
+
+
+
+
+
 def db_upload():
-    # Define a function to insert data into Neo4j
     driver = GraphDatabase.driver(URI, auth=AUTH)
-    def insert_data(user, name, material, width, length, classification):
-        with driver.session() as session:
-            if classification == "":
-                id = random.randint(100)
-                IFC = pd.read_csv("IFC_processed.csv")
-                # Assuming sh.get_query_matches is a function you have defined elsewhere
-                results, cos = sh.get_query_matches(name, IFC['IFC'])
-                results = [results]
-                classification = IFC.raw[results[0][0]]
-                session.run("CREATE (a:Component {id: $id,user: $user, name: $name, material: $material, length: $length, width: $width, classification: $classification})",
-                            id=int(id), user=user, name=name, material=material, width=width, length=length, classification=classification)
-            else:
-                # Additional logic for handling the classification
-                pass  # Replace with your actual code for other classifications
+
+    st.title('Component Upload')
+
+    if 'checkbox_state_upload' not in st.session_state:
+        st.session_state.checkbox_state_upload = [False, False, False, False, False]
+
+    def goto_level_2():
+        st.session_state["stage"] = "level_2"
+
+    def goto_level_1():
+        st.session_state["stage"] = "level_1"
+
+    # Define a function to update checkboxes ensuring one is checked at a time
+    def checkbox_callback(index):
+
+        st.session_state.checkbox_state_upload = [False, False, False, False, False]
+        st.session_state.checkbox_state_upload[index] = not st.session_state.checkbox_state_upload[index]
+
+    checkbox1 = st.checkbox('eBKP', value=st.session_state.checkbox_state_upload[0], on_change=checkbox_callback, args=(0,))
+    checkbox2 = st.checkbox('IFC', value=st.session_state.checkbox_state_upload[1], on_change=checkbox_callback, args=(1,))
+    checkbox3 = st.checkbox('MF', value=st.session_state.checkbox_state_upload[2], on_change=checkbox_callback, args=(2,))
+    checkbox4 = st.checkbox('Uniclass_2015', value=st.session_state.checkbox_state_upload[3], on_change=checkbox_callback, args=(3,))
+    checkbox5 = st.checkbox('No_Class', value=st.session_state.checkbox_state_upload[4], on_change=checkbox_callback, args=(4,))
+
+    def insert_data(user, name):
+        IFC = pd.read_csv("IFC_processed.csv")
+        # Assuming sh.get_query_matches is a function you have defined elsewhere
+        if checkbox2:
+            results, _ = sh.get_query_matches(name, IFC['IFC'])
+            results = [results]
+            classification = IFC.raw[results[0][0]]
+
+        st.session_state["component"] = {"user":user, "name":name, "classification": classification}
+
 
     # Streamlit input form
-    with st.form("my_form"):
-        st.write("Enter component details:")
-        user = st.text_input("User")
-        name = st.text_input("Name")
-        material = st.text_input("Material")
-        width = st.text_input("Width")
-        length = st.text_input("Length")
-        classification = st.text_input("Classification")
+    def unpload_data(driver, user, name, component):
+        with driver.session() as session:
+            session.run("CREATE (a:Component {id: $id,user: $user, name: $name, material: $material, length: $length, width: $width, classification: $classification})",
+                                id=int(id), user=user, name=name, material=component.material, width=component.width, length=component.length, classification=component.classification)
 
-        # Every form must have a submit button
-        submitted = st.form_submit_button("Submit")
-        if submitted:
-            insert_data(user, name, material, width, length, classification)
-            st.success("Data submitted!")
+    st.write("Enter component classification or click on no classification:")
+    user = st.text_input("Username")
+    name = st.text_input("Component name")
+    if user:
+        pass
+    if name:
+        pass
+    if "stage" not in st.session_state:
+        st.session_state["stage"] = "level_1"
+
+    if st.session_state["stage"] == "level_1":
+        if st.button("Search"):
+            st.session_state["stage"] = "level_1"
+            # Add checkboxes
+            # Every form must have a submit button
+            if not (checkbox1 or checkbox2 or checkbox3 or checkbox4 or checkbox5):
+                st.session_state.checkbox_state[4] = True
+
+            st.session_state["component"] = insert_data(user, name)
+            goto_level_2()
+
+    if st.session_state["stage"] == "level_2":
+        with st.form("my_form"):
+            st.write("Enter component details : ")
+
+            material = st.text_input("Material")
+            width = st.text_input("Width")
+            length = st.text_input("Length")
+            classification = st.text_input("Classification")
+
+            # Every form must have a submit button
+            submitted = st.form_submit_button("Submit")
+            if submitted:
+                unpload_data(driver, user, name)
+                st.success("Data submitted!")
+                goto_level_1()
+
+
+
+
 
 # Define a function to fetch components with the same user value
 def get_components_with_same_user(driver, user_value):
