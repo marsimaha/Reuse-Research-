@@ -9,13 +9,8 @@ from urllib.parse import urlencode
 
 from neo4j import GraphDatabase
 import search as sh
+import json
 
-# Database connection would be handled differently in Streamlit,
-# possibly with caching to avoid reconnecting on each rerun.
-# Here we set up the connection parameters.
-
-# Assuming 'get_top_matches' and other necessary functions are defined elsewhere
-# and imported correctly.
 
 URI = "neo4j+ssc://d4e7c69a.databases.neo4j.io"
 AUTH = ("neo4j", "8gGwVhSx2-ycIPiPGOWejHAhufieq2XOOrkOAizxa1E")
@@ -105,8 +100,36 @@ def search():
 
 
 
+def get_attributes(classification):
+    with open('IFC.json', 'r') as file:
+        data = json.load(file)
+    prop_name_list=[]
+    for pset_name, pset_details in data["Domain"]["Classifications"][classification].get("Psets", {}).items():
+        for prop_name, prop_details in pset_details.get("Properties", {}).items():
+            if prop_details["type"] == "string" or prop_details["type"] == "real":
+                prop_details = prop_details["type"]
+            elif "values" in prop_details.keys():
+                prop_details = str(prop_details["values"])
+            else:
+                prop_details = str(prop_details)
 
+            prop_name_list.append((prop_name, prop_details))
+    return prop_name_list
 
+def upload_data(driver, component):
+    # Flatten or serialize complex structures
+    for key, value in component.items():
+        if isinstance(value, list) and any(isinstance(i, (list, dict)) for i in value):
+            # Serialize if the list contains nested structures
+            component[key] = json.dumps(value)
+        elif isinstance(value, dict):
+            # Serialize nested dictionaries
+            component[key] = json.dumps(value)
+
+    with driver.session() as session:
+        properties = ", ".join(f"{key}: ${key}" for key in component.keys())
+        query = f"CREATE (a:Component {{{properties}}})"
+        session.run(query, **component)
 
 def db_upload():
     driver = GraphDatabase.driver(URI, auth=AUTH)
@@ -119,8 +142,6 @@ def db_upload():
     def goto_level_2():
         st.session_state["stage"] = "level_2"
 
-    def goto_level_1():
-        st.session_state["stage"] = "level_1"
 
     # Define a function to update checkboxes ensuring one is checked at a time
     def checkbox_callback(index):
@@ -136,20 +157,28 @@ def db_upload():
 
     def insert_data(user, name):
         IFC = pd.read_csv("IFC_processed.csv")
+        with open('IFC.json', 'r') as file:
+            IFC_ATTRIBUTES = json.load(file)
+
         # Assuming sh.get_query_matches is a function you have defined elsewhere
         if checkbox2:
             results, _ = sh.get_query_matches(name, IFC['IFC'])
             results = [results]
             classification = IFC.raw[results[0][0]]
+            prop_name_list= dict()
+            for pset_name, pset_details in IFC_ATTRIBUTES["Domain"]["Classifications"][classification].get("Psets", {}).items():
+                for prop_name, prop_details in pset_details.get("Properties", {}).items():
+                    if prop_details["type"] == "string" or prop_details["type"] == "real":
+                        prop_details = prop_details["type"]
+                    elif "values" in prop_details.keys():
+                        prop_details = str(prop_details["values"])
+                    else:
+                        prop_details = str(prop_details)
 
-        st.session_state["component"] = {"user":user, "name":name, "classification": classification}
+                    prop_name_list[prop_name] = prop_details
 
+        st.session_state["component"] = {"user":user, "name":name, "classification": classification, "attributes": prop_name_list}
 
-    # Streamlit input form
-    def unpload_data(driver, user, name, component):
-        with driver.session() as session:
-            session.run("CREATE (a:Component {id: $id,user: $user, name: $name, material: $material, length: $length, width: $width, classification: $classification})",
-                                id=int(id), user=user, name=name, material=component.material, width=component.width, length=component.length, classification=component.classification)
 
     st.write("Enter component classification or click on no classification:")
     user = st.text_input("Username")
@@ -161,35 +190,60 @@ def db_upload():
     if "stage" not in st.session_state:
         st.session_state["stage"] = "level_1"
 
-    if st.session_state["stage"] == "level_1":
-        if st.button("Search"):
-            st.session_state["stage"] = "level_1"
-            # Add checkboxes
-            # Every form must have a submit button
-            if not (checkbox1 or checkbox2 or checkbox3 or checkbox4 or checkbox5):
-                st.session_state.checkbox_state[4] = True
-
-            st.session_state["component"] = insert_data(user, name)
-            goto_level_2()
+    if st.button("Search"):
+        st.session_state["stage"] = "level_1"
+        # Add checkboxes
+        # Every form must have a submit button
+        if not (checkbox1 or checkbox2 or checkbox3 or checkbox4 or checkbox5):
+            st.session_state.checkbox_state[4] = True
+        insert_data(user, name)
+        goto_level_2()
 
     if st.session_state["stage"] == "level_2":
         with st.form("my_form"):
             st.write("Enter component details : ")
+            attribut = dict()
+            for prop, place in st.session_state.component["attributes"].items():
+                selectbox = False
+                default_value = None
+                try:
+                    place = json.loads(place)
+                    print("e")
+                except json.JSONDecodeError as e:
+                    print(f"Error converting string to dictionary: {e}")
 
-            material = st.text_input("Material")
-            width = st.text_input("Width")
-            length = st.text_input("Length")
-            classification = st.text_input("Classification")
+                try:
+                    evaluated_place = eval(place)
+                    if isinstance(evaluated_place, list) and all(item in ['TRUE', 'FALSE'] for item in evaluated_place):
+                        default_value = False
+                        selectbox = True
+                    if isinstance(place, dict) and 'type' in place:
+                        evaluated_place = place['type']
+
+                    elif isinstance(evaluated_place, list) and all(isinstance(item, str) for item in evaluated_place):
+                        default_value = "OTHER"
+                        selectbox = True
+                    else:
+                        default_value = place  # Default to the original value if none of the above conditions are met
+                except:
+                    evaluated_place = place
+                
+                widget_key = f"{prop}"
+                if selectbox:
+                    attribut[prop] = st.selectbox(prop, evaluated_place, key=widget_key)
+                else:
+                    attribut[prop] =  st.text_input(prop, placeholder=evaluated_place, key=widget_key)
 
             # Every form must have a submit button
             submitted = st.form_submit_button("Submit")
             if submitted:
-                unpload_data(driver, user, name)
+                st.session_state.component["attributes"] = attribut
+                upload_data(driver, st.session_state.component)
+                st.write(st.session_state.component)
+
                 st.success("Data submitted!")
-                goto_level_1()
-
-
-
+                st.session_state["component"] = dict()
+                #st.session_state["stage"] = "level_1"
 
 
 # Define a function to fetch components with the same user value
