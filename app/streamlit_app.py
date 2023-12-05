@@ -159,14 +159,17 @@ def db_upload():
         IFC = pd.read_csv("IFC_processed.csv")
         with open('IFC.json', 'r') as file:
             IFC_ATTRIBUTES = json.load(file)
-
         # Assuming sh.get_query_matches is a function you have defined elsewhere
         if checkbox2:
             results, _ = sh.get_query_matches(name, IFC['IFC'])
             results = [results]
+
             classification = IFC.raw[results[0][0]]
+
             prop_name_list= dict()
             for pset_name, pset_details in IFC_ATTRIBUTES["Domain"]["Classifications"][classification].get("Psets", {}).items():
+                st.write(pset_details)
+
                 for prop_name, prop_details in pset_details.get("Properties", {}).items():
                     if prop_details["type"] == "string" or prop_details["type"] == "real":
                         prop_details = prop_details["type"]
@@ -297,21 +300,23 @@ def components_by_user():
     driver = GraphDatabase.driver(URI, auth=AUTH)
     st.title('Component Viewer')
     # Input for the user
-    user = st.text_input('Enter user name to find components')
+    name = st.text_input('Enter component name to find all the same components')
     # Button to fetch components
     if st.button('Fetch components'):
-        if user:  # Check if user is not empty
+        if name:  # Check if user is not empty
             # Fetch components from the database
-            components = get_components_with_same_user(driver, user)
+            components = get_components_with_same_name(driver, name)
+            st.write(components)
             if components:
                 # Display the components in the app
-                st.write('Components for user:', user)
+                st.write('Components for user:', name)
                 for component in components:
                     st.json(component)  # Assuming the component is a dict or JSON-like object
             else:
-                st.write('No components found for user:', user)
+                st.write('No components found for user:', name)
         else:
             st.warning('Please enter a user name.')
+            
 
 # Function to update the component in the database
 def update_component(driver, component_id, updated_properties):
