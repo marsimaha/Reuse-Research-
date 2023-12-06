@@ -10,10 +10,14 @@ from urllib.parse import urlencode
 from neo4j import GraphDatabase
 import search as sh
 import json
+from nltk.stem import WordNetLemmatizer
+
 
 
 URI = "neo4j+ssc://d4e7c69a.databases.neo4j.io"
 AUTH = ("neo4j", "8gGwVhSx2-ycIPiPGOWejHAhufieq2XOOrkOAizxa1E")
+
+lemmatizer = WordNetLemmatizer()
 
 def outputs(list, list_code, search_query):
     results, cos = sh.get_query_matches(search_query, list)
@@ -31,6 +35,11 @@ def outputs(list, list_code, search_query):
     df_similar_texts.reset_index()
 
     return df_similar_texts
+
+def lemmatize_text(text):
+    lemmatized_words = [lemmatizer.lemmatize(word) for word in text.split()]
+    return ' '.join(lemmatized_words)
+
 
 def search():
     st.title("My Streamlit App")
@@ -57,43 +66,54 @@ def search():
         pass
 
     IFC = pd.read_csv("IFC_processed.csv") 
-    eBKP = pd.read_csv("eBKP_processed.csv") 
-    MF = pd.read_csv("MF_processed.csv") 
+    IFC.IFC = IFC.IFC.apply(lemmatize_text)
 
+    eBKP = pd.read_csv("eBKP_processed1.csv") 
+    eBKP['Element designation_EN'] = eBKP['Element designation_EN'].apply(lemmatize_text)
+
+    MF = pd.read_csv("MF_processed.csv") 
+    MF['label'] = MF['label'].apply(lemmatize_text)
+    
     # You can use buttons to trigger actions
     if st.button("Search"):
         # Perform action on click (similar to form submission in Flask)
         if checkbox1:
             st.write("eBKP")
-            df_similar_texts = outputs(eBKP['Translated_Text'], eBKP['code'], search_query)
+            df_similar_texts = outputs(eBKP['Element designation_EN'], eBKP['Code'], lemmatize_text(search_query))
+            eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
+
+            df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
             # Display the DataFrame as a table in Streamlit
             st.table(df_similar_texts)
 
         if checkbox2:
             st.write("IFC")
-            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], search_query)
+            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], lemmatize_text(search_query))
             # Display the DataFrame as a table in Streamlit
             st.table(df_similar_texts)
 
         if checkbox3:
             st.write("MF")
-            df_similar_texts = outputs(MF['label'], MF['code'], search_query)
+            df_similar_texts = outputs(MF['label'], MF['code'], lemmatize_text(search_query))
             # Display the DataFrame as a table in Streamlit
             st.table(df_similar_texts)
 
         if not checkbox3 and not checkbox2 and not checkbox1 :
             st.write("eBKP")
-            df_similar_texts = outputs(eBKP['Translated_Text'], eBKP['code'], search_query)
+            df_similar_texts = outputs(eBKP['Element designation_EN'], eBKP['Code'], lemmatize_text(search_query))
+            eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
+
+            df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
             # Display the DataFrame as a table in Streamlit
             st.table(df_similar_texts)
 
             st.write("IFC")
-            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], search_query)
+            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], lemmatize_text(search_query))
             # Display the DataFrame as a table in Streamlit
             st.table(df_similar_texts)
 
             st.write("MF")
-            df_similar_texts = outputs(MF['label'], MF['code'], search_query)
+            df_similar_texts = outputs(MF['label'], MF['code'], lemmatize_text(search_query))
             # Display the DataFrame as a table in Streamlit
             st.table(df_similar_texts)
 
