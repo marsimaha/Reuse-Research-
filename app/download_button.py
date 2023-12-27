@@ -4,62 +4,95 @@ from io import BytesIO
 import ifcopenshell
 import ast
 
-def create_ifc_file():
-    return ifcopenshell.file()
-
-def parse_attributes(attribute_str):
-    # Convert the attribute string to a Python list
-    return ast.literal_eval(attribute_str)
-
-def create_and_add_entity(ifc_file, entity_type, attributes_dict):
-    # Parse the attributes from the dictionary
-    attributes = parse_attributes(attributes_dict['attributes'])
-
-    # Check if attributes list is empty
-    if not attributes:
-        print("Error: Empty attributes list.")
-        return None
-
-    # Print the attributes for debugging
-    print(f"Creating entity of type {entity_type} with attributes:")
-    for attribute in attributes:
-        print(f"{attribute[0]}: {attribute[1]}")
-
+def safe_eval(value):
     try:
-        # Create an IFC entity in the file
-        entity = ifc_file.create_entity(entity_type, **dict(attributes))
+        # Check if the value is the string 'None' and keep it as-is
+        if value == 'None':
+            return 'None'
+        # Safely evaluate the string if it is not already a Python literal
+        elif not isinstance(value, (int, float, bool)):
+            return ast.literal_eval(value)
+        return value
+    except (ValueError, SyntaxError):
+        # Return the value as-is if it cannot be safely evaluated
+        return value
 
-        # Add the entity to the IFC file
-        ifc_file.add(entity)
+def parse_attributes(dict_):
+    # Convert the attribute string to a Python list
+    #dict_ = ast.literal_eval(dict_)
+    evaluated_dict = {key: safe_eval(value) for key, value in dict_.items()}
 
-        return entity
-    except Exception as e:
-        print(f"Error creating entity: {e}")
-        return None
-
-def save_ifc_file(ifc_file):
-    # Create a BytesIO object to store the IFC file
-    ifc_buffer = BytesIO()
-    ifc_buffer.write(ifc_file.wrapped_data)
-
-    return ifc_buffer
+    return evaluated_dict
 
 
-# Streamlit app
-def download_button(neo4j_node):
-    # Example usage:
-    ifc_file = create_ifc_file()
+def create_pset_door_common(ifc_file, door, properties):
+    # Create property values
+    property_values = []
+    for name, value in properties.items():
+        # Determine the type of the property and create accordingly
+        if isinstance(value, bool):
+            property_value = ifc_file.createIfcBoolean(value)
+        elif isinstance(value, (float, int)):
+            property_value = ifc_file.createIfcReal(value)
+        else:  # Assuming default type is text
+            property_value = ifc_file.createIfcText(value)
+        
+        # Create the property itself
+        prop = ifc_file.createIfcPropertySingleValue(Name=name, NominalValue=property_value)
+        property_values.append(prop)
 
-    # Add an IfcDoor entity to the file using the provided attributes
-    create_and_add_entity(ifc_file, neo4j_node["classification"], neo4j_node)
-
-    # Save the IFC file
-    ifc_buffer = save_ifc_file(ifc_file)
-
-    # Set up the download button for the IFC file
-    st.download_button(
-        label="Download IFC File",
-        data=ifc_buffer,
-        file_name='example.ifc',
-        mime='application/octet-stream'
+    # Create the property set
+    pset = ifc_file.createIfcPropertySet(
+        GlobalId=ifcopenshell.guid.new(),
+        OwnerHistory=None,  # Assuming no owner history
+        Name="Pset_DoorCommon",
+        Description=None,  # Assuming no description
+        HasProperties=property_values
     )
+
+    # Relate the property set to the door
+    ifc_file.createIfcRelDefinesByProperties(
+        GlobalId=ifcopenshell.guid.new(),
+        OwnerHistory=None,  # Assuming no owner history
+        RelatedObjects=[door],
+        RelatingPropertyDefinition=pset
+    )
+
+    return pset
+
+
+def download_button(component):
+
+    
+
+    res = parse_attributes(component)
+    properties = res['attributes']
+
+    # Initialize an IFC file
+    ifc_file = ifcopenshell.file(schema="IFC4")
+
+    # Create an IfcDoor entity (example)
+    door = ifc_file.create_entity(
+        res['classification'],
+        GlobalId=ifcopenshell.guid.new(),
+        Name="Example",
+    )
+
+
+    # Create and associate Pset_DoorCommon with the door
+    create_pset_door_common(ifc_file, door, properties)
+
+    # Output the IFC file to a file on disk
+    file_path = 'file.ifc'
+    ifc_file.write(file_path)
+
+    # Download button for the IFC file
+    with open(file_path, 'rb') as file:
+        st.download_button(
+            label="Download IFC File",
+            data=file,
+            file_name=file_path,
+            mime="application/octet-stream"
+        )
+
+    print(f"IFC file with Pset_DoorCommon written to {file_path}")

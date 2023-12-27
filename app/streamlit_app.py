@@ -90,17 +90,20 @@ def db_upload():
 
             prop_name_list= dict()
             for pset_name, pset_details in IFC_ATTRIBUTES["Domain"]["Classifications"][classification].get("Psets", {}).items():
-                st.write(pset_details)
 
                 for prop_name, prop_details in pset_details.get("Properties", {}).items():
                     if prop_details["type"] == "string" or prop_details["type"] == "real":
                         prop_details = prop_details["type"]
+                        prop_name_list[prop_name] = prop_details
+
                     elif "values" in prop_details.keys():
                         prop_details = str(prop_details["values"])
-                    else:
-                        prop_details = str(prop_details)
+                        prop_name_list[prop_name] = prop_details
 
-                    prop_name_list[prop_name] = prop_details
+                    #else:
+                        #prop_details = str(prop_details)
+
+                    #prop_name_list[prop_name] = prop_details
 
         st.session_state["component"] = {"user":user, "name":name, "classification": classification, "attributes": prop_name_list}
 
@@ -124,51 +127,70 @@ def db_upload():
         insert_data(user, name)
         goto_level_2()
 
-    if st.session_state["stage"] == "level_2":
-        with st.form("my_form"):
-            st.write("Enter component details : ")
-            attribut = dict()
-            for prop, place in st.session_state.component["attributes"].items():
-                selectbox = False
-                default_value = None
-                try:
-                    place = json.loads(place)
-                    print("e")
-                except json.JSONDecodeError as e:
-                    print(f"Error converting string to dictionary: {e}")
+    def is_valid_json(value):
+        try:
+            json.loads(value)
+            return True
+        except json.JSONDecodeError:
+            return False
 
-                try:
-                    evaluated_place = eval(place)
-                    if isinstance(evaluated_place, list) and all(item in ['TRUE', 'FALSE'] for item in evaluated_place):
-                        default_value = False
-                        selectbox = True
-                    if isinstance(place, dict) and 'type' in place:
-                        evaluated_place = place['type']
+    def get_default_value(place):
+        if place.strip().lower() == "real":
+            # For "real", return 0 as the default
+            return 0, False
+        elif place.strip().lower() == "string":
+            # For "real", return 0 as the default
+            return "None", False
+        try:
+            # Safely evaluate the string representation of the list
+            evaluated_place = ast.literal_eval(place)
 
-                    elif isinstance(evaluated_place, list) and all(isinstance(item, str) for item in evaluated_place):
-                        default_value = "OTHER"
-                        selectbox = True
-                    else:
-                        default_value = place  # Default to the original value if none of the above conditions are met
-                except:
-                    evaluated_place = place
-                
-                widget_key = f"{prop}"
-                if selectbox:
-                    attribut[prop] = st.selectbox(prop, evaluated_place, key=widget_key)
+            if isinstance(evaluated_place, list):
+                # For a list, check if it's a list of booleans
+                if all(item.upper() in ['TRUE', 'FALSE'] for item in evaluated_place):
+                    # For a list of booleans, return the boolean False as the default
+                    return False, True
                 else:
-                    attribut[prop] =  st.text_input(prop, placeholder=evaluated_place, key=widget_key)
+                    # For other lists, return the first item in the list as the default
+                    return evaluated_place[0], True
+        except (ValueError, SyntaxError):
+            # If there is an error during evaluation or the string is not a list,
+            # it will fall back to the original value, which should be a string
+            return place, False
+
+        # If none of the above conditions are met, return the original place as the default value
+        return place, False
+
+    if st.session_state.get("stage") == "level_2":
+        with st.form("my_form"):
+            st.write("Enter component details:")
+            attributes = dict()
+
+            for prop, place in st.session_state.component["attributes"].items():
+                default_value, use_selectbox = get_default_value(place)
+
+                widget_key = f"{prop}"
+                if use_selectbox:
+                    # 'evaluated_place' must be a list obtained from 'ast.literal_eval'
+                    # The first element of this list will be used as the default option
+                    options = ast.literal_eval(place)
+                    attributes[prop] = st.selectbox(prop, options, index=0, key=widget_key)
+                else:
+                    # For text inputs, 'default_value' is used as the default value
+                    attributes[prop] = st.text_input(prop, default_value, key=widget_key)
+
 
             # Every form must have a submit button
             submitted = st.form_submit_button("Submit")
             if submitted:
-                st.session_state.component["attributes"] = attribut
+                st.session_state.component["attributes"] = attributes
                 upload_data(driver, st.session_state.component)
-                st.write(st.session_state.component)
+                #st.write(st.session_state.component)
 
                 st.success("Data submitted!")
                 st.session_state["component"] = dict()
-                #st.session_state["stage"] = "level_1"
+
+
 
 
 # Define a function to fetch components with the same user value

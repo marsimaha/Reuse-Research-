@@ -1,0 +1,10 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [CoordinationView]'),'2;1');
+FILE_NAME('','2023-12-27T12:16:22',(),(),'IfcOpenShell v0.7.0-6c9e130ca','IfcOpenShell v0.7.0-6c9e130ca','');
+FILE_SCHEMA(('IFC4'));
+ENDSEC;
+DATA;
+#1=IFCWALL('2nF0m88AL1LQdDCHZpTK7L',$,'A Simple Wall',$,'Wall',$,$,'WallTag',$);
+ENDSEC;
+END-ISO-10303-21;
