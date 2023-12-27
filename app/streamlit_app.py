@@ -11,112 +11,14 @@ from neo4j import GraphDatabase
 import search as sh
 import json
 from nltk.stem import WordNetLemmatizer
+from download_button import download_button
 
-
+from search import *
 
 URI = "neo4j+ssc://d4e7c69a.databases.neo4j.io"
 AUTH = ("neo4j", "8gGwVhSx2-ycIPiPGOWejHAhufieq2XOOrkOAizxa1E")
 
 lemmatizer = WordNetLemmatizer()
-
-def outputs(list, list_code, search_query):
-    results, cos = sh.get_query_matches(search_query, list)
-    cos = np.sort(cos)[[-1, -2, -3, -4, -5]]            
-    similar_texts = list[results] 
-    similar_codes = list_code[results]
-    # Convert the list of tuples into a pandas DataFrame
-    df_similar_texts = pd.DataFrame({
-        'Name': similar_texts,
-        'Relevance': cos[0:len(similar_texts)],
-        "Code": similar_codes
-    }) 
-    df_similar_texts = df_similar_texts.drop_duplicates(subset='Code', keep='first')
-    df_similar_texts = df_similar_texts.loc[df_similar_texts['Relevance'] != 0]
-    df_similar_texts.reset_index()
-
-    return df_similar_texts
-
-def lemmatize_text(text):
-    lemmatized_words = [lemmatizer.lemmatize(word) for word in text.split()]
-    return ' '.join(lemmatized_words)
-
-
-def search():
-    st.title("My Streamlit App")
-    # Initialize the session state for checkboxes if not already set
-    if 'checkbox_state' not in st.session_state:
-        st.session_state.checkbox_state = [False, False, False]
-    
-    # Replace HTML form with Streamlit input widgets
-    search_query = st.text_input("Enter your search query:")
-
-    # Define a function to update checkboxes ensuring one is checked at a time
-    def checkbox_callback(index):
-        # When a checkbox is clicked, set all to False and then toggle the clicked one
-        st.session_state.checkbox_state = [False, False, False]
-        st.session_state.checkbox_state[index] = not st.session_state.checkbox_state[index]
-
-    # Add checkboxes
-    checkbox1 = st.checkbox('eBKP', value=st.session_state.checkbox_state[0], on_change=checkbox_callback, args=(0,))
-    checkbox2 = st.checkbox('IFC', value=st.session_state.checkbox_state[1], on_change=checkbox_callback, args=(1,))
-    checkbox3 = st.checkbox('MF', value=st.session_state.checkbox_state[2], on_change=checkbox_callback, args=(2,))
-
-
-    if search_query:
-        pass
-
-    IFC = pd.read_csv("IFC_processed.csv") 
-    IFC.IFC = IFC.IFC.apply(lemmatize_text)
-
-    eBKP = pd.read_csv("eBKP_processed1.csv") 
-    eBKP['Element designation_EN'] = eBKP['Element designation_EN'].apply(lemmatize_text)
-
-    MF = pd.read_csv("MF_processed.csv") 
-    MF['label'] = MF['label'].apply(lemmatize_text)
-    
-    # You can use buttons to trigger actions
-    if st.button("Search"):
-        # Perform action on click (similar to form submission in Flask)
-        if checkbox1:
-            st.write("eBKP")
-            df_similar_texts = outputs(eBKP['Element designation_EN'], eBKP['Code'], lemmatize_text(search_query))
-            eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
-
-            df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
-            # Display the DataFrame as a table in Streamlit
-            st.table(df_similar_texts)
-
-        if checkbox2:
-            st.write("IFC")
-            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], lemmatize_text(search_query))
-            # Display the DataFrame as a table in Streamlit
-            st.table(df_similar_texts)
-
-        if checkbox3:
-            st.write("MF")
-            df_similar_texts = outputs(MF['label'], MF['code'], lemmatize_text(search_query))
-            # Display the DataFrame as a table in Streamlit
-            st.table(df_similar_texts)
-
-        if not checkbox3 and not checkbox2 and not checkbox1 :
-            st.write("eBKP")
-            df_similar_texts = outputs(eBKP['Element designation_EN'], eBKP['Code'], lemmatize_text(search_query))
-            eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
-
-            df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
-            # Display the DataFrame as a table in Streamlit
-            st.table(df_similar_texts)
-
-            st.write("IFC")
-            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], lemmatize_text(search_query))
-            # Display the DataFrame as a table in Streamlit
-            st.table(df_similar_texts)
-
-            st.write("MF")
-            df_similar_texts = outputs(MF['label'], MF['code'], lemmatize_text(search_query))
-            # Display the DataFrame as a table in Streamlit
-            st.table(df_similar_texts)
-
 
 
 
@@ -314,6 +216,8 @@ def get_components_with_same_name(driver, name):
         result = session.run(query, name=name)
         components = [record['c'] for record in result]
         return components
+    
+    
 
 
 def components_by_user():
@@ -326,7 +230,9 @@ def components_by_user():
         if name:  # Check if user is not empty
             # Fetch components from the database
             components = get_components_with_same_name(driver, name)
-            st.write(components)
+            for component in components:
+                st.write(component)
+                download_button(dict(component))
             if components:
                 # Display the components in the app
                 st.write('Components for user:', name)
@@ -334,6 +240,7 @@ def components_by_user():
                     st.json(component)  # Assuming the component is a dict or JSON-like object
             else:
                 st.write('No components found for user:', name)
+            
         else:
             st.warning('Please enter a user name.')
             

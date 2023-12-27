@@ -7,6 +7,15 @@ import ast
 from nltk.tokenize import word_tokenize
 from rank_bm25 import BM25Okapi
 
+import streamlit as st
+
+
+from neo4j import GraphDatabase
+import search as sh
+import json
+from nltk.stem import WordNetLemmatizer
+
+
 def tokenize(text):
     return word_tokenize(text.lower())  # Tokenize and lowercase the text
 
@@ -104,4 +113,108 @@ def get_MF(adapter, results):
         most_similar_text232 = MF["label"][correct_and_eval(adapMF[results[2]])[2]]
 
         return [[most_similar_text2, most_similar_text22], [most_similar_text21, most_similar_text212], [most_similar_text23, most_similar_text232]]
+
+
+
+def outputs(list, list_code, search_query):
+    results, cos = sh.get_query_matches(search_query, list)
+    cos = np.sort(cos)[[-1, -2, -3, -4, -5]]            
+    similar_texts = list[results] 
+    similar_codes = list_code[results]
+    df_similar_texts = pd.DataFrame({
+        'Name': similar_texts,
+        'Relevance': cos[0:len(similar_texts)],
+        "Code": similar_codes
+    }) 
+    df_similar_texts = df_similar_texts.drop_duplicates(subset='Code', keep='first')
+    df_similar_texts = df_similar_texts.loc[df_similar_texts['Relevance'] != 0]
+    df_similar_texts.reset_index()
+
+    return df_similar_texts
+
+def lemmatize_text(text):
+    lemmatizer = WordNetLemmatizer()
+
+    lemmatized_words = [lemmatizer.lemmatize(word) for word in text.split()]
+    return ' '.join(lemmatized_words)
+
+
+def search():
+    st.title("My Streamlit App")
+    if 'checkbox_state' not in st.session_state:
+        st.session_state.checkbox_state = [False, False, False, False]
+    
+    search_query = st.text_input("Enter your search query:")
+
+    def checkbox_callback(index):
+        st.session_state.checkbox_state = [False, False, False, False]
+        st.session_state.checkbox_state[index] = not st.session_state.checkbox_state[index]
+
+    checkbox1 = st.checkbox('eBKP', value=st.session_state.checkbox_state[0], on_change=checkbox_callback, args=(0,))
+    checkbox2 = st.checkbox('IFC', value=st.session_state.checkbox_state[1], on_change=checkbox_callback, args=(1,))
+    checkbox3 = st.checkbox('MF', value=st.session_state.checkbox_state[2], on_change=checkbox_callback, args=(2,))
+    checkbox4 = st.checkbox('UNICLASS', value=st.session_state.checkbox_state[3], on_change=checkbox_callback, args=(3,))
+
+
+    if search_query:
+        pass
+
+    IFC = pd.read_csv("IFC_processed.csv") 
+    IFC.IFC = IFC.IFC.apply(lemmatize_text)
+
+    eBKP = pd.read_csv("eBKP_processed1.csv") 
+    eBKP['Element designation_EN'] = eBKP['Element designation_EN'].apply(lemmatize_text)
+
+    MF = pd.read_csv("MF_processed.csv") 
+    MF['label'] = MF['label'].apply(lemmatize_text)
+
+    UNI = pd.read_excel("Uniclass2015_Pr.xlsx", header=2) 
+    UNI['Title'] = UNI['Title'].apply(lemmatize_text)
+
+    # You can use buttons to trigger actions
+    if st.button("Search"):
+        # Perform action on click (similar to form submission in Flask)
+        if checkbox1:
+            st.write("eBKP")
+            df_similar_texts = outputs(eBKP['Element designation_EN'], eBKP['Code'], lemmatize_text(search_query))
+            eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
+
+            df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
+            st.table(df_similar_texts)
+
+        if checkbox2:
+            st.write("IFC")
+            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], lemmatize_text(search_query))
+            st.table(df_similar_texts)
+
+        if checkbox3:
+            st.write("MF")
+            df_similar_texts = outputs(MF['label'], MF['code'], lemmatize_text(search_query))
+            st.table(df_similar_texts)
+        
+        if checkbox4:
+            st.write("UNICLASS")
+            df_similar_texts = outputs(UNI['Title'], UNI['Code'], lemmatize_text(search_query))
+            st.table(df_similar_texts)
+
+
+        if not checkbox3 and not checkbox2 and not checkbox1 and not checkbox4:
+            st.write("eBKP")
+            df_similar_texts = outputs(eBKP['Element designation_EN'], eBKP['Code'], lemmatize_text(search_query))
+            eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
+
+            df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
+            st.table(df_similar_texts)
+
+            st.write("IFC")
+            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], lemmatize_text(search_query))
+            st.table(df_similar_texts)
+
+            st.write("MF")
+            df_similar_texts = outputs(MF['label'], MF['code'], lemmatize_text(search_query))
+            st.table(df_similar_texts)
+
+            st.write("UNICLASS")
+            df_similar_texts = outputs(UNI['Title'], UNI['Code'], lemmatize_text(search_query))
+            st.table(df_similar_texts)
 

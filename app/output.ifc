@@ -1,0 +1,11 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('ViewDefinition [CoordinationView]'),'2;1');
+FILE_NAME('','2023-12-26T03:35:51',(),(),'IfcOpenShell v0.7.0-6c9e130ca','IfcOpenShell v0.7.0-6c9e130ca','');
+FILE_SCHEMA(('IFC4'));
+ENDSEC;
+DATA;
+#1=IFCPROJECT('3nqOEgsRr2RvJZiD62LdD2',$,'Example Project',$,'Project',$,$,$,$);
+#2=IFCDOOR('0o3aX4vd55RulZdxIAgAiw',$,'Example Door',$,'Door',$,$,'Door01',2.,0.8,.NOTDEFINED.,$,$);
+ENDSEC;
+END-ISO-10303-21;
