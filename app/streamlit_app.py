@@ -15,7 +15,9 @@ from download_button import download_button
 
 from search import *
 
-URI = "neo4j+ssc://d4e7c69a.databases.neo4j.io"
+import calculate_rvi as rvi
+
+URI = "neo4j+s://d4e7c69a.databases.neo4j.io"
 AUTH = ("neo4j", "8gGwVhSx2-ycIPiPGOWejHAhufieq2XOOrkOAizxa1E")
 
 lemmatizer = WordNetLemmatizer()
@@ -53,8 +55,7 @@ def upload_data(driver, component):
         query = f"CREATE (a:Component {{{properties}}})"
         session.run(query, **component)
 
-def db_upload():
-    driver = GraphDatabase.driver(URI, auth=AUTH)
+def db_upload(driver):
 
     st.title('Component Upload')
 
@@ -241,8 +242,7 @@ def get_components_with_same_name(driver, name):
     
     
 
-
-def components_by_user():
+def components_by_user(driver):
     driver = GraphDatabase.driver(URI, auth=AUTH)
     st.title('Component Viewer')
     # Input for the user
@@ -277,9 +277,8 @@ def update_component(driver, component_id, updated_properties):
         )
         session.run(query, id=component_id, props=updated_properties)
 
-def db_update():
+def db_update(driver):
     st.title('Edit Component')
-    driver = GraphDatabase.driver(URI, auth=AUTH)
 
     # Get component ID from user input or a selection widget
     component_id = st.number_input('Enter component ID', min_value=0, step=1)
@@ -344,18 +343,23 @@ def db_update():
 
 # Main function to control the app
 def main():
+    driver = GraphDatabase.driver(URI, auth=AUTH)
+
     # Sidebar for navigation
     st.sidebar.title("Navigation")
-    choice = st.sidebar.radio("Choose a page", ["Search", "DB Upload", "DB Read", "DB Edit"])
+    choice = st.sidebar.radio("Choose a page", ["Search", "DB Upload", "DB Read", "DB Edit", "RVI"])
 
     # Display the selected page
     if choice == "Search":
         search()
     elif choice == "DB Upload":
-        db_upload()
+        db_upload(driver)
     elif choice == "DB Read":
-        components_by_user()
+        components_by_user(driver)
     elif choice == "DB Edit":
-        db_update()
+        db_update(driver)
+
+    elif choice == "RVI":
+        rvi.display_rvi_streamlit(driver)
 if __name__ == "__main__":
     main()

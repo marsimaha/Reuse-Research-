@@ -8,6 +8,7 @@ from nltk.tokenize import word_tokenize
 from rank_bm25 import BM25Okapi
 
 import streamlit as st
+from sentence_transformers import SentenceTransformer
 
 
 from neo4j import GraphDatabase
@@ -116,8 +117,33 @@ def get_MF(adapter, results):
 
 
 
-def outputs(list, list_code, search_query):
-    results, cos = sh.get_query_matches(search_query, list)
+
+def cosine_similarity(a, b):
+    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
+
+def get_query_matches_embed(model, search_query, list_embeddings):
+    # Encode the search query
+    query_embedding = model.encode(search_query, convert_to_numpy=True)
+
+    # Calculate cosine similarities
+    cos_similarities = np.array([cosine_similarity(query_embedding, emb) for emb in list_embeddings])
+
+    # Get top matches
+    top_matches_indices = np.argsort(-cos_similarities)[:5]  # Assuming you want top 5 matches
+    top_cos_similarities = cos_similarities[top_matches_indices]
+
+    return top_matches_indices, top_cos_similarities
+
+
+def lemmatize_text(text):
+    lemmatizer = WordNetLemmatizer()
+
+    lemmatized_words = [lemmatizer.lemmatize(word) for word in text.split()]
+    return ' '.join(lemmatized_words)
+
+
+def outputs(model, list, list_code, search_query, list_embeddings):
+    results, cos = get_query_matches_embed(model, search_query, list_embeddings)
     cos = np.sort(cos)[[-1, -2, -3, -4, -5]]            
     similar_texts = list[results] 
     similar_codes = list_code[results]
@@ -132,15 +158,10 @@ def outputs(list, list_code, search_query):
 
     return df_similar_texts
 
-def lemmatize_text(text):
-    lemmatizer = WordNetLemmatizer()
-
-    lemmatized_words = [lemmatizer.lemmatize(word) for word in text.split()]
-    return ' '.join(lemmatized_words)
-
-
 def search():
     st.title("My Streamlit App")
+    model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
+
     if 'checkbox_state' not in st.session_state:
         st.session_state.checkbox_state = [False, False, False, False]
     
@@ -161,22 +182,28 @@ def search():
 
     IFC = pd.read_csv("IFC_processed.csv") 
     IFC.IFC = IFC.IFC.apply(lemmatize_text)
+    IFC_embeddings = np.load('embeddings_ifc.npy')
 
     eBKP = pd.read_csv("eBKP_processed1.csv") 
     eBKP['Element designation_EN'] = eBKP['Element designation_EN'].apply(lemmatize_text)
+    eBKP_embeddings = np.load('embeddings_ebkp.npy')
 
     MF = pd.read_csv("MF_processed.csv") 
     MF['label'] = MF['label'].apply(lemmatize_text)
+    MF_embeddings = np.load('embeddings_mf.npy')
+
 
     UNI = pd.read_excel("Uniclass2015_Pr.xlsx", header=2) 
     UNI['Title'] = UNI['Title'].apply(lemmatize_text)
+    UNI_embeddings = np.load('embeddings_uni.npy')
+
 
     # You can use buttons to trigger actions
     if st.button("Search"):
         # Perform action on click (similar to form submission in Flask)
         if checkbox1:
             st.write("eBKP")
-            df_similar_texts = outputs(eBKP['Element designation_EN'], eBKP['Code'], lemmatize_text(search_query))
+            df_similar_texts = outputs(model, eBKP['Element designation_EN'], eBKP['Code'], search_query, eBKP_embeddings)
             eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
 
             df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
@@ -184,37 +211,37 @@ def search():
 
         if checkbox2:
             st.write("IFC")
-            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], lemmatize_text(search_query))
+            df_similar_texts = outputs(model, IFC['IFC'], IFC['raw'], search_query, IFC_embeddings)
             st.table(df_similar_texts)
 
         if checkbox3:
             st.write("MF")
-            df_similar_texts = outputs(MF['label'], MF['code'], lemmatize_text(search_query))
+            df_similar_texts = outputs(model, MF['label'], MF['code'], search_query, MF_embeddings)
             st.table(df_similar_texts)
         
         if checkbox4:
             st.write("UNICLASS")
-            df_similar_texts = outputs(UNI['Title'], UNI['Code'], lemmatize_text(search_query))
+            df_similar_texts = outputs(model, UNI['Title'], UNI['Code'], search_query, UNI_embeddings)
             st.table(df_similar_texts)
 
 
         if not checkbox3 and not checkbox2 and not checkbox1 and not checkbox4:
             st.write("eBKP")
-            df_similar_texts = outputs(eBKP['Element designation_EN'], eBKP['Code'], lemmatize_text(search_query))
+            df_similar_texts = outputs(model, eBKP['Element designation_EN'], eBKP['Code'], search_query, eBKP_embeddings) 
             eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
 
             df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
             st.table(df_similar_texts)
 
             st.write("IFC")
-            df_similar_texts = outputs(IFC['IFC'], IFC['raw'], lemmatize_text(search_query))
+            df_similar_texts = outputs(model, IFC['IFC'], IFC['raw'], search_query, IFC_embeddings)
             st.table(df_similar_texts)
 
             st.write("MF")
-            df_similar_texts = outputs(MF['label'], MF['code'], lemmatize_text(search_query))
+            df_similar_texts = outputs(model,MF['label'], MF['code'], search_query, MF_embeddings)
             st.table(df_similar_texts)
 
             st.write("UNICLASS")
-            df_similar_texts = outputs(UNI['Title'], UNI['Code'], lemmatize_text(search_query))
+            df_similar_texts = outputs(model,UNI['Title'], UNI['Code'], search_query, UNI_embeddings)
             st.table(df_similar_texts)
 
