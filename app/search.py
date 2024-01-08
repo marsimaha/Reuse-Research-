@@ -163,18 +163,19 @@ def search():
     model = SentenceTransformer('sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2')
 
     if 'checkbox_state' not in st.session_state:
-        st.session_state.checkbox_state = [False, False, False, False]
+        st.session_state.checkbox_state = [False,False, False, False, False]
     
     search_query = st.text_input("Enter your search query:")
 
     def checkbox_callback(index):
-        st.session_state.checkbox_state = [False, False, False, False]
+        st.session_state.checkbox_state = [False, False, False, False, False]
         st.session_state.checkbox_state[index] = not st.session_state.checkbox_state[index]
 
-    checkbox1 = st.checkbox('eBKP', value=st.session_state.checkbox_state[0], on_change=checkbox_callback, args=(0,))
-    checkbox2 = st.checkbox('IFC', value=st.session_state.checkbox_state[1], on_change=checkbox_callback, args=(1,))
-    checkbox3 = st.checkbox('MF', value=st.session_state.checkbox_state[2], on_change=checkbox_callback, args=(2,))
-    checkbox4 = st.checkbox('UNICLASS', value=st.session_state.checkbox_state[3], on_change=checkbox_callback, args=(3,))
+    checkbox0 = st.checkbox('English', value=st.session_state.checkbox_state[0], on_change=checkbox_callback, args=(0,))
+    checkbox1 = st.checkbox('eBKP', value=st.session_state.checkbox_state[1], on_change=checkbox_callback, args=(1,))
+    checkbox2 = st.checkbox('IFC', value=st.session_state.checkbox_state[2], on_change=checkbox_callback, args=(2,))
+    checkbox3 = st.checkbox('MF', value=st.session_state.checkbox_state[3], on_change=checkbox_callback, args=(3,))
+    checkbox4 = st.checkbox('UNICLASS', value=st.session_state.checkbox_state[4], on_change=checkbox_callback, args=(4,))
 
 
     if search_query:
@@ -183,65 +184,111 @@ def search():
     IFC = pd.read_csv("IFC_processed.csv") 
     IFC.IFC = IFC.IFC.apply(lemmatize_text)
     IFC_embeddings = np.load('embeddings_ifc.npy')
+    IFC_embeddings_en = np.load('embeddings_ifc_en.npy')
 
     eBKP = pd.read_csv("eBKP_processed1.csv") 
     eBKP['Element designation_EN'] = eBKP['Element designation_EN'].apply(lemmatize_text)
     eBKP_embeddings = np.load('embeddings_ebkp.npy')
+    eBKP_embeddings_en = np.load('embeddings_ebkp_en.npy')
 
     MF = pd.read_csv("MF_processed.csv") 
     MF['label'] = MF['label'].apply(lemmatize_text)
     MF_embeddings = np.load('embeddings_mf.npy')
-
+    MF_embeddings_en = np.load('embeddings_mf_en.npy')
 
     UNI = pd.read_excel("Uniclass2015_Pr.xlsx", header=2) 
     UNI['Title'] = UNI['Title'].apply(lemmatize_text)
     UNI_embeddings = np.load('embeddings_uni.npy')
-
+    UNI_embeddings_en = np.load('embeddings_uni_en.npy')
 
     # You can use buttons to trigger actions
     if st.button("Search"):
         # Perform action on click (similar to form submission in Flask)
-        if checkbox1:
-            st.write("eBKP")
-            df_similar_texts = outputs(model, eBKP['Element designation_EN'], eBKP['Code'], search_query, eBKP_embeddings)
-            eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
+        if checkbox0:
+            if checkbox1:
+                st.write("eBKP")
+                df_similar_texts = outputs(model, eBKP['Element designation_EN'], eBKP['Code'], search_query, eBKP_embeddings)
+                eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
 
-            df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
-            st.table(df_similar_texts)
+                df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
+                st.table(df_similar_texts)
 
-        if checkbox2:
-            st.write("IFC")
-            df_similar_texts = outputs(model, IFC['IFC'], IFC['raw'], search_query, IFC_embeddings)
-            st.table(df_similar_texts)
+            if checkbox2:
+                st.write("IFC")
+                df_similar_texts = outputs(model, IFC['IFC'], IFC['raw'], search_query, IFC_embeddings_en)
+                st.table(df_similar_texts)
 
-        if checkbox3:
-            st.write("MF")
-            df_similar_texts = outputs(model, MF['label'], MF['code'], search_query, MF_embeddings)
-            st.table(df_similar_texts)
-        
-        if checkbox4:
-            st.write("UNICLASS")
-            df_similar_texts = outputs(model, UNI['Title'], UNI['Code'], search_query, UNI_embeddings)
-            st.table(df_similar_texts)
+            if checkbox3:
+                st.write("MF")
+                df_similar_texts = outputs(model, MF['label'], MF['code'], search_query, MF_embeddings_en)
+                st.table(df_similar_texts)
+            
+            if checkbox4:
+                st.write("UNICLASS")
+                df_similar_texts = outputs(model, UNI['Title'], UNI['Code'], search_query, UNI_embeddings_en)
+                st.table(df_similar_texts)
 
 
-        if not checkbox3 and not checkbox2 and not checkbox1 and not checkbox4:
-            st.write("eBKP")
-            df_similar_texts = outputs(model, eBKP['Element designation_EN'], eBKP['Code'], search_query, eBKP_embeddings) 
-            eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
+            if not checkbox3 and not checkbox2 and not checkbox1 and not checkbox4:
+                st.write("eBKP")
+                df_similar_texts = outputs(model, eBKP['Element designation_EN'], eBKP['Code'], search_query, eBKP_embeddings_en) 
+                eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
 
-            df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
-            st.table(df_similar_texts)
+                df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
+                st.table(df_similar_texts)
 
-            st.write("IFC")
-            df_similar_texts = outputs(model, IFC['IFC'], IFC['raw'], search_query, IFC_embeddings)
-            st.table(df_similar_texts)
+                st.write("IFC")
+                df_similar_texts = outputs(model, IFC['IFC'], IFC['raw'], search_query, IFC_embeddings_en)
+                st.table(df_similar_texts)
 
-            st.write("MF")
-            df_similar_texts = outputs(model,MF['label'], MF['code'], search_query, MF_embeddings)
-            st.table(df_similar_texts)
+                st.write("MF")
+                df_similar_texts = outputs(model,MF['label'], MF['code'], search_query, MF_embeddings_en)
+                st.table(df_similar_texts)
 
-            st.write("UNICLASS")
-            df_similar_texts = outputs(model,UNI['Title'], UNI['Code'], search_query, UNI_embeddings)
-            st.table(df_similar_texts)
+                st.write("UNICLASS")
+                df_similar_texts = outputs(model,UNI['Title'], UNI['Code'], search_query, UNI_embeddings_en)
+                st.table(df_similar_texts)
+        else:
+            if checkbox1:
+                st.write("eBKP")
+                df_similar_texts = outputs(model, eBKP['Element designation_EN'], eBKP['Code'], search_query, eBKP_embeddings)
+                eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
 
+                df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
+                st.table(df_similar_texts)
+
+            if checkbox2:
+                st.write("IFC")
+                df_similar_texts = outputs(model, IFC['IFC'], IFC['raw'], search_query, IFC_embeddings)
+                st.table(df_similar_texts)
+
+            if checkbox3:
+                st.write("MF")
+                df_similar_texts = outputs(model, MF['label'], MF['code'], search_query, MF_embeddings)
+                st.table(df_similar_texts)
+            
+            if checkbox4:
+                st.write("UNICLASS")
+                df_similar_texts = outputs(model, UNI['Title'], UNI['Code'], search_query, UNI_embeddings)
+                st.table(df_similar_texts)
+
+
+            if not checkbox3 and not checkbox2 and not checkbox1 and not checkbox4:
+                st.write("eBKP")
+                df_similar_texts = outputs(model, eBKP['Element designation_EN'], eBKP['Code'], search_query, eBKP_embeddings) 
+                eBKPCode = eBKP[eBKP["Code"].isin(df_similar_texts["Code"])]
+
+                df_similar_texts['Type'] = eBKPCode["IfcBuiltSystem.ObjectType"]
+                st.table(df_similar_texts)
+
+                st.write("IFC")
+                df_similar_texts = outputs(model, IFC['IFC'], IFC['raw'], search_query, IFC_embeddings)
+                st.table(df_similar_texts)
+
+                st.write("MF")
+                df_similar_texts = outputs(model,MF['label'], MF['code'], search_query, MF_embeddings)
+                st.table(df_similar_texts)
+
+                st.write("UNICLASS")
+                df_similar_texts = outputs(model,UNI['Title'], UNI['Code'], search_query, UNI_embeddings)
+                st.table(df_similar_texts)

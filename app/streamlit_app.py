@@ -12,7 +12,6 @@ import search as sh
 import json
 from nltk.stem import WordNetLemmatizer
 from download_button import download_button
-
 from search import *
 
 import calculate_rvi as rvi
@@ -51,9 +50,23 @@ def upload_data(driver, component):
             component[key] = json.dumps(value)
 
     with driver.session() as session:
+        # Create the component node
+        import re
         properties = ", ".join(f"{key}: ${key}" for key in component.keys())
-        query = f"CREATE (a:Component {{{properties}}})"
-        session.run(query, **component)
+        create_query = f"CREATE (a:Component {{{properties}}})"
+        session.run(create_query, **component)
+
+        # Assuming 'classification' is a property of the component
+        classification = component.get('classification', None)
+        parts = classification.split("lock")
+
+        # Join the parts with an underscore
+        joined_result = "_".join(parts)
+
+        with driver.session() as session:
+                properties = ", ".join(f"{key}: ${key}" for key in component.keys())
+                query = f"CREATE (a:Component {{{properties}}})"
+                session.run(query, **component)
 
 def db_upload(driver):
 
@@ -72,11 +85,11 @@ def db_upload(driver):
         st.session_state.checkbox_state_upload = [False, False, False, False, False]
         st.session_state.checkbox_state_upload[index] = not st.session_state.checkbox_state_upload[index]
 
-    checkbox1 = st.checkbox('eBKP', value=st.session_state.checkbox_state_upload[0], on_change=checkbox_callback, args=(0,))
+    checkbox1 = False#st.checkbox('eBKP', value=st.session_state.checkbox_state_upload[0], on_change=checkbox_callback, args=(0,))
     checkbox2 = st.checkbox('IFC', value=st.session_state.checkbox_state_upload[1], on_change=checkbox_callback, args=(1,))
-    checkbox3 = st.checkbox('MF', value=st.session_state.checkbox_state_upload[2], on_change=checkbox_callback, args=(2,))
-    checkbox4 = st.checkbox('Uniclass_2015', value=st.session_state.checkbox_state_upload[3], on_change=checkbox_callback, args=(3,))
-    checkbox5 = st.checkbox('No_Class', value=st.session_state.checkbox_state_upload[4], on_change=checkbox_callback, args=(4,))
+    checkbox3 = False#st.checkbox('MF', value=st.session_state.checkbox_state_upload[2], on_change=checkbox_callback, args=(2,))
+    checkbox4 = False#st.checkbox('Uniclass_2015', value=st.session_state.checkbox_state_upload[3], on_change=checkbox_callback, args=(3,))
+    checkbox5 = False#st.checkbox('No_Class', value=st.session_state.checkbox_state_upload[4], on_change=checkbox_callback, args=(4,))
 
     def insert_data(user, name):
         IFC = pd.read_csv("IFC_processed.csv")
@@ -91,7 +104,6 @@ def db_upload(driver):
 
             prop_name_list= dict()
             for pset_name, pset_details in IFC_ATTRIBUTES["Domain"]["Classifications"][classification].get("Psets", {}).items():
-
                 for prop_name, prop_details in pset_details.get("Properties", {}).items():
                     if prop_details["type"] == "string" or prop_details["type"] == "real":
                         prop_details = prop_details["type"]
@@ -100,11 +112,6 @@ def db_upload(driver):
                     elif "values" in prop_details.keys():
                         prop_details = str(prop_details["values"])
                         prop_name_list[prop_name] = prop_details
-
-                    #else:
-                        #prop_details = str(prop_details)
-
-                    #prop_name_list[prop_name] = prop_details
 
         st.session_state["component"] = {"user":user, "name":name, "classification": classification, "attributes": prop_name_list}
 
@@ -166,10 +173,16 @@ def db_upload(driver):
         with st.form("my_form"):
             st.write("Enter component details:")
             attributes = dict()
+            # Sample data: replace this with your actual options
+            materials = pd.read_excel("co2mat.xlsx", sheet_name="Sheet2")
+            materials = materials["Eng"].to_list()
+            
+            selected_option = st.selectbox("Select an option:", materials)
+
+            attributes["Material"] = selected_option
 
             for prop, place in st.session_state.component["attributes"].items():
                 default_value, use_selectbox = get_default_value(place)
-
                 widget_key = f"{prop}"
                 if use_selectbox:
                     # 'evaluated_place' must be a list obtained from 'ast.literal_eval'
@@ -347,7 +360,7 @@ def main():
 
     # Sidebar for navigation
     st.sidebar.title("Navigation")
-    choice = st.sidebar.radio("Choose a page", ["Search", "DB Upload", "DB Read", "DB Edit", "RVI"])
+    choice = st.sidebar.radio("Choose a page", ["Search", "DB Upload", "DB Read", "RVI"])
 
     # Display the selected page
     if choice == "Search":
@@ -356,10 +369,10 @@ def main():
         db_upload(driver)
     elif choice == "DB Read":
         components_by_user(driver)
-    elif choice == "DB Edit":
-        db_update(driver)
+    #elif choice == "DB Edit":
+    #    db_update(driver)
 
     elif choice == "RVI":
-        rvi.display_rvi_streamlit(driver)
+        rvi.display_rvi_streamlit_att2(driver)
 if __name__ == "__main__":
     main()
