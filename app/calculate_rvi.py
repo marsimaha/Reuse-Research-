@@ -109,22 +109,17 @@ def display_rvi_streamlit_att2(driver):
 
             for component_att in components_attributes:
                 material = ast.literal_eval(component_att)["Material"]
-                # Search for rows in the DataFrame where 'Eng' matches the material name
                 matching_rows = co2_mat[co2_mat['Eng'] == material]
 
-                # If there are matching rows, append them to the results list
                 if not matching_rows.empty:
                     results.append(matching_rows)
             
-            # If there are results, concatenate them into a single DataFrame
             if results:
                 result_df = pd.concat(results)
-                # Display the DataFrame in Streamlit as a sortable table
                 weight1 = (result_df['Fabrication']+result_df['Élimination'] - result_df['Contenu dans le produit'])  / (result_df['Fabrication']+result_df['Élimination']) * 100  # Normalized weights based on Total
-                # Calculate the RVI for each row
                 result_df['RVI(%)'] = (weight1) / 2
                 result_df.columns = ['Total (kg CO2-eq)','Fabrication (kg CO2-eq)', 'Elimination (kg CO2-eq)', 'Reuse (kg CO2-eq)', 'Name FR', 'Name EN','RVI(%)' ]
-                result_df = result_df.drop(columns=['Name FR', 'Name EN'])
+                result_df = result_df.drop(columns=['Name FR'])
                 st.dataframe(result_df)
             else:
                 st.write("No matching data found for Material:", material)
