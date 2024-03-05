@@ -16,7 +16,7 @@ from search import *
 
 import calculate_rvi as rvi
 
-URI = "aaf6defa.databases.neo4j.io:7687"
+URI = "neo4j+s://aaf6defa.databases.neo4j.io:7687"
 AUTH = ("neo4j", "LkoDag9gu-p8wEKa1EyyFrKsqpJWptJMk3OM0KV38Uo")
 
 lemmatizer = WordNetLemmatizer()
