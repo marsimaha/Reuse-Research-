@@ -1,0 +1,48 @@
+fourth_level,material_emb_2,GES_Fabrication
+Bar,Aluminium,4.175000000000001
+Bar,Steel,0.729
+Basement floors,Cork,7.77
+Bricks,Clays,0.262
+Cement,Cement,0.114
+Clays,Clays,0.167
+Concrete,Concrete,0.20224444444444445
+Doors,Aluminium,180.0
+Doors,Mixed,82.225
+Doors,Wood,60.58
+Foundation,Concrete,29.2
+Foundation,Metal,86.15
+Insulation,Cellulose Fibre,0.186
+Insulation,Cork,1.07
+Insulation,Fibre,1.0496666666666667
+Insulation,Glass,0.5329999999999999
+Insulation,Glass wool,0.9802500000000001
+Insulation,Polystyrene (PS),5.885
+Insulation,Polyurethane (PU),4.609999999999999
+Insulation,Resin,4.17
+Insulation,Rockwool,1.08
+Insulation,Straw,0.0956
+Medium-density fiberboards (MDF),Medium-density fiberboards (MDF),0.854
+Panels,Aluminium,35.7
+Panels,Cement replacement materials,32.25735
+Panels,Fibre,0.633
+Panels,Mixed,0.5514
+Panels,Plastics,16.6
+Panels,Resin,8.03
+Panels,Synthetic minerals,6.12
+Panels,Wood,0.9365
+Parquet,Cork,3.355
+Parquet,Wood,6.153333333333333
+Sandstone,Stone,0.11493333333333333
+Sheet,Aluminium,5.57
+Sheet,Brass,2.7
+Sheet,Chrome steel,3.6050000000000004
+Sheet,Copper,2.2
+Sheet,Nickel steel,4.99
+Sheet,Steel,3.6350000000000002
+Sheet,Titanium,4.02
+Slabs,Stone,4.51
+Windows,Aluminium,83.3
+Windows,Glass,71.2090909090909
+Windows,Polyvinyl chloride (PVC),53.2
+Windows,Wood,26.15
+Windows,Wood Metal,44.85

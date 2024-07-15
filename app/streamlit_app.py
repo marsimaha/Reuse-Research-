@@ -11,7 +11,7 @@ from neo4j import GraphDatabase
 import search as sh
 import json
 from nltk.stem import WordNetLemmatizer
-from download_button import download_button
+#from download_button import download_button
 from search import *
 
 import calculate_rvi as rvi
@@ -267,7 +267,7 @@ def components_by_user(driver):
             components = get_components_with_same_name(driver, name)
             for component in components:
                 st.write(component)
-                download_button(dict(component))
+                #download_button(dict(component))
             if components:
                 # Display the components in the app
                 st.write('Components for user:', name)

@@ -63,8 +63,6 @@ def create_pset_door_common(ifc_file, door, properties):
 
 def download_button(component):
 
-    
-
     res = parse_attributes(component)
     properties = res['attributes']
 
